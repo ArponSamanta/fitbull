@@ -176,3 +176,48 @@ p.is-style-eyebrow {
 		color: #000;
 	}
 }
+
+/* Mobile menu overlay: dark, large, left-aligned links */
+.wp-block-navigation__responsive-container.is-menu-open {
+	padding: 1.25rem clamp(1rem, 4vw, 2rem) 2rem;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content {
+	padding-top: 3.5rem;
+	align-items: flex-start !important;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container {
+	align-items: flex-start !important;
+	gap: 1.1rem;
+	width: 100%;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content {
+	font-family: var(--wp--preset--font-family--display);
+	font-size: 2.25rem;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+	padding: 0.15rem 0;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open .fb-nav-cta {
+	margin-top: 0.75rem;
+}
+
+/* Four classes, to beat core's padding reset on overlay links. */
+.wp-block-navigation__responsive-container.is-menu-open .fb-nav-cta > .wp-block-navigation-item__content {
+	display: inline-block;
+	font-size: 1.5rem;
+	padding: 0.8rem 1.9rem;
+	border-radius: 999px;
+}
+
+.wp-block-navigation__responsive-container-close,
+.wp-block-navigation__responsive-container-open {
+	min-width: 44px;
+	min-height: 44px;
+	justify-content: center;
+	align-items: center;
+}

@@ -3,7 +3,7 @@ Contributors: arponsamanta
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,10 @@ The theme works on its own as a blog theme. Install the companion plugin, Fitbul
 No. Without Fitbull Core the theme is a complete blog theme. Sections that rely on the plugin are hidden.
 
 == Changelog ==
+
+= 1.0.1 =
+* Mobile menu: dark full-screen overlay with large, left-aligned links and a visible Tools button.
+* Larger tap targets for the menu open and close buttons.
 
 = 1.0.0 =
 * First release.

@@ -239,3 +239,11 @@
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 }
+
+// Three long labels (Lose fat / Maintain / Lean bulk) stack on a phone.
+@container (max-width: 380px) {
+
+	.fb-calc__segments--3 {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}

@@ -51,7 +51,7 @@ export default function GearKit( { items = [] } ) {
 						{ __( 'How far do you want to go?', 'fitbull-core' ) }
 					</legend>
 					<div
-						className="fb-seg"
+						className={ `fb-seg fb-seg--${ TIERS.length }` }
 						style={ { '--fb-count': TIERS.length } }
 					>
 						{ TIERS.map( ( t ) => (

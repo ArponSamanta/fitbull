@@ -126,9 +126,19 @@
 	}
 }
 
+/* Three long labels don't fit side by side on a phone: stack them. */
+@container (max-width: 380px) {
+	.fb-seg--3 {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
 .fb-seg button,
 .fb-check {
 	min-height: 44px;
+	overflow-wrap: normal;
+	word-break: normal;
+	hyphens: none;
 	padding: 0 0.9rem;
 	border-radius: 12px;
 	border: 1px solid var(--fb-line-strong);

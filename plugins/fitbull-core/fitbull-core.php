@@ -3,7 +3,7 @@
  * Plugin Name:       Fitbull Core
  * Plugin URI:        https://github.com/ArponSamanta/fitbull
  * Description:       Exercise library, workout plan generator, Indian recipes and meal planner, macro and 1RM calculators, progress log, gear and supplement guides.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 6.6
  * Requires PHP:      8.0
  * Author:            Arpon Samanta
@@ -17,7 +17,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'FITBULL_CORE_VERSION', '1.0.0' );
+define( 'FITBULL_CORE_VERSION', '1.0.1' );
 define( 'FITBULL_CORE_FILE', __FILE__ );
 define( 'FITBULL_CORE_DIR', plugin_dir_path( __FILE__ ) );
 define( 'FITBULL_CORE_URL', plugin_dir_url( __FILE__ ) );

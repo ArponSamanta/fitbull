@@ -4,7 +4,7 @@ Tags: fitness, workout, recipes, nutrition, gym
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -75,6 +75,11 @@ The macro calculator remembers its inputs in the visitor's own browser (localSto
 5. Progress log.
 
 == Changelog ==
+
+= 1.0.1 =
+* Mobile: option buttons stack on narrow screens instead of breaking words.
+* Mobile: gear kit cards keep the step number beside the title.
+* Workout plan: fixed spacing in the equipment gap notice.
 
 = 1.0.0 =
 * First release.

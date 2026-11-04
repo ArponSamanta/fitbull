@@ -257,7 +257,7 @@ export default function WorkoutPlan( { equipment = [] } ) {
 						<p className="fb-notice">
 							<strong>
 								{ __( 'Gap in your plan:', 'fitbull-core' ) }
-							</strong>
+							</strong>{ ' ' }
 							{ sprintf(
 								/* translators: %s: list of movement types */
 								__(
