@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "fitbull/recipe-details",
+	"version": "1.0.0",
+	"title": "Recipe details",
+	"category": "theme",
+	"icon": "list-view",
+	"description": "Nutrition, ingredients and method for the current recipe.",
+	"keywords": [
+		"recipe",
+		"ingredients"
+	],
+	"textdomain": "fitbull-core",
+	"attributes": {},
+	"supports": {
+		"html": false,
+		"align": [
+			"wide"
+		],
+		"spacing": {
+			"margin": true
+		}
+	},
+	"editorScript": "file:./index.js",
+	"usesContext": [
+		"postId",
+		"postType"
+	],
+	"style": [
+		"file:./style-index.css",
+		"fitbull-core-ui"
+	],
+	"render": "file:./render.php"
+}

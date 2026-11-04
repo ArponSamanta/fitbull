@@ -9,14 +9,34 @@ import {
 } from '@wordpress/editor';
 import { useSelect } from '@wordpress/data';
 import { useEntityProp } from '@wordpress/core-data';
+import { useState } from '@wordpress/element';
 import {
 	Button,
 	Flex,
 	SelectControl,
 	TextControl,
 	TextareaControl,
+	ToggleControl,
 } from '@wordpress/components';
 import { __, sprintf } from '@wordpress/i18n';
+
+const PATTERN_OPTIONS = [
+	{ value: 'squat', label: __( 'Squat', 'fitbull-core' ) },
+	{ value: 'hinge', label: __( 'Hip hinge', 'fitbull-core' ) },
+	{ value: 'lunge', label: __( 'Lunge (single leg)', 'fitbull-core' ) },
+	{ value: 'push_h', label: __( 'Horizontal push (chest)', 'fitbull-core' ) },
+	{
+		value: 'push_v',
+		label: __( 'Vertical push (overhead)', 'fitbull-core' ),
+	},
+	{ value: 'pull_h', label: __( 'Horizontal pull (row)', 'fitbull-core' ) },
+	{
+		value: 'pull_v',
+		label: __( 'Vertical pull (pulldown)', 'fitbull-core' ),
+	},
+	{ value: 'core', label: __( 'Core', 'fitbull-core' ) },
+	{ value: 'arms', label: __( 'Arms', 'fitbull-core' ) },
+];
 
 const controlProps = {
 	__nextHasNoMarginBottom: true,
@@ -158,6 +178,26 @@ function ExercisePanels() {
 						] }
 						onChange={ set( 'fb_difficulty' ) }
 					/>
+					<SelectControl
+						{ ...controlProps }
+						label={ __( 'Movement pattern', 'fitbull-core' ) }
+						help={ __(
+							'The workout plan generator fills each session slot by pattern.',
+							'fitbull-core'
+						) }
+						value={ meta.fb_pattern }
+						options={ PATTERN_OPTIONS }
+						onChange={ set( 'fb_pattern' ) }
+					/>
+					<ToggleControl
+						__nextHasNoMarginBottom
+						label={ __(
+							'Timed hold (seconds, not reps)',
+							'fitbull-core'
+						) }
+						checked={ !! meta.fb_timed }
+						onChange={ set( 'fb_timed' ) }
+					/>
 					<TextControl
 						{ ...controlProps }
 						type="url"
@@ -274,6 +314,20 @@ function GearPanel() {
 					] }
 					onChange={ set( 'fb_budget_tier' ) }
 				/>
+				<TextControl
+					{ ...controlProps }
+					type="number"
+					min={ 1 }
+					label={ __( 'Buying order', 'fitbull-core' ) }
+					help={ __(
+						'Lower numbers are recommended first within a tier.',
+						'fitbull-core'
+					) }
+					value={ meta.fb_priority ?? 10 }
+					onChange={ ( value ) =>
+						set( 'fb_priority' )( parseInt( value, 10 ) || 1 )
+					}
+				/>
 			</Flex>
 		</PluginDocumentSettingPanel>
 	);
@@ -323,6 +377,117 @@ function SupplementPanel() {
 	);
 }
 
+// Keeps a text draft so blank lines can be typed; saves non-empty lines.
+function MethodField( { value, onChange } ) {
+	const [ draft, setDraft ] = useState( value.join( '\n' ) );
+	return (
+		<TextareaControl
+			__nextHasNoMarginBottom
+			label={ __( 'Steps, one per line', 'fitbull-core' ) }
+			rows={ 8 }
+			value={ draft }
+			onChange={ ( text ) => {
+				setDraft( text );
+				onChange(
+					text
+						.split( '\n' )
+						.map( ( line ) => line.trim() )
+						.filter( Boolean )
+				);
+			} }
+		/>
+	);
+}
+
+function RecipePanels() {
+	const [ meta, set ] = useMeta( 'fb_recipe' );
+	const number = ( key ) => ( value ) =>
+		set( key )( Math.max( 0, parseInt( value, 10 ) || 0 ) );
+	const fields = [
+		[ 'fb_calories', __( 'Calories (kcal)', 'fitbull-core' ) ],
+		[ 'fb_protein_g', __( 'Protein (g)', 'fitbull-core' ) ],
+		[ 'fb_carbs_g', __( 'Carbs (g)', 'fitbull-core' ) ],
+		[ 'fb_fat_g', __( 'Fat (g)', 'fitbull-core' ) ],
+		[ 'fb_prep_minutes', __( 'Time (minutes)', 'fitbull-core' ) ],
+	];
+	const fromMacros =
+		( meta.fb_protein_g || 0 ) * 4 +
+		( meta.fb_carbs_g || 0 ) * 4 +
+		( meta.fb_fat_g || 0 ) * 9;
+	const off =
+		meta.fb_calories > 0 &&
+		Math.abs( fromMacros - meta.fb_calories ) > meta.fb_calories * 0.1;
+
+	return (
+		<>
+			<PluginDocumentSettingPanel
+				name="fitbull-nutrition"
+				title={ __( 'Nutrition per serving', 'fitbull-core' ) }
+			>
+				<Flex direction="column" gap={ 3 }>
+					{ fields.map( ( [ key, label ] ) => (
+						<TextControl
+							key={ key }
+							{ ...controlProps }
+							type="number"
+							min={ 0 }
+							label={ label }
+							value={ meta[ key ] ?? 0 }
+							onChange={ number( key ) }
+						/>
+					) ) }
+					<p
+						style={ {
+							margin: 0,
+							color: off ? '#b32d2e' : '#757575',
+						} }
+					>
+						{ sprintf(
+							/* translators: %d: kcal calculated from macros */
+							__( 'Macros add up to %d kcal.', 'fitbull-core' ),
+							fromMacros
+						) }
+						{ off &&
+							' ' +
+								__(
+									'That is more than 10% away from the calories field.',
+									'fitbull-core'
+								) }
+					</p>
+				</Flex>
+			</PluginDocumentSettingPanel>
+			<PluginDocumentSettingPanel
+				name="fitbull-ingredients"
+				title={ __( 'Ingredients', 'fitbull-core' ) }
+			>
+				<RowList
+					rows={ meta.fb_ingredients }
+					onChange={ set( 'fb_ingredients' ) }
+					/* translators: %d: ingredient number */
+					itemLabel={ __( 'Ingredient %d', 'fitbull-core' ) }
+					addLabel={ __( 'Add ingredient', 'fitbull-core' ) }
+					fields={ [
+						{
+							key: 'item',
+							label: __( 'Ingredient', 'fitbull-core' ),
+						},
+						{ key: 'qty', label: __( 'Amount', 'fitbull-core' ) },
+					] }
+				/>
+			</PluginDocumentSettingPanel>
+			<PluginDocumentSettingPanel
+				name="fitbull-method"
+				title={ __( 'Method', 'fitbull-core' ) }
+			>
+				<MethodField
+					value={ meta.fb_method || [] }
+					onChange={ set( 'fb_method' ) }
+				/>
+			</PluginDocumentSettingPanel>
+		</>
+	);
+}
+
 function FitbullPanels() {
 	const postType = useSelect(
 		( select ) => select( editorStore ).getCurrentPostType(),
@@ -336,6 +501,9 @@ function FitbullPanels() {
 	}
 	if ( postType === 'fb_supplement' ) {
 		return <SupplementPanel />;
+	}
+	if ( postType === 'fb_recipe' ) {
+		return <RecipePanels />;
 	}
 	return null;
 }

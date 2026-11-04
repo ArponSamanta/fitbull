@@ -1,0 +1,35 @@
+<!-- wp:template-part {"slug":"header","area":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained","contentSize":"1280px"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60)">
+<!-- wp:paragraph {"className":"is-style-eyebrow"} -->
+<p class="is-style-eyebrow">Supplements</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"var:preset|font-size|xx-large"}}} -->
+<h1 class="wp-block-heading">What works, and what to skip</h1>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"textColor":"muted","fontSize":"large"} -->
+<p class="has-muted-color has-text-color has-large-font-size">Every supplement is rated by the strength of the evidence behind it. Food first, always.</p>
+<!-- /wp:paragraph -->
+<!-- wp:query {"queryId":11,"query":{"perPage":48,"pages":0,"offset":0,"postType":"fb_supplement","order":"asc","orderBy":"title","inherit":true}} -->
+<div class="wp-block-query">
+<!-- wp:post-template {"layout":{"type":"grid","columnCount":3,"minimumColumnWidth":"300px"}} -->
+<!-- wp:group {"className":"is-style-card fb-loop-card","layout":{"type":"flex","orientation":"vertical"},"style":{"spacing":{"blockGap":"0.75rem"},"dimensions":{"minHeight":"100%"}}} -->
+<div class="wp-block-group is-style-card fb-loop-card" style="min-height:100%">
+<!-- wp:post-title {"level":2,"isLink":true,"style":{"typography":{"fontSize":"1.6rem"}}} /-->
+<!-- wp:fitbull/item-facts /-->
+<!-- wp:post-excerpt {"excerptLength":24,"textColor":"muted","fontSize":"small"} /-->
+</div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+<!-- wp:query-no-results -->
+<!-- wp:paragraph {"textColor":"muted"} -->
+<p class="has-muted-color has-text-color">Nothing here yet.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results -->
+</div>
+<!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","area":"footer","tagName":"footer"} /-->

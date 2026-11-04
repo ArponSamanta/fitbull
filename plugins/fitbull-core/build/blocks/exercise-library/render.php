@@ -8,6 +8,8 @@
  * @package Fitbull\Core
  */
 
+defined( 'ABSPATH' ) || exit;
+
 use Fitbull\Core\Rest_Controller;
 
 $fitbull_per_page = max( 1, min( 48, (int) ( $attributes['perPage'] ?? 12 ) ) );
@@ -25,7 +27,7 @@ $fitbull_props    = array(
 	'filters'     => $fitbull_filters,
 );
 ?>
-<div <?php echo get_block_wrapper_attributes(); ?>>
+<div <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
 	<div data-fitbull-library="<?php echo esc_attr( wp_json_encode( $fitbull_props ) ); ?>">
 		<div class="fb-lib">
 			<?php if ( $fitbull_props['showFilters'] && $fitbull_filters['muscles'] ) : ?>

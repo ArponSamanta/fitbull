@@ -8,6 +8,8 @@
  * @package Fitbull\Core
  */
 
+defined( 'ABSPATH' ) || exit;
+
 use Fitbull\Core\Content_Types;
 
 $fitbull_post_id = (int) ( $block->context['postId'] ?? 0 );
@@ -33,7 +35,7 @@ $fitbull_equipment  = get_the_terms( $fitbull_post_id, Content_Types::GEAR_TYPE 
 $fitbull_embed      = $fitbull_video ? wp_oembed_get( $fitbull_video ) : false;
 $fitbull_tools      = get_page_by_path( 'tools' );
 ?>
-<div <?php echo get_block_wrapper_attributes( array( 'class' => 'fb-exd' ) ); ?>>
+<div <?php echo wp_kses_data( get_block_wrapper_attributes( array( 'class' => 'fb-exd' ) ) ); ?>>
 	<div class="fb-exd__tags">
 		<span class="fb-badge fb-badge--<?php echo esc_attr( $fitbull_difficulty ); ?>"><?php echo esc_html( $fitbull_levels[ $fitbull_difficulty ] ?? '' ); ?></span>
 		<?php if ( $fitbull_equipment && ! is_wp_error( $fitbull_equipment ) ) : ?>

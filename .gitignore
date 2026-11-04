@@ -16,3 +16,6 @@ plugins/fitbull-core/coverage/
 
 # Note: plugins/fitbull-core/build/ is committed on purpose, so the plugin
 # works straight from a Git checkout (Docker setup and WordPress Playground demo).
+
+# Release zips from bin/package.sh
+dist/

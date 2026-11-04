@@ -113,3 +113,66 @@ p.is-style-eyebrow {
 	.fb-hub { transition: none; }
 	.fb-hub:hover { transform: none; }
 }
+
+/* Footer page list as a row of links */
+.fb-footer__pages {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem 1.5rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0.875rem;
+}
+
+.fb-footer__pages .wp-block-pages-list__item__link {
+	color: var(--wp--preset--color--muted);
+	text-decoration: none;
+}
+
+.fb-footer__pages .wp-block-pages-list__item__link:hover {
+	color: var(--wp--preset--color--chalk);
+}
+
+/* Taxonomy terms above a single title */
+.fb-eyebrow-terms a {
+	color: var(--wp--preset--color--lime);
+	text-decoration: none;
+	font-size: 0.875rem;
+	font-weight: 600;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+/* Cards in archive query loops */
+.fb-loop-card .wp-block-post-title {
+	font-family: var(--wp--preset--font-family--display);
+	text-transform: uppercase;
+	line-height: 1;
+	margin: 0;
+}
+
+.fb-loop-card .wp-block-post-title a {
+	color: var(--wp--preset--color--chalk);
+	text-decoration: none;
+}
+
+.fb-loop-card .wp-block-post-title a:hover {
+	color: var(--wp--preset--color--lime);
+}
+
+.fb-loop-card .wp-block-post-excerpt__excerpt {
+	margin: 0;
+}
+
+@media print {
+	.fb-header,
+	.fb-footer {
+		display: none;
+	}
+
+	body {
+		background: #fff;
+		color: #000;
+	}
+}

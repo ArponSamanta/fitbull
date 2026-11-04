@@ -1,0 +1,14 @@
+./.git
+./node_modules
+./vendor
+./tests
+./coverage
+./.distignore
+./.editorconfig
+./.gitignore
+./composer.json
+./composer.lock
+./package.json
+./package-lock.json
+./phpunit.xml.dist
+./.phpunit.result.cache

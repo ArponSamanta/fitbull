@@ -11,6 +11,9 @@
 
 namespace Fitbull\Core;
 
+// Unit tests define ABSPATH in tests/php/bootstrap.php, so this class loads without WordPress.
+defined( 'ABSPATH' ) || exit;
+
 class Macro_Calculator {
 
 	/** @var array<string,mixed> */
@@ -60,12 +63,15 @@ class Macro_Calculator {
 
 	private function validate( array $input ): array {
 		if ( ! in_array( $input['sex'] ?? null, array( 'male', 'female' ), true ) ) {
+			// phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- Caught and returned as a JSON WP_Error.
 			throw new \InvalidArgumentException( 'sex must be "male" or "female".' );
 		}
 		if ( ! isset( $this->config['activity'][ $input['activity'] ?? '' ] ) ) {
+			// phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- Caught and returned as a JSON WP_Error.
 			throw new \InvalidArgumentException( 'Unknown activity level.' );
 		}
 		if ( ! isset( $this->config['goal'][ $input['goal'] ?? '' ] ) ) {
+			// phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- Caught and returned as a JSON WP_Error.
 			throw new \InvalidArgumentException( 'Unknown goal.' );
 		}
 
@@ -76,10 +82,12 @@ class Macro_Calculator {
 		);
 		foreach ( $ranges as $key => list( $min, $max ) ) {
 			if ( ! isset( $input[ $key ] ) || ! is_numeric( $input[ $key ] ) ) {
+				// phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- Caught and returned as a JSON WP_Error.
 				throw new \InvalidArgumentException( "{$key} is required." );
 			}
 			$value = (float) $input[ $key ];
 			if ( $value < $min || $value > $max ) {
+				// phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- Caught and returned as a JSON WP_Error.
 				throw new \InvalidArgumentException( "{$key} must be between {$min} and {$max}." );
 			}
 			$input[ $key ] = $value;

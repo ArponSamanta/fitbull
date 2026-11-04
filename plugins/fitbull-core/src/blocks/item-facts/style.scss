@@ -1,0 +1,85 @@
+@use "../../styles/tokens" as *;
+@use "../../styles/badge";
+
+.fb-facts {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+	font-family: $fb-font-body;
+
+	&__badges {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem;
+	}
+
+	&__text {
+		margin: 0;
+		color: $fb-muted;
+		font-size: 0.95rem;
+		line-height: 1.5;
+	}
+
+	&--full .fb-badge {
+		font-size: 0.875rem;
+		padding: 0.45rem 0.9rem;
+	}
+
+	&--full &__text {
+		color: $fb-text;
+		font-size: 1.1rem;
+	}
+
+	&__buy {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.75rem;
+		margin: 0.5rem 0 0;
+	}
+
+	&__note {
+		color: $fb-muted;
+		font-size: 0.8rem;
+	}
+}
+
+.fb-badge--evidence-strong {
+	background: $fb-lime;
+	color: $fb-ink;
+}
+
+.fb-badge--evidence-moderate {
+	background: $fb-sky;
+	color: $fb-ink;
+}
+
+.fb-badge--evidence-weak {
+	background: $fb-amber;
+	color: $fb-ink;
+}
+
+.fb-badge--evidence-none {
+	background: #4a2a2a;
+	color: $fb-text;
+}
+
+.fb-badge--tier-starter {
+	background: $fb-lime;
+	color: $fb-ink;
+}
+
+.fb-badge--tier-serious {
+	background: $fb-sky;
+	color: $fb-ink;
+}
+
+.fb-badge--tier-full {
+	background: $fb-amber;
+	color: $fb-ink;
+}
+
+.fb-badge--kcal {
+	background: $fb-lime;
+	color: $fb-ink;
+}

@@ -1,0 +1,211 @@
+# Copyright (C) 2026 Arpon Samanta
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Fitbull 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/fitbull\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-04T09:12:43+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: fitbull\n"
+
+#. Theme Name of the theme
+#: style.css
+#: functions.php:31
+msgid "Fitbull"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://github.com/ArponSamanta/fitbull"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "A dark, athletic block theme for fitness sites: bold condensed headings, a lime accent and patterns for a homepage, articles and guides. Pair it with the Fitbull Core plugin to add an exercise library, a workout plan generator, Indian recipes with a meal planner, macro and one-rep-max calculators, a progress log, and gear and supplement guides."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Arpon Samanta"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://github.com/ArponSamanta"
+msgstr ""
+
+#: functions.php:44
+msgid "Ghost"
+msgstr ""
+
+#: functions.php:51
+msgid "Card"
+msgstr ""
+
+#: functions.php:58
+msgid "Eyebrow"
+msgstr ""
+
+#: patterns/cta-band.php
+msgctxt "Pattern title"
+msgid "Lime call-to-action band"
+msgstr ""
+
+#: patterns/cta-band.php
+msgctxt "Pattern description"
+msgid "Bright band pointing beginners to the workout plan generator. Needs the Fitbull Core plugin."
+msgstr ""
+
+#: patterns/cta-band.php:21
+msgid "New to the gym?"
+msgstr ""
+
+#: patterns/cta-band.php:24
+msgid "Answer four questions and get a weekly plan built from real exercises. Free, no sign-up."
+msgstr ""
+
+#: patterns/cta-band.php:31
+msgid "Build my plan"
+msgstr ""
+
+#: patterns/exercise-finder.php
+msgctxt "Pattern title"
+msgid "Exercise finder"
+msgstr ""
+
+#: patterns/exercise-finder.php
+msgctxt "Pattern description"
+msgid "Intro text beside the filterable exercise library. Needs the Fitbull Core plugin."
+msgstr ""
+
+#: patterns/exercise-finder.php:16
+msgid "Exercise finder"
+msgstr ""
+
+#: patterns/exercise-finder.php:19
+msgid "Pick a muscle. Get the moves."
+msgstr ""
+
+#: patterns/exercise-finder.php:22
+msgid "Choose what you want to train and the equipment you have. Easiest exercises come first."
+msgstr ""
+
+#: patterns/hero.php
+msgctxt "Pattern title"
+msgid "Hero with macro calculator"
+msgstr ""
+
+#: patterns/hero.php
+msgctxt "Pattern description"
+msgid "Headline, two calls to action and, with the Fitbull Core plugin, the live macro calculator."
+msgstr ""
+
+#: patterns/hero.php:18
+msgid "Workouts · Diet · Gear · Supplements"
+msgstr ""
+
+#: patterns/hero.php:21
+msgid "Train smart.<br>Eat Indian.<br><span class=\"fb-brand-accent\">Buy right.</span>"
+msgstr ""
+
+#: patterns/hero.php:24
+msgid "Correct form for every lift, meal plans built on dal, paneer and rice, and honest gear picks for every budget. No bro-science."
+msgstr ""
+
+#: patterns/hero.php:30
+msgid "Build my free plan"
+msgstr ""
+
+#: patterns/hero.php:33
+msgid "Explore exercises"
+msgstr ""
+
+#: patterns/hubs.php
+msgctxt "Pattern title"
+msgid "Six content hubs"
+msgstr ""
+
+#: patterns/hubs.php
+msgctxt "Pattern description"
+msgid "Grid of linked cards, one per section of the site. Needs the Fitbull Core plugin."
+msgstr ""
+
+#: patterns/hubs.php:15
+msgid "Workout plan"
+msgstr ""
+
+#: patterns/hubs.php:15
+msgid "A weekly plan for your goal, schedule and equipment, in under a minute."
+msgstr ""
+
+#: patterns/hubs.php:16
+msgid "Exercise library"
+msgstr ""
+
+#: patterns/hubs.php:16
+msgid "Form cues, common mistakes and easier or harder versions."
+msgstr ""
+
+#: patterns/hubs.php:17
+msgid "Recipes and meal plan"
+msgstr ""
+
+#: patterns/hubs.php:17
+msgid "Indian dishes with macros, and a day of meals that hits your target."
+msgstr ""
+
+#: patterns/hubs.php:18
+msgid "Supplements"
+msgstr ""
+
+#: patterns/hubs.php:18
+msgid "What works, what to skip, rated by strength of evidence."
+msgstr ""
+
+#: patterns/hubs.php:19
+msgid "Gear and equipment"
+msgstr ""
+
+#: patterns/hubs.php:19
+msgid "What to buy first for a home gym, by budget."
+msgstr ""
+
+#: patterns/hubs.php:20
+msgid "Tools and progress"
+msgstr ""
+
+#: patterns/hubs.php:20
+msgid "Macro and one-rep-max calculators, plus your private progress log."
+msgstr ""
+
+#: patterns/hubs.php:28
+msgid "Everything in one place"
+msgstr ""
+
+#: patterns/hubs.php:31
+msgid "Six hubs, all linked, so a squat guide is one tap from the right shoes and the right meal."
+msgstr ""
+
+#: patterns/latest-guides.php
+msgctxt "Pattern title"
+msgid "Latest guides"
+msgstr ""
+
+#: patterns/latest-guides.php
+msgctxt "Pattern description"
+msgid "The three newest articles as cards."
+msgstr ""
+
+#: patterns/latest-guides.php:12
+msgid "Start here"
+msgstr ""
+
+#: patterns/latest-guides.php:28
+msgid "Guides are on the way."
+msgstr ""

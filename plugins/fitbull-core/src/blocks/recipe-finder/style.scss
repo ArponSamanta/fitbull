@@ -1,0 +1,121 @@
+@use "../../styles/tokens" as *;
+@use "../../styles/badge";
+
+.fb-chip {
+
+	@include fb-chip;
+	display: inline-flex;
+	align-items: center;
+	text-decoration: none;
+
+	&[aria-pressed="true"] {
+		background: $fb-lime;
+		border-color: $fb-lime;
+		color: $fb-ink;
+		font-weight: 600;
+	}
+}
+
+.fb-lib__chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.fb-recipes {
+
+	&__grid {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+		gap: 0.9rem;
+	}
+
+	&[aria-busy="true"] .fb-recipes__grid {
+		opacity: 0.55;
+	}
+}
+
+.fb-rcard {
+	position: relative;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	padding: 0.75rem;
+	background: $fb-ink;
+	border: 1px solid $fb-line;
+	border-radius: 18px;
+
+	&:hover,
+	&:focus-within {
+		border-color: $fb-lime;
+	}
+
+	&__media {
+		flex: 0 0 88px;
+		height: 88px;
+		border-radius: 14px;
+		background: $fb-surface-2;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__kcal {
+		font-family: $fb-font-display;
+		font-size: 1.6rem;
+		font-weight: 800;
+		color: $fb-lime;
+
+		&::after {
+			content: " kcal";
+			font-size: 0.8rem;
+			color: $fb-muted;
+		}
+	}
+
+	&__body {
+		flex: 1;
+		min-width: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.3rem;
+	}
+
+	&__title {
+		margin: 0;
+		font-family: $fb-font-body;
+		font-size: 1.05rem;
+		font-weight: 600;
+		line-height: 1.3;
+		text-transform: none;
+
+		a {
+			color: $fb-text;
+			text-decoration: none;
+
+			&::after {
+				content: "";
+				position: absolute;
+				inset: 0;
+				border-radius: inherit;
+			}
+		}
+	}
+
+	&__meta {
+		margin: 0;
+		color: $fb-muted;
+		font-size: 0.8125rem;
+	}
+}

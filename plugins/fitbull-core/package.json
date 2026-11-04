@@ -1,6 +1,6 @@
 {
 	"name": "fitbull-core",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"private": true,
 	"description": "Content types, REST API and interactive blocks for the Fitbull fitness site.",
 	"author": "Arpon Samanta",

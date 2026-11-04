@@ -1,296 +1,1211 @@
 {
-	"muscles": [ "Chest", "Back", "Shoulders", "Arms", "Core", "Legs", "Glutes" ],
-	"equipment": [ "Bodyweight", "Dumbbells", "Barbell", "Resistance bands", "Pull-up bar", "Bench" ],
+	"muscles": [
+		"Chest",
+		"Back",
+		"Shoulders",
+		"Arms",
+		"Core",
+		"Legs",
+		"Glutes"
+	],
+	"equipment": [
+		"Bodyweight",
+		"Dumbbells",
+		"Barbell",
+		"Resistance bands",
+		"Pull-up bar",
+		"Bench"
+	],
 	"exercises": [
 		{
 			"title": "Push-up",
 			"difficulty": "beginner",
-			"muscles": [ "Chest" ],
-			"equipment": [ "Bodyweight" ],
-			"secondary": [ "Triceps", "Front shoulders", "Core" ],
+			"muscles": [
+				"Chest"
+			],
+			"equipment": [
+				"Bodyweight"
+			],
+			"secondary": [
+				"Triceps",
+				"Front shoulders",
+				"Core"
+			],
 			"excerpt": "The best no-equipment chest builder. Scale it from wall to floor as you get stronger.",
 			"steps": [
-				{ "title": "Set your hands", "text": "Hands slightly wider than shoulders, fingers spread, wrists under shoulders." },
-				{ "title": "Make a plank", "text": "Squeeze glutes and brace your stomach so your body is one straight line from head to heels." },
-				{ "title": "Lower with control", "text": "Bend the elbows to about 45 degrees from your body until your chest is a fist above the floor." },
-				{ "title": "Press the floor away", "text": "Push back up without letting your hips sag or lead." }
+				{
+					"title": "Set your hands",
+					"text": "Hands slightly wider than shoulders, fingers spread, wrists under shoulders."
+				},
+				{
+					"title": "Make a plank",
+					"text": "Squeeze glutes and brace your stomach so your body is one straight line from head to heels."
+				},
+				{
+					"title": "Lower with control",
+					"text": "Bend the elbows to about 45 degrees from your body until your chest is a fist above the floor."
+				},
+				{
+					"title": "Press the floor away",
+					"text": "Push back up without letting your hips sag or lead."
+				}
 			],
 			"mistakes": [
-				{ "title": "Hips sagging", "fix": "Squeeze your glutes and shorten the set until you can hold the line." },
-				{ "title": "Elbows flared wide", "fix": "Tuck them to roughly 45 degrees to protect the shoulders." },
-				{ "title": "Half reps", "fix": "Raise your hands on a bench and use full range instead." }
-			]
+				{
+					"title": "Hips sagging",
+					"fix": "Squeeze your glutes and shorten the set until you can hold the line."
+				},
+				{
+					"title": "Elbows flared wide",
+					"fix": "Tuck them to roughly 45 degrees to protect the shoulders."
+				},
+				{
+					"title": "Half reps",
+					"fix": "Raise your hands on a bench and use full range instead."
+				}
+			],
+			"pattern": "push_h",
+			"timed": false
 		},
 		{
 			"title": "Bodyweight squat",
 			"difficulty": "beginner",
-			"muscles": [ "Legs", "Glutes" ],
-			"equipment": [ "Bodyweight" ],
-			"secondary": [ "Core" ],
+			"muscles": [
+				"Legs",
+				"Glutes"
+			],
+			"equipment": [
+				"Bodyweight"
+			],
+			"secondary": [
+				"Core"
+			],
 			"excerpt": "Learn the squat pattern before you load it. Works anywhere, including a small flat.",
 			"steps": [
-				{ "title": "Stance", "text": "Feet about shoulder width apart, toes turned out slightly." },
-				{ "title": "Brace", "text": "Breathe in, tighten your stomach and keep your chest proud." },
-				{ "title": "Sit down and back", "text": "Push hips back and let knees travel out over your toes." },
-				{ "title": "Stand tall", "text": "Drive through the whole foot and finish with hips fully straight." }
+				{
+					"title": "Stance",
+					"text": "Feet about shoulder width apart, toes turned out slightly."
+				},
+				{
+					"title": "Brace",
+					"text": "Breathe in, tighten your stomach and keep your chest proud."
+				},
+				{
+					"title": "Sit down and back",
+					"text": "Push hips back and let knees travel out over your toes."
+				},
+				{
+					"title": "Stand tall",
+					"text": "Drive through the whole foot and finish with hips fully straight."
+				}
 			],
 			"mistakes": [
-				{ "title": "Knees caving in", "fix": "Push your knees out in line with your toes." },
-				{ "title": "Heels lifting", "fix": "Keep weight mid-foot; a slightly wider stance helps." }
-			]
+				{
+					"title": "Knees caving in",
+					"fix": "Push your knees out in line with your toes."
+				},
+				{
+					"title": "Heels lifting",
+					"fix": "Keep weight mid-foot; a slightly wider stance helps."
+				}
+			],
+			"pattern": "squat",
+			"timed": false
 		},
 		{
 			"title": "Glute bridge",
 			"difficulty": "beginner",
-			"muscles": [ "Glutes" ],
-			"equipment": [ "Bodyweight" ],
-			"secondary": [ "Hamstrings", "Core" ],
+			"muscles": [
+				"Glutes"
+			],
+			"equipment": [
+				"Bodyweight"
+			],
+			"secondary": [
+				"Hamstrings",
+				"Core"
+			],
 			"excerpt": "A gentle way to wake up the glutes, good for beginners and desk workers.",
 			"steps": [
-				{ "title": "Lie down", "text": "On your back, knees bent, feet flat and hip-width apart near your glutes." },
-				{ "title": "Brace", "text": "Flatten your lower back lightly into the floor." },
-				{ "title": "Drive up", "text": "Push through your heels and lift hips until shoulders, hips and knees line up." },
-				{ "title": "Squeeze and lower", "text": "Pause one second at the top, then lower slowly." }
+				{
+					"title": "Lie down",
+					"text": "On your back, knees bent, feet flat and hip-width apart near your glutes."
+				},
+				{
+					"title": "Brace",
+					"text": "Flatten your lower back lightly into the floor."
+				},
+				{
+					"title": "Drive up",
+					"text": "Push through your heels and lift hips until shoulders, hips and knees line up."
+				},
+				{
+					"title": "Squeeze and lower",
+					"text": "Pause one second at the top, then lower slowly."
+				}
 			],
 			"mistakes": [
-				{ "title": "Arching the lower back", "fix": "Stop when hips are straight; the squeeze comes from the glutes, not the spine." },
-				{ "title": "Feet too far away", "fix": "Bring them closer so you feel glutes, not hamstrings cramping." }
-			]
+				{
+					"title": "Arching the lower back",
+					"fix": "Stop when hips are straight; the squeeze comes from the glutes, not the spine."
+				},
+				{
+					"title": "Feet too far away",
+					"fix": "Bring them closer so you feel glutes, not hamstrings cramping."
+				}
+			],
+			"pattern": "hinge",
+			"timed": false
 		},
 		{
 			"title": "Plank",
 			"difficulty": "beginner",
-			"muscles": [ "Core" ],
-			"equipment": [ "Bodyweight" ],
-			"secondary": [ "Shoulders", "Glutes" ],
+			"muscles": [
+				"Core"
+			],
+			"equipment": [
+				"Bodyweight"
+			],
+			"secondary": [
+				"Shoulders",
+				"Glutes"
+			],
 			"excerpt": "Trains your core to keep the spine still, which carries over to every big lift.",
 			"steps": [
-				{ "title": "Forearms down", "text": "Elbows under shoulders, forearms parallel." },
-				{ "title": "Step back", "text": "Legs straight, feet hip-width apart." },
-				{ "title": "Lock in", "text": "Squeeze glutes, tuck the pelvis slightly and brace like you expect a punch." },
-				{ "title": "Breathe and hold", "text": "Keep breathing. Stop the set when your form slips, not when the timer says." }
+				{
+					"title": "Forearms down",
+					"text": "Elbows under shoulders, forearms parallel."
+				},
+				{
+					"title": "Step back",
+					"text": "Legs straight, feet hip-width apart."
+				},
+				{
+					"title": "Lock in",
+					"text": "Squeeze glutes, tuck the pelvis slightly and brace like you expect a punch."
+				},
+				{
+					"title": "Breathe and hold",
+					"text": "Keep breathing. Stop the set when your form slips, not when the timer says."
+				}
 			],
 			"mistakes": [
-				{ "title": "Hips too high or low", "fix": "Ask someone to check, or film yourself from the side." },
-				{ "title": "Holding your breath", "fix": "Take short breaths while keeping the brace." }
-			]
+				{
+					"title": "Hips too high or low",
+					"fix": "Ask someone to check, or film yourself from the side."
+				},
+				{
+					"title": "Holding your breath",
+					"fix": "Take short breaths while keeping the brace."
+				}
+			],
+			"pattern": "core",
+			"timed": true
 		},
 		{
 			"title": "Goblet squat",
 			"difficulty": "beginner",
-			"muscles": [ "Legs", "Glutes" ],
-			"equipment": [ "Dumbbells" ],
-			"secondary": [ "Core", "Upper back" ],
+			"muscles": [
+				"Legs",
+				"Glutes"
+			],
+			"equipment": [
+				"Dumbbells"
+			],
+			"secondary": [
+				"Core",
+				"Upper back"
+			],
 			"excerpt": "The easiest loaded squat to learn. The weight in front helps you stay upright.",
 			"steps": [
-				{ "title": "Hold the weight", "text": "Cup one dumbbell at chest height, elbows pointing down." },
-				{ "title": "Stance", "text": "Feet a little wider than shoulders, toes slightly out." },
-				{ "title": "Squat between your legs", "text": "Sit down until elbows brush the inside of your knees, chest up." },
-				{ "title": "Drive up", "text": "Push the floor away and stand fully." }
+				{
+					"title": "Hold the weight",
+					"text": "Cup one dumbbell at chest height, elbows pointing down."
+				},
+				{
+					"title": "Stance",
+					"text": "Feet a little wider than shoulders, toes slightly out."
+				},
+				{
+					"title": "Squat between your legs",
+					"text": "Sit down until elbows brush the inside of your knees, chest up."
+				},
+				{
+					"title": "Drive up",
+					"text": "Push the floor away and stand fully."
+				}
 			],
 			"mistakes": [
-				{ "title": "Dumbbell drifting forward", "fix": "Keep it touching your chest the whole rep." },
-				{ "title": "Rounding at the bottom", "fix": "Only go as deep as you can with a flat back." }
-			]
+				{
+					"title": "Dumbbell drifting forward",
+					"fix": "Keep it touching your chest the whole rep."
+				},
+				{
+					"title": "Rounding at the bottom",
+					"fix": "Only go as deep as you can with a flat back."
+				}
+			],
+			"pattern": "squat",
+			"timed": false
 		},
 		{
 			"title": "Dumbbell bent-over row",
 			"difficulty": "beginner",
-			"muscles": [ "Back" ],
-			"equipment": [ "Dumbbells" ],
-			"secondary": [ "Biceps", "Rear shoulders" ],
+			"muscles": [
+				"Back"
+			],
+			"equipment": [
+				"Dumbbells"
+			],
+			"secondary": [
+				"Biceps",
+				"Rear shoulders"
+			],
 			"excerpt": "Builds a stronger, thicker back with just a pair of dumbbells.",
 			"steps": [
-				{ "title": "Hinge", "text": "Soft knees, push hips back until your torso is about 45 degrees, back flat." },
-				{ "title": "Let the weights hang", "text": "Arms straight under your shoulders, palms facing each other." },
-				{ "title": "Row to your hips", "text": "Pull elbows back toward your hip pockets, squeezing shoulder blades together." },
-				{ "title": "Lower slowly", "text": "Take two seconds to return to straight arms." }
+				{
+					"title": "Hinge",
+					"text": "Soft knees, push hips back until your torso is about 45 degrees, back flat."
+				},
+				{
+					"title": "Let the weights hang",
+					"text": "Arms straight under your shoulders, palms facing each other."
+				},
+				{
+					"title": "Row to your hips",
+					"text": "Pull elbows back toward your hip pockets, squeezing shoulder blades together."
+				},
+				{
+					"title": "Lower slowly",
+					"text": "Take two seconds to return to straight arms."
+				}
 			],
 			"mistakes": [
-				{ "title": "Jerking the weight", "fix": "Go lighter and pause for a second at the top." },
-				{ "title": "Rounded back", "fix": "Keep your chest up and brace before every rep." }
-			]
+				{
+					"title": "Jerking the weight",
+					"fix": "Go lighter and pause for a second at the top."
+				},
+				{
+					"title": "Rounded back",
+					"fix": "Keep your chest up and brace before every rep."
+				}
+			],
+			"pattern": "pull_h",
+			"timed": false
 		},
 		{
 			"title": "Dumbbell shoulder press",
 			"difficulty": "beginner",
-			"muscles": [ "Shoulders" ],
-			"equipment": [ "Dumbbells" ],
-			"secondary": [ "Triceps", "Upper chest" ],
+			"muscles": [
+				"Shoulders"
+			],
+			"equipment": [
+				"Dumbbells"
+			],
+			"secondary": [
+				"Triceps",
+				"Upper chest"
+			],
 			"excerpt": "A simple overhead press for stronger, healthier shoulders.",
 			"steps": [
-				{ "title": "Start position", "text": "Sit or stand tall, dumbbells at shoulder height, palms forward or slightly in." },
-				{ "title": "Brace", "text": "Tighten your stomach and glutes so your lower back stays neutral." },
-				{ "title": "Press up", "text": "Push the weights up until arms are straight, biceps near your ears." },
-				{ "title": "Lower to the shoulders", "text": "Bring them back down with control." }
+				{
+					"title": "Start position",
+					"text": "Sit or stand tall, dumbbells at shoulder height, palms forward or slightly in."
+				},
+				{
+					"title": "Brace",
+					"text": "Tighten your stomach and glutes so your lower back stays neutral."
+				},
+				{
+					"title": "Press up",
+					"text": "Push the weights up until arms are straight, biceps near your ears."
+				},
+				{
+					"title": "Lower to the shoulders",
+					"text": "Bring them back down with control."
+				}
 			],
 			"mistakes": [
-				{ "title": "Leaning back", "fix": "Squeeze glutes; if you still lean, the weight is too heavy." },
-				{ "title": "Partial range", "fix": "Lower to at least chin level each rep." }
-			]
+				{
+					"title": "Leaning back",
+					"fix": "Squeeze glutes; if you still lean, the weight is too heavy."
+				},
+				{
+					"title": "Partial range",
+					"fix": "Lower to at least chin level each rep."
+				}
+			],
+			"pattern": "push_v",
+			"timed": false
 		},
 		{
 			"title": "Dumbbell Romanian deadlift",
 			"difficulty": "intermediate",
-			"muscles": [ "Glutes", "Legs" ],
-			"equipment": [ "Dumbbells" ],
-			"secondary": [ "Hamstrings", "Lower back" ],
+			"muscles": [
+				"Glutes",
+				"Legs"
+			],
+			"equipment": [
+				"Dumbbells"
+			],
+			"secondary": [
+				"Hamstrings",
+				"Lower back"
+			],
 			"excerpt": "Teaches the hip hinge and builds the hamstrings and glutes.",
 			"steps": [
-				{ "title": "Stand tall", "text": "Dumbbells in front of your thighs, feet hip-width, soft knees." },
-				{ "title": "Push hips back", "text": "Slide the weights down your legs as your hips move back, back flat." },
-				{ "title": "Feel the stretch", "text": "Stop when you feel a strong hamstring stretch, usually around mid-shin." },
-				{ "title": "Drive hips forward", "text": "Squeeze glutes to stand up; do not lean back at the top." }
+				{
+					"title": "Stand tall",
+					"text": "Dumbbells in front of your thighs, feet hip-width, soft knees."
+				},
+				{
+					"title": "Push hips back",
+					"text": "Slide the weights down your legs as your hips move back, back flat."
+				},
+				{
+					"title": "Feel the stretch",
+					"text": "Stop when you feel a strong hamstring stretch, usually around mid-shin."
+				},
+				{
+					"title": "Drive hips forward",
+					"text": "Squeeze glutes to stand up; do not lean back at the top."
+				}
 			],
 			"mistakes": [
-				{ "title": "Squatting instead of hinging", "fix": "Keep the knee bend small and fixed; the hips do the moving." },
-				{ "title": "Weights drifting away", "fix": "Keep them brushing your legs the whole time." }
-			]
+				{
+					"title": "Squatting instead of hinging",
+					"fix": "Keep the knee bend small and fixed; the hips do the moving."
+				},
+				{
+					"title": "Weights drifting away",
+					"fix": "Keep them brushing your legs the whole time."
+				}
+			],
+			"pattern": "hinge",
+			"timed": false
 		},
 		{
 			"title": "Band pull-apart",
 			"difficulty": "beginner",
-			"muscles": [ "Shoulders", "Back" ],
-			"equipment": [ "Resistance bands" ],
-			"secondary": [ "Upper back" ],
+			"muscles": [
+				"Shoulders",
+				"Back"
+			],
+			"equipment": [
+				"Resistance bands"
+			],
+			"secondary": [
+				"Upper back"
+			],
 			"excerpt": "Cheap, quick and great for posture. Do a few sets between pressing exercises.",
 			"steps": [
-				{ "title": "Grip", "text": "Hold a light band at shoulder height, arms straight, hands shoulder-width." },
-				{ "title": "Set the shoulders", "text": "Pull shoulders down away from your ears." },
-				{ "title": "Pull apart", "text": "Open your arms out to the sides until the band touches your chest." },
-				{ "title": "Return slowly", "text": "Resist the band on the way back." }
+				{
+					"title": "Grip",
+					"text": "Hold a light band at shoulder height, arms straight, hands shoulder-width."
+				},
+				{
+					"title": "Set the shoulders",
+					"text": "Pull shoulders down away from your ears."
+				},
+				{
+					"title": "Pull apart",
+					"text": "Open your arms out to the sides until the band touches your chest."
+				},
+				{
+					"title": "Return slowly",
+					"text": "Resist the band on the way back."
+				}
 			],
 			"mistakes": [
-				{ "title": "Shrugging", "fix": "Keep shoulders low; use a lighter band." },
-				{ "title": "Bending the elbows", "fix": "Keep arms nearly straight so the upper back does the work." }
-			]
+				{
+					"title": "Shrugging",
+					"fix": "Keep shoulders low; use a lighter band."
+				},
+				{
+					"title": "Bending the elbows",
+					"fix": "Keep arms nearly straight so the upper back does the work."
+				}
+			],
+			"pattern": "pull_h",
+			"timed": false
 		},
 		{
 			"title": "Dumbbell biceps curl",
 			"difficulty": "beginner",
-			"muscles": [ "Arms" ],
-			"equipment": [ "Dumbbells" ],
-			"secondary": [ "Forearms" ],
+			"muscles": [
+				"Arms"
+			],
+			"equipment": [
+				"Dumbbells"
+			],
+			"secondary": [
+				"Forearms"
+			],
 			"excerpt": "The classic arm builder. Strict form beats heavy weight here.",
 			"steps": [
-				{ "title": "Stand tall", "text": "Dumbbells at your sides, palms facing forward." },
-				{ "title": "Pin the elbows", "text": "Keep elbows by your ribs for the whole set." },
-				{ "title": "Curl", "text": "Bend the elbows and lift until the dumbbells reach shoulder height." },
-				{ "title": "Lower all the way", "text": "Take two seconds to straighten your arms fully." }
+				{
+					"title": "Stand tall",
+					"text": "Dumbbells at your sides, palms facing forward."
+				},
+				{
+					"title": "Pin the elbows",
+					"text": "Keep elbows by your ribs for the whole set."
+				},
+				{
+					"title": "Curl",
+					"text": "Bend the elbows and lift until the dumbbells reach shoulder height."
+				},
+				{
+					"title": "Lower all the way",
+					"text": "Take two seconds to straighten your arms fully."
+				}
 			],
 			"mistakes": [
-				{ "title": "Swinging the body", "fix": "Lighten the weight, or sit on a bench to stop the swing." },
-				{ "title": "Elbows moving forward", "fix": "Keep them still at your sides." }
-			]
+				{
+					"title": "Swinging the body",
+					"fix": "Lighten the weight, or sit on a bench to stop the swing."
+				},
+				{
+					"title": "Elbows moving forward",
+					"fix": "Keep them still at your sides."
+				}
+			],
+			"pattern": "arms",
+			"timed": false
 		},
 		{
 			"title": "Overhead triceps extension",
 			"difficulty": "beginner",
-			"muscles": [ "Arms" ],
-			"equipment": [ "Dumbbells" ],
-			"secondary": [ "Core" ],
+			"muscles": [
+				"Arms"
+			],
+			"equipment": [
+				"Dumbbells"
+			],
+			"secondary": [
+				"Core"
+			],
 			"excerpt": "Trains the long head of the triceps, which makes up most of the back of the arm.",
 			"steps": [
-				{ "title": "Hold one dumbbell", "text": "Grip one end with both hands and press it straight overhead." },
-				{ "title": "Brace", "text": "Ribs down, glutes tight, so your lower back does not arch." },
-				{ "title": "Lower behind your head", "text": "Bend only the elbows until you feel a stretch in the triceps." },
-				{ "title": "Extend", "text": "Straighten the arms back to the start." }
+				{
+					"title": "Hold one dumbbell",
+					"text": "Grip one end with both hands and press it straight overhead."
+				},
+				{
+					"title": "Brace",
+					"text": "Ribs down, glutes tight, so your lower back does not arch."
+				},
+				{
+					"title": "Lower behind your head",
+					"text": "Bend only the elbows until you feel a stretch in the triceps."
+				},
+				{
+					"title": "Extend",
+					"text": "Straighten the arms back to the start."
+				}
 			],
 			"mistakes": [
-				{ "title": "Elbows flaring out", "fix": "Keep them pointing forward, close to your head." },
-				{ "title": "Arching the back", "fix": "Sit on a bench with back support." }
-			]
+				{
+					"title": "Elbows flaring out",
+					"fix": "Keep them pointing forward, close to your head."
+				},
+				{
+					"title": "Arching the back",
+					"fix": "Sit on a bench with back support."
+				}
+			],
+			"pattern": "arms",
+			"timed": false
 		},
 		{
 			"title": "Barbell back squat",
 			"difficulty": "intermediate",
-			"muscles": [ "Legs", "Glutes" ],
-			"equipment": [ "Barbell" ],
-			"secondary": [ "Hamstrings", "Core", "Lower back" ],
+			"muscles": [
+				"Legs",
+				"Glutes"
+			],
+			"equipment": [
+				"Barbell"
+			],
+			"secondary": [
+				"Hamstrings",
+				"Core",
+				"Lower back"
+			],
 			"excerpt": "The king of leg exercises. Learn the goblet squat first.",
 			"steps": [
-				{ "title": "Set the bar", "text": "Rack it at mid-chest height. Rest it on your upper back, not your neck." },
-				{ "title": "Brace", "text": "Feet about shoulder width, toes slightly out. Breathe in and tighten your core." },
-				{ "title": "Sit down and back", "text": "Push hips back and knees out over your toes. Keep your chest up." },
-				{ "title": "Drive up", "text": "Go as deep as you can with a neutral back, then push the floor away to stand." }
+				{
+					"title": "Set the bar",
+					"text": "Rack it at mid-chest height. Rest it on your upper back, not your neck."
+				},
+				{
+					"title": "Brace",
+					"text": "Feet about shoulder width, toes slightly out. Breathe in and tighten your core."
+				},
+				{
+					"title": "Sit down and back",
+					"text": "Push hips back and knees out over your toes. Keep your chest up."
+				},
+				{
+					"title": "Drive up",
+					"text": "Go as deep as you can with a neutral back, then push the floor away to stand."
+				}
 			],
 			"mistakes": [
-				{ "title": "Knees caving in", "fix": "Push knees out in line with your toes." },
-				{ "title": "Heels lifting", "fix": "Keep weight mid-foot and work on ankle mobility." },
-				{ "title": "Rounding the back", "fix": "Brace harder and lower the weight." }
-			]
+				{
+					"title": "Knees caving in",
+					"fix": "Push knees out in line with your toes."
+				},
+				{
+					"title": "Heels lifting",
+					"fix": "Keep weight mid-foot and work on ankle mobility."
+				},
+				{
+					"title": "Rounding the back",
+					"fix": "Brace harder and lower the weight."
+				}
+			],
+			"pattern": "squat",
+			"timed": false
 		},
 		{
 			"title": "Barbell bench press",
 			"difficulty": "intermediate",
-			"muscles": [ "Chest" ],
-			"equipment": [ "Barbell", "Bench" ],
-			"secondary": [ "Triceps", "Front shoulders" ],
+			"muscles": [
+				"Chest"
+			],
+			"equipment": [
+				"Barbell",
+				"Bench"
+			],
+			"secondary": [
+				"Triceps",
+				"Front shoulders"
+			],
 			"excerpt": "The main upper-body strength lift. Always use safety bars or a spotter.",
 			"steps": [
-				{ "title": "Set up", "text": "Eyes under the bar, feet flat, shoulder blades squeezed together and down." },
-				{ "title": "Grip and unrack", "text": "Hands a little wider than shoulders, wrists straight. Move the bar over your shoulders." },
-				{ "title": "Lower to the chest", "text": "Bring the bar to your lower chest with elbows about 45 to 70 degrees from the body." },
-				{ "title": "Press", "text": "Drive the bar up and slightly back over your shoulders." }
+				{
+					"title": "Set up",
+					"text": "Eyes under the bar, feet flat, shoulder blades squeezed together and down."
+				},
+				{
+					"title": "Grip and unrack",
+					"text": "Hands a little wider than shoulders, wrists straight. Move the bar over your shoulders."
+				},
+				{
+					"title": "Lower to the chest",
+					"text": "Bring the bar to your lower chest with elbows about 45 to 70 degrees from the body."
+				},
+				{
+					"title": "Press",
+					"text": "Drive the bar up and slightly back over your shoulders."
+				}
 			],
 			"mistakes": [
-				{ "title": "Bouncing off the chest", "fix": "Touch lightly and press; use a lighter weight." },
-				{ "title": "Elbows flared at 90 degrees", "fix": "Tuck them a little to protect the shoulders." },
-				{ "title": "Benching alone without safeties", "fix": "Set the rack's safety arms or ask for a spot." }
-			]
+				{
+					"title": "Bouncing off the chest",
+					"fix": "Touch lightly and press; use a lighter weight."
+				},
+				{
+					"title": "Elbows flared at 90 degrees",
+					"fix": "Tuck them a little to protect the shoulders."
+				},
+				{
+					"title": "Benching alone without safeties",
+					"fix": "Set the rack's safety arms or ask for a spot."
+				}
+			],
+			"pattern": "push_h",
+			"timed": false
 		},
 		{
 			"title": "Conventional deadlift",
 			"difficulty": "advanced",
-			"muscles": [ "Back", "Glutes", "Legs" ],
-			"equipment": [ "Barbell" ],
-			"secondary": [ "Hamstrings", "Grip", "Core" ],
+			"muscles": [
+				"Back",
+				"Glutes",
+				"Legs"
+			],
+			"equipment": [
+				"Barbell"
+			],
+			"secondary": [
+				"Hamstrings",
+				"Grip",
+				"Core"
+			],
 			"excerpt": "A full-body strength lift. Master the Romanian deadlift before adding heavy weight.",
 			"steps": [
-				{ "title": "Bar over mid-foot", "text": "Stand with feet hip-width, the bar over the middle of your feet." },
-				{ "title": "Grip", "text": "Hinge down and grab the bar just outside your legs." },
-				{ "title": "Set your back", "text": "Shins to the bar, chest up, pull the slack out of the bar until your back is flat and tight." },
-				{ "title": "Push the floor away", "text": "Stand up with the bar dragging up your legs, then lock hips and knees together." }
+				{
+					"title": "Bar over mid-foot",
+					"text": "Stand with feet hip-width, the bar over the middle of your feet."
+				},
+				{
+					"title": "Grip",
+					"text": "Hinge down and grab the bar just outside your legs."
+				},
+				{
+					"title": "Set your back",
+					"text": "Shins to the bar, chest up, pull the slack out of the bar until your back is flat and tight."
+				},
+				{
+					"title": "Push the floor away",
+					"text": "Stand up with the bar dragging up your legs, then lock hips and knees together."
+				}
 			],
 			"mistakes": [
-				{ "title": "Rounded lower back", "fix": "Lower the weight and set your back before every rep." },
-				{ "title": "Bar drifting forward", "fix": "Keep it in contact with your legs." },
-				{ "title": "Leaning back at the top", "fix": "Finish by squeezing glutes, standing straight." }
-			]
+				{
+					"title": "Rounded lower back",
+					"fix": "Lower the weight and set your back before every rep."
+				},
+				{
+					"title": "Bar drifting forward",
+					"fix": "Keep it in contact with your legs."
+				},
+				{
+					"title": "Leaning back at the top",
+					"fix": "Finish by squeezing glutes, standing straight."
+				}
+			],
+			"pattern": "hinge",
+			"timed": false
 		},
 		{
 			"title": "Pull-up",
 			"difficulty": "advanced",
-			"muscles": [ "Back" ],
-			"equipment": [ "Pull-up bar" ],
-			"secondary": [ "Biceps", "Core" ],
+			"muscles": [
+				"Back"
+			],
+			"equipment": [
+				"Pull-up bar"
+			],
+			"secondary": [
+				"Biceps",
+				"Core"
+			],
 			"excerpt": "The best bodyweight back exercise. Use a band or negatives until you get your first rep.",
 			"steps": [
-				{ "title": "Hang", "text": "Grip the bar slightly wider than shoulders, palms facing away, arms straight." },
-				{ "title": "Set the shoulders", "text": "Pull your shoulders down away from your ears before you bend the arms." },
-				{ "title": "Pull", "text": "Drive elbows down toward your ribs until your chin clears the bar." },
-				{ "title": "Lower fully", "text": "Return to a straight-arm hang with control." }
+				{
+					"title": "Hang",
+					"text": "Grip the bar slightly wider than shoulders, palms facing away, arms straight."
+				},
+				{
+					"title": "Set the shoulders",
+					"text": "Pull your shoulders down away from your ears before you bend the arms."
+				},
+				{
+					"title": "Pull",
+					"text": "Drive elbows down toward your ribs until your chin clears the bar."
+				},
+				{
+					"title": "Lower fully",
+					"text": "Return to a straight-arm hang with control."
+				}
 			],
 			"mistakes": [
-				{ "title": "Kicking and swinging", "fix": "Squeeze legs together and keep the core tight." },
-				{ "title": "Half reps", "fix": "Use a resistance band to get full-range reps." }
+				{
+					"title": "Kicking and swinging",
+					"fix": "Squeeze legs together and keep the core tight."
+				},
+				{
+					"title": "Half reps",
+					"fix": "Use a resistance band to get full-range reps."
+				}
+			],
+			"pattern": "pull_v",
+			"timed": false
+		},
+		{
+			"title": "Reverse lunge",
+			"difficulty": "beginner",
+			"muscles": [
+				"Legs",
+				"Glutes"
+			],
+			"equipment": [
+				"Bodyweight"
+			],
+			"secondary": [
+				"Core"
+			],
+			"pattern": "lunge",
+			"timed": false,
+			"excerpt": "A knee-friendly lunge that builds balance and single-leg strength.",
+			"steps": [
+				{
+					"title": "Stand tall",
+					"text": "Feet hip-width apart, hands on hips or by your sides."
+				},
+				{
+					"title": "Step back",
+					"text": "Take a long step back and lower until both knees are bent to about 90 degrees."
+				},
+				{
+					"title": "Stay upright",
+					"text": "Keep your chest up and front knee over the middle of your foot."
+				},
+				{
+					"title": "Drive back up",
+					"text": "Push through the front heel to return, then switch legs."
+				}
+			],
+			"mistakes": [
+				{
+					"title": "Front knee caving in",
+					"fix": "Push the knee out in line with your toes."
+				},
+				{
+					"title": "Short steps",
+					"fix": "Step back far enough that your front shin stays fairly upright."
+				}
+			]
+		},
+		{
+			"title": "Dumbbell split squat",
+			"difficulty": "beginner",
+			"muscles": [
+				"Legs",
+				"Glutes"
+			],
+			"equipment": [
+				"Dumbbells"
+			],
+			"secondary": [
+				"Core"
+			],
+			"pattern": "lunge",
+			"timed": false,
+			"excerpt": "A stable single-leg exercise. Easier to balance than a walking lunge.",
+			"steps": [
+				{
+					"title": "Set the stance",
+					"text": "Hold dumbbells at your sides and take a long split stance."
+				},
+				{
+					"title": "Lower straight down",
+					"text": "Bend both knees until the back knee nearly touches the floor."
+				},
+				{
+					"title": "Keep weight forward",
+					"text": "Most of your weight stays on the front foot."
+				},
+				{
+					"title": "Stand up",
+					"text": "Push through the front foot. Do all reps, then switch legs."
+				}
+			],
+			"mistakes": [
+				{
+					"title": "Stance too narrow",
+					"fix": "Feet hip-width apart side to side, like standing on train tracks."
+				},
+				{
+					"title": "Leaning far forward",
+					"fix": "Keep your torso tall and brace your core."
+				}
+			]
+		},
+		{
+			"title": "Dead bug",
+			"difficulty": "beginner",
+			"muscles": [
+				"Core"
+			],
+			"equipment": [
+				"Bodyweight"
+			],
+			"secondary": [
+				"Hip flexors"
+			],
+			"pattern": "core",
+			"timed": false,
+			"excerpt": "Teaches your core to keep the lower back still while your limbs move.",
+			"steps": [
+				{
+					"title": "Set up",
+					"text": "Lie on your back, arms up to the ceiling, knees bent over hips."
+				},
+				{
+					"title": "Flatten the back",
+					"text": "Press your lower back gently into the floor."
+				},
+				{
+					"title": "Extend opposite limbs",
+					"text": "Slowly lower one arm and the opposite leg towards the floor."
+				},
+				{
+					"title": "Return and switch",
+					"text": "Bring them back and repeat on the other side."
+				}
+			],
+			"mistakes": [
+				{
+					"title": "Lower back arching",
+					"fix": "Make the movement smaller until your back stays down."
+				},
+				{
+					"title": "Rushing",
+					"fix": "Move slowly and breathe out as you extend."
+				}
+			]
+		},
+		{
+			"title": "Pike push-up",
+			"difficulty": "intermediate",
+			"muscles": [
+				"Shoulders"
+			],
+			"equipment": [
+				"Bodyweight"
+			],
+			"secondary": [
+				"Triceps",
+				"Upper chest"
+			],
+			"pattern": "push_v",
+			"timed": false,
+			"excerpt": "An overhead press using only bodyweight. Raise your feet to make it harder.",
+			"steps": [
+				{
+					"title": "Make an upside-down V",
+					"text": "Hands shoulder-width, hips high, head between your arms."
+				},
+				{
+					"title": "Lower your head",
+					"text": "Bend the elbows and lower the top of your head towards the floor."
+				},
+				{
+					"title": "Keep hips high",
+					"text": "Your body stays in a V the whole time."
+				},
+				{
+					"title": "Press back up",
+					"text": "Push through your hands until your arms are straight."
+				}
+			],
+			"mistakes": [
+				{
+					"title": "Turning it into a push-up",
+					"fix": "Keep your hips high so the shoulders do the work."
+				},
+				{
+					"title": "Elbows flaring wide",
+					"fix": "Keep them at about 45 degrees."
+				}
+			]
+		},
+		{
+			"title": "Band lat pulldown",
+			"difficulty": "beginner",
+			"muscles": [
+				"Back"
+			],
+			"equipment": [
+				"Resistance bands"
+			],
+			"secondary": [
+				"Biceps"
+			],
+			"pattern": "pull_v",
+			"timed": false,
+			"excerpt": "Trains the same muscles as a pull-up, with a band anchored above you.",
+			"steps": [
+				{
+					"title": "Anchor the band",
+					"text": "Loop it over a sturdy door top or bar, above head height."
+				},
+				{
+					"title": "Kneel and grip",
+					"text": "Kneel facing the anchor, arms straight up holding the band."
+				},
+				{
+					"title": "Pull elbows down",
+					"text": "Drive your elbows down to your ribs, squeezing the shoulder blades."
+				},
+				{
+					"title": "Return slowly",
+					"text": "Let your arms rise with control."
+				}
+			],
+			"mistakes": [
+				{
+					"title": "Leaning back a lot",
+					"fix": "Stay upright; a slight lean is fine."
+				},
+				{
+					"title": "Pulling with the hands",
+					"fix": "Think about pulling with your elbows."
+				}
+			]
+		},
+		{
+			"title": "Band seated row",
+			"difficulty": "beginner",
+			"muscles": [
+				"Back"
+			],
+			"equipment": [
+				"Resistance bands"
+			],
+			"secondary": [
+				"Biceps",
+				"Rear shoulders"
+			],
+			"pattern": "pull_h",
+			"timed": false,
+			"excerpt": "A cheap, joint-friendly row that works anywhere.",
+			"steps": [
+				{
+					"title": "Sit tall",
+					"text": "Legs straight, band looped around your feet."
+				},
+				{
+					"title": "Grip",
+					"text": "Hold the ends with arms straight, shoulders down."
+				},
+				{
+					"title": "Row",
+					"text": "Pull your hands to your stomach, elbows close to your body."
+				},
+				{
+					"title": "Return slowly",
+					"text": "Straighten your arms without rounding forward."
+				}
+			],
+			"mistakes": [
+				{
+					"title": "Rocking backwards",
+					"fix": "Keep your torso still; the arms and back move."
+				},
+				{
+					"title": "Shrugging",
+					"fix": "Keep shoulders away from your ears."
+				}
+			]
+		},
+		{
+			"title": "Dumbbell floor press",
+			"difficulty": "beginner",
+			"muscles": [
+				"Chest"
+			],
+			"equipment": [
+				"Dumbbells"
+			],
+			"secondary": [
+				"Triceps"
+			],
+			"pattern": "push_h",
+			"timed": false,
+			"excerpt": "A chest press with no bench. The floor limits the range, which is easier on shoulders.",
+			"steps": [
+				{
+					"title": "Lie down",
+					"text": "On your back, knees bent, a dumbbell in each hand over your chest."
+				},
+				{
+					"title": "Lower",
+					"text": "Bring your elbows down until your upper arms touch the floor."
+				},
+				{
+					"title": "Pause",
+					"text": "Rest the arms lightly for a moment."
+				},
+				{
+					"title": "Press",
+					"text": "Push the dumbbells back up over your chest."
+				}
+			],
+			"mistakes": [
+				{
+					"title": "Bouncing elbows off the floor",
+					"fix": "Touch lightly and pause."
+				},
+				{
+					"title": "Wrists bent back",
+					"fix": "Keep wrists straight over your elbows."
+				}
+			]
+		},
+		{
+			"title": "Barbell overhead press",
+			"difficulty": "intermediate",
+			"muscles": [
+				"Shoulders"
+			],
+			"equipment": [
+				"Barbell"
+			],
+			"secondary": [
+				"Triceps",
+				"Core"
+			],
+			"pattern": "push_v",
+			"timed": false,
+			"excerpt": "Builds strong shoulders and a solid core. Start light and learn the bar path.",
+			"steps": [
+				{
+					"title": "Set up",
+					"text": "Bar on your front shoulders, hands just outside shoulder width."
+				},
+				{
+					"title": "Brace",
+					"text": "Squeeze glutes and tighten your stomach."
+				},
+				{
+					"title": "Press",
+					"text": "Push the bar up, moving your head back slightly so it clears your chin."
+				},
+				{
+					"title": "Lock out",
+					"text": "Finish with the bar over the middle of your feet, head through."
+				}
+			],
+			"mistakes": [
+				{
+					"title": "Leaning back",
+					"fix": "Squeeze your glutes; lower the weight if you still lean."
+				},
+				{
+					"title": "Bar drifting forward",
+					"fix": "Keep it close to your face on the way up."
+				}
+			]
+		},
+		{
+			"title": "Barbell bent-over row",
+			"difficulty": "intermediate",
+			"muscles": [
+				"Back"
+			],
+			"equipment": [
+				"Barbell"
+			],
+			"secondary": [
+				"Biceps",
+				"Rear shoulders",
+				"Lower back"
+			],
+			"pattern": "pull_h",
+			"timed": false,
+			"excerpt": "A heavy back builder. Learn the hinge with the Romanian deadlift first.",
+			"steps": [
+				{
+					"title": "Hinge",
+					"text": "Hold the bar, soft knees, hips back until your torso is about 45 degrees."
+				},
+				{
+					"title": "Brace",
+					"text": "Flat back, chest up, bar hanging under your shoulders."
+				},
+				{
+					"title": "Row",
+					"text": "Pull the bar to your lower ribs."
+				},
+				{
+					"title": "Lower with control",
+					"text": "Straighten your arms without losing your back position."
+				}
+			],
+			"mistakes": [
+				{
+					"title": "Standing up as you row",
+					"fix": "Keep the torso angle fixed."
+				},
+				{
+					"title": "Rounded back",
+					"fix": "Use less weight and brace before each rep."
+				}
 			]
 		}
 	],
 	"gear": [
-		{ "title": "Adjustable dumbbells", "tier": "serious", "equipment": [ "Dumbbells" ], "excerpt": "Replace a full rack of dumbbells in a small flat. The single best home-gym buy." },
-		{ "title": "Resistance band set", "tier": "starter", "equipment": [ "Resistance bands" ], "excerpt": "Light, cheap and portable. Great for warm-ups, pull-aparts and assisted pull-ups." },
-		{ "title": "Doorway pull-up bar", "tier": "starter", "equipment": [ "Pull-up bar" ], "excerpt": "Turns any sturdy door frame into a back-training station. Check your frame first." },
-		{ "title": "Adjustable flat bench", "tier": "serious", "equipment": [ "Bench" ], "excerpt": "Unlocks presses, rows and step-ups. Look for a stable base and a good weight rating." },
-		{ "title": "Squat rack with safety arms", "tier": "full", "equipment": [ "Barbell" ], "excerpt": "Lets you squat and bench heavy, safely, on your own." },
-		{ "title": "Olympic barbell and plates", "tier": "full", "equipment": [ "Barbell" ], "excerpt": "The foundation of a full home gym. Rubber plates are kinder to floors and neighbours." }
+		{
+			"title": "Adjustable dumbbells",
+			"tier": "serious",
+			"equipment": [
+				"Dumbbells"
+			],
+			"excerpt": "Replace a full rack of dumbbells in a small flat. The single best home-gym buy.",
+			"priority": 3
+		},
+		{
+			"title": "Resistance band set",
+			"tier": "starter",
+			"equipment": [
+				"Resistance bands"
+			],
+			"excerpt": "Light, cheap and portable. Great for warm-ups, pull-aparts and assisted pull-ups.",
+			"priority": 1
+		},
+		{
+			"title": "Doorway pull-up bar",
+			"tier": "starter",
+			"equipment": [
+				"Pull-up bar"
+			],
+			"excerpt": "Turns any sturdy door frame into a back-training station. Check your frame first.",
+			"priority": 2
+		},
+		{
+			"title": "Adjustable flat bench",
+			"tier": "serious",
+			"equipment": [
+				"Bench"
+			],
+			"excerpt": "Unlocks presses, rows and step-ups. Look for a stable base and a good weight rating.",
+			"priority": 4
+		},
+		{
+			"title": "Squat rack with safety arms",
+			"tier": "full",
+			"equipment": [
+				"Barbell"
+			],
+			"excerpt": "Lets you squat and bench heavy, safely, on your own.",
+			"priority": 5
+		},
+		{
+			"title": "Olympic barbell and plates",
+			"tier": "full",
+			"equipment": [
+				"Barbell"
+			],
+			"excerpt": "The foundation of a full home gym. Rubber plates are kinder to floors and neighbours.",
+			"priority": 6
+		}
 	],
 	"supplements": [
-		{ "title": "Whey protein", "evidence": "strong", "verdict": "Useful if you struggle to reach your protein target from food. It is food, not magic: dal, paneer, curd and eggs work too.", "excerpt": "A convenient way to top up protein. Buy only from authorised sellers." },
-		{ "title": "Creatine monohydrate", "evidence": "strong", "verdict": "The most researched supplement for strength and muscle. Plain monohydrate is enough; fancy forms cost more for no extra benefit.", "excerpt": "Cheap, safe for healthy adults and well studied." },
-		{ "title": "Caffeine", "evidence": "moderate", "verdict": "Can make hard sessions feel easier. A cup of coffee before training does the job; avoid it late in the day.", "excerpt": "Coffee counts. You probably do not need a pre-workout." },
-		{ "title": "BCAAs", "evidence": "weak", "verdict": "Not worth it if you eat enough protein, because protein already contains these amino acids.", "excerpt": "Mostly flavoured water if your protein intake is good." },
-		{ "title": "Fat burners", "evidence": "none", "verdict": "Skip them. Fat loss comes from a calorie deficit. Many products are mainly caffeine at a high price.", "excerpt": "Save the money and spend it on food and gear." }
+		{
+			"title": "Whey protein",
+			"evidence": "strong",
+			"verdict": "Useful if you struggle to reach your protein target from food. It is food, not magic: dal, paneer, curd and eggs work too.",
+			"excerpt": "A convenient way to top up protein. Buy only from authorised sellers."
+		},
+		{
+			"title": "Creatine monohydrate",
+			"evidence": "strong",
+			"verdict": "The most researched supplement for strength and muscle. Plain monohydrate is enough; fancy forms cost more for no extra benefit.",
+			"excerpt": "Cheap, safe for healthy adults and well studied."
+		},
+		{
+			"title": "Caffeine",
+			"evidence": "moderate",
+			"verdict": "Can make hard sessions feel easier. A cup of coffee before training does the job; avoid it late in the day.",
+			"excerpt": "Coffee counts. You probably do not need a pre-workout."
+		},
+		{
+			"title": "BCAAs",
+			"evidence": "weak",
+			"verdict": "Not worth it if you eat enough protein, because protein already contains these amino acids.",
+			"excerpt": "Mostly flavoured water if your protein intake is good."
+		},
+		{
+			"title": "Fat burners",
+			"evidence": "none",
+			"verdict": "Skip them. Fat loss comes from a calorie deficit. Many products are mainly caffeine at a high price.",
+			"excerpt": "Save the money and spend it on food and gear."
+		}
 	],
 	"posts": [
 		{
@@ -316,7 +1231,22 @@
 		{
 			"title": "Tools",
 			"slug": "tools",
-			"content": "<!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"large\"} --><p class=\"has-muted-color has-text-color has-large-font-size\">Work out your daily calories and macros in under a minute. Your inputs stay in your browser.</p><!-- /wp:paragraph --><!-- wp:fitbull/macro-calculator {\"mealPlanUrl\":\"/category/diet/\"} /-->"
+			"content": "<!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"large\"} --><p class=\"has-muted-color has-text-color has-large-font-size\">Work out your daily calories and macros, and the weights to use in your sets. Your inputs stay in your browser.</p><!-- /wp:paragraph --><!-- wp:fitbull/macro-calculator {\"mealPlanUrl\":\"/meal-plan/\"} /--><!-- wp:heading --><h2 class=\"wp-block-heading\">One-rep max</h2><!-- /wp:heading --><!-- wp:fitbull/one-rep-max /-->"
+		},
+		{
+			"title": "Workout plan",
+			"slug": "workout-plan",
+			"content": "<!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"large\"} --><p class=\"has-muted-color has-text-color has-large-font-size\">Tell us your goal, how many days you can train and what equipment you have. You get a weekly plan built from the exercise library.</p><!-- /wp:paragraph --><!-- wp:fitbull/workout-plan /-->"
+		},
+		{
+			"title": "Meal plan",
+			"slug": "meal-plan",
+			"content": "<!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"large\"} --><p class=\"has-muted-color has-text-color has-large-font-size\">A day of Indian meals that lands close to your calorie and protein target. Portions are adjusted for you.</p><!-- /wp:paragraph --><!-- wp:fitbull/meal-planner /-->"
+		},
+		{
+			"title": "My progress",
+			"slug": "my-progress",
+			"content": "<!-- wp:paragraph {\"textColor\":\"muted\",\"fontSize\":\"large\"} --><p class=\"has-muted-color has-text-color has-large-font-size\">Log your bodyweight and your lifts. Only you can see your entries.</p><!-- /wp:paragraph --><!-- wp:fitbull/progress-log /-->"
 		},
 		{
 			"title": "About",
@@ -333,5 +1263,648 @@
 			"slug": "affiliate-disclosure",
 			"content": "<!-- wp:paragraph --><p>Some links on this site may be affiliate links. If you buy through them we may earn a small commission at no extra cost to you. We only recommend products we would use ourselves.</p><!-- /wp:paragraph -->"
 		}
+	],
+	"recipes": [
+		{
+			"title": "Moong dal chilla",
+			"diet": "vegan",
+			"meals": [
+				"breakfast"
+			],
+			"calories": 280,
+			"protein_g": 16,
+			"carbs_g": 38,
+			"fat_g": 7,
+			"prep_minutes": 25,
+			"servings": 1,
+			"excerpt": "Savoury lentil pancakes. High protein, no eggs needed.",
+			"ingredients": [
+				{
+					"item": "Yellow moong dal, soaked 4 hours",
+					"qty": "60 g dry"
+				},
+				{
+					"item": "Onion and tomato, finely chopped",
+					"qty": "1/2 cup"
+				},
+				{
+					"item": "Green chilli and ginger",
+					"qty": "to taste"
+				},
+				{
+					"item": "Oil",
+					"qty": "1 tsp"
+				}
+			],
+			"method": [
+				"Grind the soaked dal with a little water, chilli and ginger to a thick batter.",
+				"Stir in the onion, tomato and salt.",
+				"Spread thin on a hot oiled pan and cook both sides until golden.",
+				"Serve with green chutney."
+			]
+		},
+		{
+			"title": "Poha with peanuts",
+			"diet": "vegan",
+			"meals": [
+				"breakfast"
+			],
+			"calories": 330,
+			"protein_g": 8,
+			"carbs_g": 52,
+			"fat_g": 10,
+			"prep_minutes": 15,
+			"servings": 1,
+			"excerpt": "A quick, light breakfast. Add sprouts or a side of curd for more protein.",
+			"ingredients": [
+				{
+					"item": "Thick poha",
+					"qty": "60 g"
+				},
+				{
+					"item": "Peanuts",
+					"qty": "1 tbsp"
+				},
+				{
+					"item": "Onion, peas, curry leaves",
+					"qty": "1/2 cup"
+				},
+				{
+					"item": "Oil",
+					"qty": "1 tsp"
+				}
+			],
+			"method": [
+				"Rinse the poha and let it soften for 5 minutes.",
+				"Fry peanuts, mustard seeds and curry leaves in oil.",
+				"Add onion and peas, then the poha, turmeric and salt.",
+				"Finish with lemon juice and coriander."
+			]
+		},
+		{
+			"title": "Masala omelette with toast",
+			"diet": "eggetarian",
+			"meals": [
+				"breakfast"
+			],
+			"calories": 330,
+			"protein_g": 22,
+			"carbs_g": 16,
+			"fat_g": 20,
+			"prep_minutes": 10,
+			"servings": 1,
+			"excerpt": "Three eggs, vegetables and one slice of toast. Done in ten minutes.",
+			"ingredients": [
+				{
+					"item": "Eggs",
+					"qty": "3"
+				},
+				{
+					"item": "Onion, tomato, chilli, coriander",
+					"qty": "1/3 cup"
+				},
+				{
+					"item": "Whole-wheat bread",
+					"qty": "1 slice"
+				},
+				{
+					"item": "Oil or ghee",
+					"qty": "1 tsp"
+				}
+			],
+			"method": [
+				"Beat the eggs with the vegetables, salt and pepper.",
+				"Cook in a hot oiled pan until set, then fold.",
+				"Serve with toasted bread."
+			]
+		},
+		{
+			"title": "Overnight oats with curd and banana",
+			"diet": "veg",
+			"meals": [
+				"breakfast"
+			],
+			"calories": 360,
+			"protein_g": 16,
+			"carbs_g": 55,
+			"fat_g": 8,
+			"prep_minutes": 5,
+			"servings": 1,
+			"excerpt": "Make it the night before. No cooking in the morning.",
+			"ingredients": [
+				{
+					"item": "Rolled oats",
+					"qty": "50 g"
+				},
+				{
+					"item": "Curd",
+					"qty": "150 g"
+				},
+				{
+					"item": "Banana",
+					"qty": "1 small"
+				},
+				{
+					"item": "Chia seeds",
+					"qty": "1 tsp"
+				}
+			],
+			"method": [
+				"Mix the oats, curd, chia seeds and a splash of milk in a jar.",
+				"Refrigerate overnight.",
+				"Top with sliced banana before eating."
+			]
+		},
+		{
+			"title": "Rajma chawal",
+			"diet": "vegan",
+			"meals": [
+				"lunch"
+			],
+			"calories": 515,
+			"protein_g": 18,
+			"carbs_g": 88,
+			"fat_g": 10,
+			"prep_minutes": 40,
+			"servings": 1,
+			"excerpt": "Kidney bean curry with rice. Comfort food with good fibre and plant protein.",
+			"ingredients": [
+				{
+					"item": "Cooked rajma",
+					"qty": "1 cup"
+				},
+				{
+					"item": "Cooked rice",
+					"qty": "1 cup"
+				},
+				{
+					"item": "Onion-tomato masala",
+					"qty": "1/2 cup"
+				},
+				{
+					"item": "Oil",
+					"qty": "2 tsp"
+				}
+			],
+			"method": [
+				"Cook the onion-tomato masala with ginger, garlic and spices.",
+				"Add the cooked rajma with some of its water and simmer 15 minutes.",
+				"Mash a few beans to thicken the gravy.",
+				"Serve over rice."
+			]
+		},
+		{
+			"title": "Paneer bhurji with roti",
+			"diet": "veg",
+			"meals": [
+				"lunch",
+				"dinner"
+			],
+			"calories": 520,
+			"protein_g": 28,
+			"carbs_g": 44,
+			"fat_g": 26,
+			"prep_minutes": 20,
+			"servings": 1,
+			"excerpt": "Scrambled paneer with vegetables. One of the easiest high-protein veg meals.",
+			"ingredients": [
+				{
+					"item": "Paneer, crumbled",
+					"qty": "100 g"
+				},
+				{
+					"item": "Onion, tomato, capsicum",
+					"qty": "1 cup"
+				},
+				{
+					"item": "Whole-wheat roti",
+					"qty": "2"
+				},
+				{
+					"item": "Oil",
+					"qty": "1 tsp"
+				}
+			],
+			"method": [
+				"Sauté onion and capsicum, then add tomato and spices.",
+				"Stir in the crumbled paneer and cook 3 to 4 minutes.",
+				"Finish with coriander and serve with rotis."
+			]
+		},
+		{
+			"title": "Chicken curry with rice",
+			"diet": "non-veg",
+			"meals": [
+				"lunch",
+				"dinner"
+			],
+			"calories": 580,
+			"protein_g": 40,
+			"carbs_g": 65,
+			"fat_g": 18,
+			"prep_minutes": 45,
+			"servings": 1,
+			"excerpt": "A home-style curry. Use skinless chicken to keep the fat down.",
+			"ingredients": [
+				{
+					"item": "Skinless chicken",
+					"qty": "150 g"
+				},
+				{
+					"item": "Cooked rice",
+					"qty": "1 cup"
+				},
+				{
+					"item": "Onion-tomato masala",
+					"qty": "1/2 cup"
+				},
+				{
+					"item": "Oil",
+					"qty": "2 tsp"
+				}
+			],
+			"method": [
+				"Brown the chicken lightly and set aside.",
+				"Cook the masala with spices until the oil separates.",
+				"Add the chicken and water, cover and simmer until cooked through.",
+				"Serve with rice."
+			]
+		},
+		{
+			"title": "Dal tadka with jeera rice",
+			"diet": "vegan",
+			"meals": [
+				"lunch",
+				"dinner"
+			],
+			"calories": 480,
+			"protein_g": 17,
+			"carbs_g": 80,
+			"fat_g": 10,
+			"prep_minutes": 35,
+			"servings": 1,
+			"excerpt": "Everyday dal with tempered spices. Pair with curd if you eat dairy.",
+			"ingredients": [
+				{
+					"item": "Toor or moong dal",
+					"qty": "50 g dry"
+				},
+				{
+					"item": "Cooked rice",
+					"qty": "1 cup"
+				},
+				{
+					"item": "Cumin, garlic, chilli",
+					"qty": "for the tadka"
+				},
+				{
+					"item": "Oil",
+					"qty": "2 tsp"
+				}
+			],
+			"method": [
+				"Pressure-cook the dal with turmeric and salt.",
+				"Heat oil with cumin, garlic and chilli for the tadka.",
+				"Pour the tadka over the dal and simmer 5 minutes.",
+				"Serve with jeera rice."
+			]
+		},
+		{
+			"title": "Soya chunk curry with roti",
+			"diet": "vegan",
+			"meals": [
+				"dinner"
+			],
+			"calories": 410,
+			"protein_g": 30,
+			"carbs_g": 48,
+			"fat_g": 11,
+			"prep_minutes": 30,
+			"servings": 1,
+			"excerpt": "Soya chunks are one of the cheapest high-protein foods in India.",
+			"ingredients": [
+				{
+					"item": "Soya chunks",
+					"qty": "40 g dry"
+				},
+				{
+					"item": "Onion-tomato masala",
+					"qty": "1/2 cup"
+				},
+				{
+					"item": "Whole-wheat roti",
+					"qty": "2"
+				},
+				{
+					"item": "Oil",
+					"qty": "1 tsp"
+				}
+			],
+			"method": [
+				"Boil the soya chunks for 5 minutes, then squeeze out the water.",
+				"Cook the masala with spices.",
+				"Add the chunks and a little water and simmer 10 minutes.",
+				"Serve with rotis."
+			]
+		},
+		{
+			"title": "Grilled fish with sabzi",
+			"diet": "non-veg",
+			"meals": [
+				"dinner"
+			],
+			"calories": 380,
+			"protein_g": 38,
+			"carbs_g": 18,
+			"fat_g": 17,
+			"prep_minutes": 30,
+			"servings": 1,
+			"excerpt": "Light and high in protein. Works with rohu, surmai or basa.",
+			"ingredients": [
+				{
+					"item": "Fish fillet",
+					"qty": "170 g"
+				},
+				{
+					"item": "Mixed vegetable sabzi",
+					"qty": "1 cup"
+				},
+				{
+					"item": "Lemon, chilli, turmeric",
+					"qty": "for the marinade"
+				},
+				{
+					"item": "Oil",
+					"qty": "2 tsp"
+				}
+			],
+			"method": [
+				"Marinate the fish with lemon, turmeric, chilli and salt for 15 minutes.",
+				"Grill or pan-fry until it flakes easily.",
+				"Serve with a dry vegetable sabzi."
+			]
+		},
+		{
+			"title": "Palak paneer with roti",
+			"diet": "veg",
+			"meals": [
+				"dinner"
+			],
+			"calories": 480,
+			"protein_g": 24,
+			"carbs_g": 40,
+			"fat_g": 25,
+			"prep_minutes": 35,
+			"servings": 1,
+			"excerpt": "Spinach and paneer. Iron, calcium and protein in one dish.",
+			"ingredients": [
+				{
+					"item": "Spinach",
+					"qty": "2 cups"
+				},
+				{
+					"item": "Paneer",
+					"qty": "80 g"
+				},
+				{
+					"item": "Whole-wheat roti",
+					"qty": "2"
+				},
+				{
+					"item": "Oil or ghee",
+					"qty": "2 tsp"
+				}
+			],
+			"method": [
+				"Blanch the spinach and blend it smooth.",
+				"Cook onion, garlic and spices, then add the spinach purée.",
+				"Add paneer cubes and simmer 5 minutes.",
+				"Serve with rotis."
+			]
+		},
+		{
+			"title": "Egg bhurji with roti",
+			"diet": "eggetarian",
+			"meals": [
+				"dinner",
+				"breakfast"
+			],
+			"calories": 400,
+			"protein_g": 22,
+			"carbs_g": 38,
+			"fat_g": 18,
+			"prep_minutes": 15,
+			"servings": 1,
+			"excerpt": "Spiced scrambled eggs. Fast, cheap and filling.",
+			"ingredients": [
+				{
+					"item": "Eggs",
+					"qty": "3"
+				},
+				{
+					"item": "Onion, tomato, chilli",
+					"qty": "1/2 cup"
+				},
+				{
+					"item": "Whole-wheat roti",
+					"qty": "2"
+				},
+				{
+					"item": "Oil",
+					"qty": "1 tsp"
+				}
+			],
+			"method": [
+				"Sauté onion, chilli and tomato with spices.",
+				"Add the beaten eggs and stir until just set.",
+				"Serve with rotis."
+			]
+		},
+		{
+			"title": "Roasted chana",
+			"diet": "vegan",
+			"meals": [
+				"snack"
+			],
+			"calories": 150,
+			"protein_g": 8,
+			"carbs_g": 23,
+			"fat_g": 3,
+			"prep_minutes": 2,
+			"servings": 1,
+			"excerpt": "A crunchy, portable snack. Keep a box at work.",
+			"ingredients": [
+				{
+					"item": "Roasted chana",
+					"qty": "40 g"
+				},
+				{
+					"item": "Chaat masala and lemon",
+					"qty": "to taste"
+				}
+			],
+			"method": [
+				"Toss the chana with chaat masala and a squeeze of lemon."
+			]
+		},
+		{
+			"title": "Sprouts chaat",
+			"diet": "vegan",
+			"meals": [
+				"snack"
+			],
+			"calories": 180,
+			"protein_g": 11,
+			"carbs_g": 30,
+			"fat_g": 2,
+			"prep_minutes": 10,
+			"servings": 1,
+			"excerpt": "Fresh, tangy and full of fibre.",
+			"ingredients": [
+				{
+					"item": "Moong sprouts, steamed",
+					"qty": "1 cup"
+				},
+				{
+					"item": "Onion, tomato, cucumber",
+					"qty": "1/2 cup"
+				},
+				{
+					"item": "Lemon, chaat masala",
+					"qty": "to taste"
+				}
+			],
+			"method": [
+				"Steam the sprouts for 5 minutes and cool.",
+				"Mix with the vegetables, lemon and chaat masala."
+			]
+		},
+		{
+			"title": "Hung curd with fruit",
+			"diet": "veg",
+			"meals": [
+				"snack",
+				"breakfast"
+			],
+			"calories": 190,
+			"protein_g": 14,
+			"carbs_g": 24,
+			"fat_g": 4,
+			"prep_minutes": 5,
+			"servings": 1,
+			"excerpt": "Thick, creamy and high in protein. Make hung curd by straining curd overnight.",
+			"ingredients": [
+				{
+					"item": "Hung curd",
+					"qty": "150 g"
+				},
+				{
+					"item": "Seasonal fruit",
+					"qty": "1 cup"
+				},
+				{
+					"item": "Honey (optional)",
+					"qty": "1 tsp"
+				}
+			],
+			"method": [
+				"Spoon the hung curd into a bowl.",
+				"Top with chopped fruit and a little honey."
+			]
+		},
+		{
+			"title": "Boiled eggs with pepper",
+			"diet": "eggetarian",
+			"meals": [
+				"snack"
+			],
+			"calories": 155,
+			"protein_g": 13,
+			"carbs_g": 1,
+			"fat_g": 11,
+			"prep_minutes": 12,
+			"servings": 1,
+			"excerpt": "The simplest protein snack there is.",
+			"ingredients": [
+				{
+					"item": "Eggs",
+					"qty": "2"
+				},
+				{
+					"item": "Salt and pepper",
+					"qty": "to taste"
+				}
+			],
+			"method": [
+				"Boil the eggs for 9 to 10 minutes.",
+				"Cool in water, peel and season."
+			]
+		}
+	],
+	"diets": [
+		[
+			"vegan",
+			"Vegan"
+		],
+		[
+			"veg",
+			"Veg"
+		],
+		[
+			"eggetarian",
+			"Eggetarian"
+		],
+		[
+			"non-veg",
+			"Non-veg"
+		]
+	],
+	"meals": [
+		[
+			"breakfast",
+			"Breakfast"
+		],
+		[
+			"lunch",
+			"Lunch"
+		],
+		[
+			"dinner",
+			"Dinner"
+		],
+		[
+			"snack",
+			"Snack"
+		]
+	],
+	"navigation": [
+		[
+			"Exercises",
+			"/exercises/"
+		],
+		[
+			"Workout plan",
+			"/workout-plan/"
+		],
+		[
+			"Recipes",
+			"/recipes/"
+		],
+		[
+			"Meal plan",
+			"/meal-plan/"
+		],
+		[
+			"Supplements",
+			"/supplements/"
+		],
+		[
+			"Gear",
+			"/gear/"
+		],
+		[
+			"Tools",
+			"/tools/"
+		]
 	]
 }

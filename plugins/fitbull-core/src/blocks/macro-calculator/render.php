@@ -8,6 +8,8 @@
  * @package Fitbull\Core
  */
 
+defined( 'ABSPATH' ) || exit;
+
 $fitbull_props = array(
 	'compact'     => ! empty( $attributes['compact'] ),
 	'mealPlanUrl' => esc_url_raw( $attributes['mealPlanUrl'] ?? '' ),
@@ -24,7 +26,7 @@ $fitbull_preview = ( new Fitbull\Core\Macro_Calculator() )->calculate(
 	)
 );
 ?>
-<div <?php echo get_block_wrapper_attributes(); ?>>
+<div <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
 	<div data-fitbull-macro="<?php echo esc_attr( wp_json_encode( $fitbull_props ) ); ?>">
 		<div class="fb-calc<?php echo $fitbull_props['compact'] ? ' fb-calc--compact' : ''; ?>">
 			<div class="fb-calc__head">

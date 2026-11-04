@@ -7,6 +7,8 @@
 
 namespace Fitbull\Core;
 
+defined( 'ABSPATH' ) || exit;
+
 class Editor {
 
 	public static function enqueue(): void {

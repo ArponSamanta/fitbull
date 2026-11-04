@@ -3,13 +3,13 @@ Theme Name: Fitbull
 Theme URI: https://github.com/ArponSamanta/fitbull
 Author: Arpon Samanta
 Author URI: https://github.com/ArponSamanta
-Description: A dark, athletic block theme for a fitness hub: workouts, exercise form, Indian diet, supplements and gear. Built to pair with the Fitbull Core plugin.
+Description: A dark, athletic block theme for fitness sites: bold condensed headings, a lime accent and patterns for a homepage, articles and guides. Pair it with the Fitbull Core plugin to add an exercise library, a workout plan generator, Indian recipes with a meal planner, macro and one-rep-max calculators, a progress log, and gear and supplement guides.
 Requires at least: 6.6
-Tested up to: 6.9
+Tested up to: 7.1
 Requires PHP: 8.0
-Version: 0.1.0
-License: GPLv2 or later
+Version: 1.0.0
+License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: fitbull
-Tags: block-patterns, full-site-editing, dark, one-column, custom-colors
+Tags: blog, one-column, grid-layout, custom-colors, editor-style, full-site-editing, block-patterns, wide-blocks, translation-ready
 */

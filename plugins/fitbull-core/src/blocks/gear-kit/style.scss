@@ -1,0 +1,58 @@
+.fb-kit {
+
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+
+	// Doubled class beats .fb-panel's column direction from the shared UI.
+	&__item.fb-panel {
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__step {
+		flex: 0 0 auto;
+		font-family: var(--fb-display);
+		font-size: 2.25rem;
+		font-weight: 800;
+		color: var(--fb-lime);
+		min-width: 2.25rem;
+	}
+
+	&__body {
+		flex: 1 1 240px;
+		min-width: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+
+	&__title {
+		margin: 0;
+		font-family: inherit;
+		font-size: 1.1rem;
+		font-weight: 600;
+		text-transform: none;
+
+		a {
+			color: var(--fb-text);
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: var(--fb-lime);
+		}
+	}
+
+	&__side {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+	}
+}

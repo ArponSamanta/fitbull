@@ -3,8 +3,12 @@
  * Title: Exercise finder
  * Slug: fitbull/exercise-finder
  * Categories: fitbull
- * Description: Intro text beside the filterable exercise library.
+ * Description: Intro text beside the filterable exercise library. Needs the Fitbull Core plugin.
  */
+
+if ( ! class_exists( 'Fitbull\\Core\\Blocks' ) ) {
+	return;
+}
 ?>
 <!-- wp:group {"align":"full","backgroundColor":"surface","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}},"border":{"top":{"color":"var:preset|color|line","width":"1px"},"bottom":{"color":"var:preset|color|line","width":"1px"}}},"layout":{"type":"constrained","contentSize":"1280px"}} -->
 <div class="wp-block-group alignfull has-surface-background-color has-background" style="border-top-color:var(--wp--preset--color--line);border-top-width:1px;border-bottom-color:var(--wp--preset--color--line);border-bottom-width:1px;padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">

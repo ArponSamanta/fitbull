@@ -3,16 +3,21 @@
  * Title: Six content hubs
  * Slug: fitbull/hubs
  * Categories: fitbull
- * Description: Grid of linked cards, one per section of the site.
+ * Description: Grid of linked cards, one per section of the site. Needs the Fitbull Core plugin.
  */
 
+// These sections come from the Fitbull Core plugin; without it, show nothing.
+if ( ! class_exists( 'Fitbull\\Core\\Blocks' ) ) {
+	return;
+}
+
 $fitbull_hubs = array(
-	array( '01', __( 'Workouts', 'fitbull' ), __( 'Beginner, push-pull-legs and home plans, sorted by goal.', 'fitbull' ), '/category/workouts/', false ),
+	array( '01', __( 'Workout plan', 'fitbull' ), __( 'A weekly plan for your goal, schedule and equipment, in under a minute.', 'fitbull' ), '/workout-plan/', true ),
 	array( '02', __( 'Exercise library', 'fitbull' ), __( 'Form cues, common mistakes and easier or harder versions.', 'fitbull' ), '/exercises/', false ),
-	array( '03', __( 'Diet and nutrition', 'fitbull' ), __( 'Indian meal plans by calorie target, veg and non-veg.', 'fitbull' ), '/category/diet/', false ),
+	array( '03', __( 'Recipes and meal plan', 'fitbull' ), __( 'Indian dishes with macros, and a day of meals that hits your target.', 'fitbull' ), '/meal-plan/', false ),
 	array( '04', __( 'Supplements', 'fitbull' ), __( 'What works, what to skip, rated by strength of evidence.', 'fitbull' ), '/supplements/', false ),
-	array( '05', __( 'Gear and equipment', 'fitbull' ), __( 'Home-gym kits and buying guides for every budget.', 'fitbull' ), '/gear/', false ),
-	array( '06', __( 'Tools', 'fitbull' ), __( 'Calorie, macro and one-rep-max calculators.', 'fitbull' ), '/tools/', true ),
+	array( '05', __( 'Gear and equipment', 'fitbull' ), __( 'What to buy first for a home gym, by budget.', 'fitbull' ), '/gear/', false ),
+	array( '06', __( 'Tools and progress', 'fitbull' ), __( 'Macro and one-rep-max calculators, plus your private progress log.', 'fitbull' ), '/tools/', false ),
 );
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained","contentSize":"1280px"}} -->
@@ -37,7 +42,7 @@ $fitbull_hubs = array(
 				<p class="fb-hub__num"><?php echo esc_html( $fitbull_hub[0] ); ?></p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":3,"className":"fb-hub__title"} -->
-				<h3 class="wp-block-heading fb-hub__title"><a href="<?php echo esc_url( $fitbull_hub[3] ); ?>"><?php echo esc_html( $fitbull_hub[1] ); ?></a></h3>
+				<h3 class="wp-block-heading fb-hub__title"><a href="<?php echo esc_url( home_url( $fitbull_hub[3] ) ); ?>"><?php echo esc_html( $fitbull_hub[1] ); ?></a></h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"className":"fb-hub__text"} -->
 				<p class="fb-hub__text"><?php echo esc_html( $fitbull_hub[2] ); ?></p>

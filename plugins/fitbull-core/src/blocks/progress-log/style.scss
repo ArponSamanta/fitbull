@@ -1,0 +1,36 @@
+.fb-log {
+
+	&__chart {
+		margin: 0;
+
+		svg {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+
+	&__grid {
+		stroke: var(--fb-line);
+		stroke-width: 1;
+	}
+
+	&__axis {
+		fill: var(--fb-muted);
+		font-size: 12px;
+	}
+
+	&__line {
+		fill: none;
+		stroke: var(--fb-lime);
+		stroke-width: 2.5;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+	}
+
+	&__dot {
+		fill: var(--fb-ink);
+		stroke: var(--fb-lime);
+		stroke-width: 2;
+	}
+}
