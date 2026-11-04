@@ -50,6 +50,7 @@ class Demo_Content {
 		foreach ( $data['exercises'] as $item ) {
 			$id = self::post( Content_Types::EXERCISE, $item['title'], $item['excerpt'], '' );
 			if ( ! $id ) {
+				self::backfill_pattern( $item );
 				continue;
 			}
 			update_post_meta( $id, 'fb_difficulty', $item['difficulty'] );
@@ -165,6 +166,18 @@ class Demo_Content {
 			)
 		);
 		return $id ? 1 : 0;
+	}
+
+	/**
+	 * Exercises imported by version 0.1 have no movement pattern, which the
+	 * workout plan generator needs. Fill it in without touching other edits.
+	 */
+	private static function backfill_pattern( array $item ): void {
+		$existing = get_page_by_path( sanitize_title( $item['title'] ), OBJECT, Content_Types::EXERCISE );
+		if ( $existing && ! metadata_exists( 'post', $existing->ID, 'fb_pattern' ) ) {
+			update_post_meta( $existing->ID, 'fb_pattern', $item['pattern'] );
+			update_post_meta( $existing->ID, 'fb_timed', (bool) $item['timed'] );
+		}
 	}
 
 	/** Remove WordPress's sample content so the demo looks finished. */
