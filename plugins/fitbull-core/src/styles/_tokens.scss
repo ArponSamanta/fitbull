@@ -1,0 +1,49 @@
+// Theme presets with fallbacks, so the blocks still look right with any theme.
+$fb-ink: var(--wp--preset--color--ink, #0f1110);
+$fb-surface: var(--wp--preset--color--surface, #181b19);
+$fb-surface-2: var(--wp--preset--color--surface-2, #242826);
+$fb-line: var(--wp--preset--color--line, #2a2e2b);
+$fb-line-strong: var(--wp--preset--color--line-strong, #3a3f3b);
+$fb-text: var(--wp--preset--color--chalk, #f1f3ee);
+$fb-muted: var(--wp--preset--color--muted, #a4aaa2);
+$fb-lime: var(--wp--preset--color--lime, #c8f03c);
+$fb-sky: var(--wp--preset--color--sky, #7fc8f8);
+$fb-amber: var(--wp--preset--color--amber, #ffb25c);
+$fb-font-body: var(--wp--preset--font-family--body, Inter, system-ui, sans-serif);
+$fb-font-display: var(--wp--preset--font-family--display, "Barlow Condensed", "Arial Narrow", sans-serif);
+
+@mixin fb-card {
+	background: $fb-surface;
+	border: 1px solid $fb-line;
+	border-radius: 24px;
+	color: $fb-text;
+	padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+@mixin fb-control {
+	min-height: 44px;
+	padding: 0 0.9rem;
+	border-radius: 12px;
+	border: 1px solid $fb-line-strong;
+	background: transparent;
+	color: $fb-text;
+	font: inherit;
+	cursor: pointer;
+
+	&:hover {
+		border-color: $fb-lime;
+	}
+
+	&:focus-visible {
+		outline: 2px solid $fb-lime;
+		outline-offset: 2px;
+	}
+}
+
+@mixin fb-chip {
+
+	@include fb-control;
+	min-height: 40px;
+	border-radius: 999px;
+	font-size: 0.875rem;
+}

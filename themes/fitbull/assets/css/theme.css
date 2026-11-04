@@ -1,0 +1,115 @@
+/* Fitbull: styles theme.json cannot express. Tokens come from theme.json presets. */
+
+:root {
+	--fb-radius-card: var(--wp--custom--radius--card, 20px);
+	--fb-radius-pill: var(--wp--custom--radius--pill, 999px);
+}
+
+/* Header */
+.fb-header {
+	border-bottom: 1px solid var(--wp--preset--color--line);
+}
+.fb-header .wp-block-site-title a { text-decoration: none; }
+.fb-header .wp-block-site-title a::after { content: ""; }
+.fb-brand-accent { color: var(--wp--preset--color--lime); }
+
+/* Buttons */
+.wp-block-button.is-style-ghost .wp-block-button__link {
+	background: transparent;
+	color: var(--wp--preset--color--chalk);
+	border: 1px solid var(--wp--preset--color--line-strong);
+}
+.wp-block-button.is-style-ghost .wp-block-button__link:hover {
+	border-color: var(--wp--preset--color--lime);
+	color: var(--wp--preset--color--lime);
+}
+
+/* Dark button on light bands */
+.wp-block-button__link.has-ink-background-color { color: var(--wp--preset--color--chalk); }
+.wp-block-button__link.has-ink-background-color:hover { background: var(--wp--preset--color--surface-2) !important; color: var(--wp--preset--color--lime); }
+
+/* Nav: last item as a pill */
+.wp-block-navigation .fb-nav-cta > a {
+	background: var(--wp--preset--color--lime);
+	color: var(--wp--preset--color--ink) !important;
+	padding: 0.6rem 1.1rem;
+	border-radius: var(--fb-radius-pill);
+	font-weight: 600;
+}
+.wp-block-navigation .fb-nav-cta > a:hover { background: var(--wp--preset--color--chalk); }
+
+/* Whole hub card clickable via the heading link */
+.fb-hub { position: relative; }
+.fb-hub .fb-hub__title a { color: inherit; text-decoration: none; }
+.fb-hub .fb-hub__title a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.fb-hub .fb-hub__title a:focus-visible { outline: none; }
+.fb-hub:focus-within { outline: 2px solid var(--wp--preset--color--lime); outline-offset: 3px; }
+.fb-hub > * { margin: 0; }
+
+/* Eyebrow text above headings */
+p.is-style-eyebrow {
+	color: var(--wp--preset--color--lime);
+	font-size: 0.875rem;
+	font-weight: 600;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+/* Cards */
+.wp-block-group.is-style-card {
+	background: var(--wp--preset--color--surface);
+	border: 1px solid var(--wp--preset--color--line);
+	border-radius: var(--fb-radius-card);
+	padding: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+/* Hub link cards on the homepage */
+.fb-hub {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+	min-height: 180px;
+	padding: 1.75rem;
+	border-radius: var(--fb-radius-card);
+	border: 1px solid var(--wp--preset--color--line);
+	background: var(--wp--preset--color--surface);
+	color: var(--wp--preset--color--chalk);
+	text-decoration: none;
+	transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.fb-hub:hover { border-color: var(--wp--preset--color--lime); transform: translateY(-2px); color: var(--wp--preset--color--chalk); }
+.fb-hub__num { color: var(--wp--preset--color--lime); font-size: 0.8rem; font-weight: 600; }
+.fb-hub__title {
+	font-family: var(--wp--preset--font-family--display);
+	font-size: 2.1rem;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.fb-hub__text { color: var(--wp--preset--color--muted); font-size: 0.95rem; }
+.fb-hub--accent { background: var(--wp--preset--color--lime); border-color: var(--wp--preset--color--lime); color: var(--wp--preset--color--ink); }
+.fb-hub--accent:hover { color: var(--wp--preset--color--ink); border-color: var(--wp--preset--color--chalk); }
+.fb-hub--accent .fb-hub__num,
+.fb-hub--accent .fb-hub__text { color: var(--wp--preset--color--ink); }
+
+.fb-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+	gap: 1.25rem;
+}
+
+/* Post cards in query loops */
+.fb-post-card .wp-block-post-featured-image img { border-radius: var(--fb-radius-card); aspect-ratio: 3 / 2; object-fit: cover; }
+.fb-post-card .wp-block-post-title { font-family: var(--wp--preset--font-family--body); text-transform: none; font-weight: 600; font-size: 1.35rem; line-height: 1.3; }
+
+/* Footer */
+.fb-footer { border-top: 1px solid var(--wp--preset--color--line); }
+.fb-footer a { color: var(--wp--preset--color--muted); text-decoration: none; }
+.fb-footer a:hover { color: var(--wp--preset--color--chalk); }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	.fb-hub { transition: none; }
+	.fb-hub:hover { transform: none; }
+}

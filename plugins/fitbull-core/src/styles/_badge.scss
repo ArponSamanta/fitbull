@@ -1,0 +1,26 @@
+@use "tokens" as *;
+
+.fb-badge {
+	display: inline-block;
+	padding: 0.3rem 0.7rem;
+	border-radius: 999px;
+	font-size: 0.75rem;
+	font-weight: 600;
+	background: $fb-surface-2;
+	color: $fb-text;
+
+	&--beginner {
+		background: $fb-lime;
+		color: $fb-ink;
+	}
+
+	&--intermediate {
+		background: $fb-sky;
+		color: $fb-ink;
+	}
+
+	&--advanced {
+		background: $fb-amber;
+		color: $fb-ink;
+	}
+}

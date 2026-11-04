@@ -1,0 +1,38 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "Fitbull demo",
+		"description": "Fitbull theme and plugin with demo exercises, gear, supplements and articles.",
+		"author": "ArponSamanta"
+	},
+	"landingPage": "/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"steps": [
+		{ "step": "login" },
+		{
+			"step": "installTheme",
+			"themeData": {
+				"resource": "git:directory",
+				"url": "https://github.com/ArponSamanta/fitbull",
+				"ref": "main",
+				"path": "themes/fitbull"
+			},
+			"options": { "activate": true }
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "git:directory",
+				"url": "https://github.com/ArponSamanta/fitbull",
+				"ref": "main",
+				"path": "plugins/fitbull-core"
+			},
+			"options": { "activate": true }
+		},
+		{ "step": "setSiteOptions", "options": { "blogname": "Fitbull" } },
+		{ "step": "wp-cli", "command": "wp fitbull seed" }
+	]
+}

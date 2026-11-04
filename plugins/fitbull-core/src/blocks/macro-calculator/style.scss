@@ -1,0 +1,241 @@
+@use "../../styles/tokens" as *;
+
+.fb-calc {
+
+	@include fb-card;
+	container-type: inline-size;
+	display: flex;
+	flex-direction: column;
+	gap: 1.1rem;
+	font-family: $fb-font-body;
+
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	&__title {
+		margin: 0;
+		font-family: $fb-font-display;
+		font-size: 1.9rem;
+		font-weight: 700;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+
+	&__label {
+		display: block;
+		margin-bottom: 0.4rem;
+		color: $fb-muted;
+		font-size: 0.8125rem;
+		padding: 0;
+	}
+
+	&__muted {
+		color: $fb-muted;
+		font-size: 0.875rem;
+	}
+
+	&__segmented {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		min-width: 0;
+	}
+
+	&__segments {
+		display: grid;
+		grid-template-columns: repeat(var(--fb-count, 3), minmax(0, 1fr));
+		gap: 0.5rem;
+	}
+
+	&__segment {
+
+		@include fb-control;
+		font-weight: 600;
+		font-size: 0.9rem;
+
+		&[aria-pressed="true"] {
+			background: $fb-lime;
+			border-color: $fb-lime;
+			color: $fb-ink;
+		}
+	}
+
+	&__numbers {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 10.5rem), 1fr));
+		gap: 0.75rem;
+	}
+
+	&__number-row {
+		display: flex;
+		align-items: center;
+		gap: 0.35rem;
+		background: $fb-ink;
+		border: 1px solid $fb-line;
+		border-radius: 14px;
+		padding: 0.25rem;
+
+		input {
+			width: 100%;
+			min-width: 3ch;
+			background: transparent;
+			border: 0;
+			color: $fb-text;
+			font: inherit;
+			font-size: 1.15rem;
+			font-weight: 600;
+			text-align: right;
+			-moz-appearance: textfield;
+
+			&::-webkit-inner-spin-button,
+			&::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
+
+			&:focus-visible {
+				outline: 2px solid $fb-lime;
+				outline-offset: 2px;
+				border-radius: 6px;
+			}
+		}
+	}
+
+	&__unit {
+		color: $fb-muted;
+		font-size: 0.8rem;
+		padding-right: 0.5rem;
+		white-space: nowrap;
+	}
+
+	&__step {
+
+		@include fb-control;
+		flex: 0 0 44px;
+		width: 44px;
+		padding: 0;
+		font-size: 1.2rem;
+		border-radius: 10px;
+	}
+
+	&__result {
+		display: flex;
+		flex-direction: column;
+		gap: 0.85rem;
+		padding-top: 0.25rem;
+		border-top: 1px solid $fb-line;
+	}
+
+	&__kcal {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		gap: 0.6rem;
+		margin: 0.5rem 0 0;
+	}
+
+	&__kcal-number {
+		font-family: $fb-font-display;
+		font-size: clamp(3.5rem, 8vw, 5rem);
+		font-weight: 800;
+		line-height: 1;
+		color: $fb-lime;
+	}
+
+	&__macro-head {
+		display: flex;
+		justify-content: space-between;
+		font-size: 0.9rem;
+		margin-bottom: 0.35rem;
+	}
+
+	&__track {
+		height: 8px;
+		border-radius: 999px;
+		background: $fb-line;
+		overflow: hidden;
+	}
+
+	&__fill {
+		height: 100%;
+		border-radius: inherit;
+		transition: width 0.3s ease;
+
+		&--protein {
+			background: $fb-lime;
+		}
+
+		&--carbs {
+			background: $fb-sky;
+		}
+
+		&--fat {
+			background: $fb-amber;
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			transition: none;
+		}
+	}
+
+	&__note {
+		margin: 0;
+	}
+
+	&__cta {
+		display: block;
+		text-align: center;
+		padding: 0.85rem;
+		border-radius: 14px;
+		border: 1px solid $fb-line-strong;
+		color: $fb-text;
+		font-weight: 600;
+		text-decoration: none;
+
+		&:hover {
+			border-color: $fb-lime;
+			color: $fb-lime;
+		}
+	}
+
+	&__disclaimer {
+		margin: 0;
+		color: $fb-muted;
+		font-size: 0.75rem;
+		text-align: center;
+	}
+
+	&--compact {
+		gap: 0.9rem;
+
+		// Steppers need room; in tight spots the number input alone is enough.
+		.fb-calc__numbers {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		.fb-calc__step {
+			display: none;
+		}
+
+		.fb-calc__number-row {
+			padding-left: 0.25rem;
+		}
+
+		.fb-calc__kcal-number {
+			font-size: clamp(3rem, 7vw, 4.25rem);
+		}
+	}
+}
+
+// Four options do not fit in one row on narrow cards.
+@container (max-width: 420px) {
+
+	.fb-calc__segments--4 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"activity": {
+		"sedentary": { "label": "Desk job", "factor": 1.2 },
+		"light": { "label": "Light", "factor": 1.375 },
+		"moderate": { "label": "Moderate", "factor": 1.55 },
+		"active": { "label": "Very active", "factor": 1.725 }
+	},
+	"goal": {
+		"lose": { "label": "Lose fat", "calorieChange": -0.15, "proteinPerKg": 2.0 },
+		"maintain": { "label": "Maintain", "calorieChange": 0, "proteinPerKg": 1.6 },
+		"gain": { "label": "Lean bulk", "calorieChange": 0.1, "proteinPerKg": 1.8 }
+	},
+	"fatShare": 0.25,
+	"limits": {
+		"age": [ 16, 80 ],
+		"heightCm": [ 140, 210 ],
+		"weightKg": [ 35, 200 ]
+	}
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "fitbull/macro-calculator",
+  "version": "0.1.0",
+  "title": "Macro calculator",
+  "category": "widgets",
+  "icon": "chart-bar",
+  "description": "Daily calorie, protein, carb and fat targets from age, height, weight, activity and goal.",
+  "keywords": [
+    "calorie",
+    "tdee",
+    "protein",
+    "diet",
+    "bmr"
+  ],
+  "textdomain": "fitbull-core",
+  "attributes": {
+    "compact": {
+      "type": "boolean",
+      "default": false
+    },
+    "mealPlanUrl": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide"
+    ],
+    "spacing": {
+      "margin": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,24 @@
+<!-- wp:template-part {"slug":"header","area":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60)">
+<!-- wp:post-terms {"term":"category","className":"is-style-eyebrow","style":{"typography":{"textTransform":"uppercase","fontWeight":"600","letterSpacing":"0.1em"}},"fontSize":"small"} /-->
+<!-- wp:post-title {"level":1,"style":{"typography":{"fontSize":"var:preset|font-size|xx-large"}}} /-->
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"0.75rem"}}} -->
+<div class="wp-block-group">
+<!-- wp:post-author-name {"textColor":"muted","fontSize":"small"} /-->
+<!-- wp:post-date {"displayType":"modified","format":"j M Y"} /-->
+</div>
+<!-- /wp:group -->
+<!-- wp:post-featured-image {"align":"wide","style":{"border":{"radius":"20px"}}} /-->
+<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+<!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
+<hr class="wp-block-separator has-alpha-channel-opacity" style="margin-top:var(--wp--preset--spacing--50)"/>
+<!-- /wp:separator -->
+<!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
+<p class="has-muted-color has-text-color has-small-font-size">Information only, not medical advice. Some links may be affiliate links; we may earn a commission at no extra cost to you.</p>
+<!-- /wp:paragraph -->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","area":"footer","tagName":"footer"} /-->

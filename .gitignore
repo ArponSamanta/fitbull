@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Local environment
+.env
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Test caches
+.phpunit.result.cache
+plugins/fitbull-core/coverage/
+
+# Note: plugins/fitbull-core/build/ is committed on purpose, so the plugin
+# works straight from a Git checkout (Docker setup and WordPress Playground demo).
