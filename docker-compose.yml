@@ -26,9 +26,9 @@ services:
     volumes:
       - wp_data:/var/www/html
       - ./themes/fitbull:/var/www/html/wp-content/themes/fitbull
-      - ./plugins/fitbull-core:/var/www/html/wp-content/plugins/fitbull-core
+      - ./plugins/arponsamanta-fitness-toolkit:/var/www/html/wp-content/plugins/arponsamanta-fitness-toolkit
 
-  # One-off WP-CLI commands, e.g.  docker compose run --rm wpcli wp fitbull seed
+  # One-off WP-CLI commands, e.g.  docker compose run --rm wpcli wp fitness-toolkit seed
   wpcli:
     image: wordpress:cli-php8.3
     profiles: ["tools"]
@@ -43,7 +43,7 @@ services:
     volumes:
       - wp_data:/var/www/html
       - ./themes/fitbull:/var/www/html/wp-content/themes/fitbull
-      - ./plugins/fitbull-core:/var/www/html/wp-content/plugins/fitbull-core
+      - ./plugins/arponsamanta-fitness-toolkit:/var/www/html/wp-content/plugins/arponsamanta-fitness-toolkit
 
 volumes:
   db_data:

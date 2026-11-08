@@ -3,10 +3,10 @@
  * Title: Lime call-to-action band
  * Slug: fitbull/cta-band
  * Categories: fitbull, call-to-action
- * Description: Bright band pointing beginners to the workout plan generator. Needs the Fitbull Core plugin.
+ * Description: Bright band pointing beginners to the workout plan generator. Needs the ArponSamanta Fitness Toolkit plugin.
  */
 
-// Points at the plugin's workout planner, so it only shows with Fitbull Core.
+// Points at the plugin's workout planner, so it only shows with ArponSamanta Fitness Toolkit.
 if ( ! class_exists( 'Fitbull\\Core\\Blocks' ) ) {
 	return;
 }

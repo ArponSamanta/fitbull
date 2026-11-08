@@ -28,11 +28,11 @@
 				"resource": "git:directory",
 				"url": "https://github.com/ArponSamanta/fitbull",
 				"ref": "main",
-				"path": "plugins/fitbull-core"
+				"path": "plugins/arponsamanta-fitness-toolkit"
 			},
 			"options": { "activate": true }
 		},
 		{ "step": "setSiteOptions", "options": { "blogname": "Fitbull" } },
-		{ "step": "wp-cli", "command": "wp fitbull seed" }
+		{ "step": "wp-cli", "command": "wp fitness-toolkit seed" }
 	]
 }

@@ -3,7 +3,7 @@
  * Title: Exercise finder
  * Slug: fitbull/exercise-finder
  * Categories: fitbull
- * Description: Intro text beside the filterable exercise library. Needs the Fitbull Core plugin.
+ * Description: Intro text beside the filterable exercise library. Needs the ArponSamanta Fitness Toolkit plugin.
  */
 
 if ( ! class_exists( 'Fitbull\\Core\\Blocks' ) ) {

@@ -3,7 +3,7 @@
  * Title: Hero with macro calculator
  * Slug: fitbull/hero
  * Categories: fitbull, banner
- * Description: Headline, two calls to action and, with the Fitbull Core plugin, the live macro calculator.
+ * Description: Headline, two calls to action and, with the ArponSamanta Fitness Toolkit plugin, the live macro calculator.
  */
 
 $fitbull_has_core = class_exists( 'Fitbull\\Core\\Blocks' );

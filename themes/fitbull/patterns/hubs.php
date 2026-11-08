@@ -3,10 +3,10 @@
  * Title: Six content hubs
  * Slug: fitbull/hubs
  * Categories: fitbull
- * Description: Grid of linked cards, one per section of the site. Needs the Fitbull Core plugin.
+ * Description: Grid of linked cards, one per section of the site. Needs the ArponSamanta Fitness Toolkit plugin.
  */
 
-// These sections come from the Fitbull Core plugin; without it, show nothing.
+// These sections come from the ArponSamanta Fitness Toolkit plugin; without it, show nothing.
 if ( ! class_exists( 'Fitbull\\Core\\Blocks' ) ) {
 	return;
 }

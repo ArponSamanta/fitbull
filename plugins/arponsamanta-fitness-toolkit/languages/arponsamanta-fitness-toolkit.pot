@@ -1,0 +1,1628 @@
+# Copyright (C) 2026 Arpon Samanta
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: ArponSamanta Fitness Toolkit 1.0.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/arponsamanta-fitness-toolkit\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-08T11:28:44+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: arponsamanta-fitness-toolkit\n"
+
+#. Plugin Name of the plugin
+#: arponsamanta-fitness-toolkit.php
+msgid "ArponSamanta Fitness Toolkit"
+msgstr ""
+
+#. Description of the plugin
+#: arponsamanta-fitness-toolkit.php
+msgid "Exercise library, workout plan generator, Indian recipes and meal planner, macro and 1RM calculators, progress log, gear and supplement guides."
+msgstr ""
+
+#. Author of the plugin
+#: arponsamanta-fitness-toolkit.php
+msgid "Arpon Samanta"
+msgstr ""
+
+#. Author URI of the plugin
+#: arponsamanta-fitness-toolkit.php
+msgid "https://github.com/ArponSamanta"
+msgstr ""
+
+#: build/blocks/exercise-details/render.php:28
+#: build/blocks/exercise-library/render.php:19
+#: build/blocks/item-facts/render.php:79
+#: src/blocks/exercise-details/render.php:28
+#: src/blocks/exercise-library/render.php:19
+#: src/blocks/item-facts/render.php:79
+#: build/blocks/exercise-library/view.js:1
+#: build/blocks/workout-plan/view.js:1
+#: src/components/ExerciseLibrary.js:7
+#: src/components/WorkoutPlan.js:13
+#: src/editor/index.js:168
+msgid "Beginner"
+msgstr ""
+
+#: build/blocks/exercise-details/render.php:29
+#: build/blocks/exercise-library/render.php:20
+#: build/blocks/item-facts/render.php:80
+#: src/blocks/exercise-details/render.php:29
+#: src/blocks/exercise-library/render.php:20
+#: src/blocks/item-facts/render.php:80
+#: build/blocks/exercise-library/view.js:1
+#: build/blocks/workout-plan/view.js:1
+#: src/components/ExerciseLibrary.js:8
+#: src/components/WorkoutPlan.js:14
+#: src/editor/index.js:172
+msgid "Intermediate"
+msgstr ""
+
+#: build/blocks/exercise-details/render.php:30
+#: build/blocks/exercise-library/render.php:21
+#: build/blocks/item-facts/render.php:81
+#: src/blocks/exercise-details/render.php:30
+#: src/blocks/exercise-library/render.php:21
+#: src/blocks/item-facts/render.php:81
+#: build/blocks/exercise-library/view.js:1
+#: src/components/ExerciseLibrary.js:9
+#: src/editor/index.js:176
+msgid "Advanced"
+msgstr ""
+
+#: build/blocks/exercise-details/render.php:60
+#: src/blocks/exercise-details/render.php:60
+msgid "How to do it"
+msgstr ""
+
+#: build/blocks/exercise-details/render.php:74
+#: src/blocks/exercise-details/render.php:74
+#: src/editor/index.js:248
+msgid "Common mistakes"
+msgstr ""
+
+#: build/blocks/exercise-details/render.php:89
+#: src/blocks/exercise-details/render.php:89
+msgid "Muscles worked"
+msgstr ""
+
+#: build/blocks/exercise-details/render.php:93
+#: src/blocks/exercise-details/render.php:93
+msgid "Primary"
+msgstr ""
+
+#: build/blocks/exercise-details/render.php:97
+#: src/blocks/exercise-details/render.php:97
+msgid "Secondary"
+msgstr ""
+
+#: build/blocks/exercise-details/render.php:104
+#: src/blocks/exercise-details/render.php:104
+msgid "Fuel the work"
+msgstr ""
+
+#: build/blocks/exercise-details/render.php:105
+#: src/blocks/exercise-details/render.php:105
+msgid "Get your daily calorie and protein target in under a minute."
+msgstr ""
+
+#: build/blocks/exercise-details/render.php:106
+#: src/blocks/exercise-details/render.php:106
+msgid "Open the calculator"
+msgstr ""
+
+#: build/blocks/exercise-details/render.php:110
+#: src/blocks/exercise-details/render.php:110
+msgid "Information only, not medical advice. Stop if you feel sharp pain, and check with a doctor before training with an injury."
+msgstr ""
+
+#: build/blocks/exercise-library/render.php:78
+#: src/blocks/exercise-library/render.php:78
+msgid "No exercises yet. Add some under Exercises in the dashboard."
+msgstr ""
+
+#: build/blocks/item-facts/render.php:38
+#: src/blocks/item-facts/render.php:38
+msgid "Strong evidence"
+msgstr ""
+
+#: build/blocks/item-facts/render.php:39
+#: src/blocks/item-facts/render.php:39
+msgid "Moderate evidence"
+msgstr ""
+
+#: build/blocks/item-facts/render.php:40
+#: src/blocks/item-facts/render.php:40
+msgid "Weak evidence"
+msgstr ""
+
+#: build/blocks/item-facts/render.php:41
+#: src/blocks/item-facts/render.php:41
+msgid "No good evidence"
+msgstr ""
+
+#: build/blocks/item-facts/render.php:50
+#: src/blocks/item-facts/render.php:50
+#: build/blocks/gear-kit/view.js:1
+#: src/components/GearKit.js:7
+#: src/editor/index.js:304
+msgid "Starter"
+msgstr ""
+
+#: build/blocks/item-facts/render.php:51
+#: src/blocks/item-facts/render.php:51
+#: build/blocks/gear-kit/view.js:1
+#: src/components/GearKit.js:15
+#: src/editor/index.js:308
+msgid "Serious"
+msgstr ""
+
+#: build/blocks/item-facts/render.php:52
+#: src/blocks/item-facts/render.php:52
+#: build/blocks/gear-kit/view.js:1
+#: src/components/GearKit.js:23
+#: src/editor/index.js:312
+msgid "Full setup"
+msgstr ""
+
+#. translators: %s: price in rupees
+#: build/blocks/item-facts/render.php:59
+#: src/blocks/item-facts/render.php:59
+#: build/blocks/gear-kit/view.js:2
+#: src/components/GearKit.js:87
+#, php-format,js-format
+msgid "About ₹%s"
+msgstr ""
+
+#. translators: %d: kcal
+#: build/blocks/item-facts/render.php:68
+#: src/blocks/item-facts/render.php:68
+#, php-format
+msgid "%d kcal"
+msgstr ""
+
+#. translators: %d: grams
+#: build/blocks/item-facts/render.php:69
+#: src/blocks/item-facts/render.php:69
+#, php-format
+msgid "%d g protein"
+msgstr ""
+
+#. translators: %d: minutes
+#: build/blocks/item-facts/render.php:70
+#: src/blocks/item-facts/render.php:70
+#, php-format
+msgid "%d min"
+msgstr ""
+
+#: build/blocks/item-facts/render.php:104
+#: src/blocks/item-facts/render.php:104
+#: build/blocks/gear-kit/view.js:2
+#: src/components/GearKit.js:99
+msgid "Check price"
+msgstr ""
+
+#: build/blocks/item-facts/render.php:105
+#: src/blocks/item-facts/render.php:105
+msgid "This may be an affiliate link."
+msgstr ""
+
+#: build/blocks/macro-calculator/render.php:33
+#: src/blocks/macro-calculator/render.php:33
+#: build/blocks/macro-calculator/index.js:2
+#: build/blocks/macro-calculator/view.js:2
+#: src/components/MacroCalculator.js:197
+msgid "Your daily targets"
+msgstr ""
+
+#: build/blocks/macro-calculator/render.php:34
+#: src/blocks/macro-calculator/render.php:34
+#: build/blocks/macro-calculator/index.js:2
+#: build/blocks/macro-calculator/view.js:2
+#: src/components/MacroCalculator.js:200
+msgid "Macro calculator"
+msgstr ""
+
+#: build/blocks/macro-calculator/render.php:38
+#: src/blocks/macro-calculator/render.php:38
+msgid "kcal per day for a 25-year-old, 170 cm, 70 kg, moderately active man. Loading the calculator…"
+msgstr ""
+
+#: build/blocks/meal-planner/render.php:14
+#: src/blocks/meal-planner/render.php:14
+msgid "Loading the meal planner… This tool needs JavaScript."
+msgstr ""
+
+#: build/blocks/one-rep-max/render.php:14
+#: src/blocks/one-rep-max/render.php:14
+msgid "Loading the one-rep-max calculator…"
+msgstr ""
+
+#: build/blocks/progress-log/render.php:19
+#: src/blocks/progress-log/render.php:19
+msgid "Track your progress"
+msgstr ""
+
+#: build/blocks/progress-log/render.php:20
+#: src/blocks/progress-log/render.php:20
+msgid "Log in to record your bodyweight and lifts. Your entries are private to your account."
+msgstr ""
+
+#: build/blocks/progress-log/render.php:22
+#: src/blocks/progress-log/render.php:22
+msgid "Log in"
+msgstr ""
+
+#: build/blocks/progress-log/render.php:24
+#: src/blocks/progress-log/render.php:24
+msgid "Create an account"
+msgstr ""
+
+#: build/blocks/progress-log/render.php:56
+#: src/blocks/progress-log/render.php:56
+msgid "Loading your log…"
+msgstr ""
+
+#: build/blocks/recipe-details/render.php:30
+#: src/blocks/recipe-details/render.php:30
+#: build/blocks/macro-calculator/index.js:2
+#: build/blocks/macro-calculator/view.js:2
+#: build/blocks/meal-planner/index.js:3
+#: build/blocks/meal-planner/view.js:3
+#: src/components/MacroCalculator.js:261
+#: src/components/MealPlanner.js:254
+msgid "Protein"
+msgstr ""
+
+#: build/blocks/recipe-details/render.php:31
+#: src/blocks/recipe-details/render.php:31
+#: build/blocks/macro-calculator/index.js:2
+#: build/blocks/macro-calculator/view.js:2
+#: src/components/MacroCalculator.js:267
+msgid "Carbs"
+msgstr ""
+
+#: build/blocks/recipe-details/render.php:32
+#: src/blocks/recipe-details/render.php:32
+#: build/blocks/macro-calculator/index.js:2
+#: build/blocks/macro-calculator/view.js:2
+#: src/components/MacroCalculator.js:273
+msgid "Fat"
+msgstr ""
+
+#: build/blocks/recipe-details/render.php:43
+#: src/blocks/recipe-details/render.php:43
+#: src/editor/index.js:461
+msgid "Ingredients"
+msgstr ""
+
+#: build/blocks/recipe-details/render.php:54
+#: src/blocks/recipe-details/render.php:54
+#: src/editor/index.js:480
+msgid "Method"
+msgstr ""
+
+#: build/blocks/recipe-details/render.php:65
+#: src/blocks/recipe-details/render.php:65
+msgid "Per serving"
+msgstr ""
+
+#: build/blocks/recipe-details/render.php:66
+#: src/blocks/recipe-details/render.php:66
+msgid "kcal"
+msgstr ""
+
+#. translators: %d: grams
+#: build/blocks/recipe-details/render.php:70
+#: src/blocks/recipe-details/render.php:70
+#: build/blocks/macro-calculator/index.js:1
+#: build/blocks/macro-calculator/view.js:1
+#: src/components/MacroCalculator.js:142
+#, php-format,js-format
+msgid "%d g"
+msgstr ""
+
+#: build/blocks/recipe-details/render.php:74
+#: src/blocks/recipe-details/render.php:74
+msgid "Approximate values. They vary with brands and portion sizes."
+msgstr ""
+
+#: build/blocks/recipe-details/render.php:76
+#: src/blocks/recipe-details/render.php:76
+msgid "Plan a day around this"
+msgstr ""
+
+#. translators: 1: kcal, 2: protein grams, 3: minutes
+#: build/blocks/recipe-finder/render.php:64
+#: src/blocks/recipe-finder/render.php:64
+#: build/blocks/recipe-finder/view.js:2
+#: src/components/RecipeFinder.js:23
+#, php-format,js-format
+msgid "%1$d kcal · %2$d g protein · %3$d min"
+msgstr ""
+
+#: build/blocks/recipe-finder/render.php:77
+#: src/blocks/recipe-finder/render.php:77
+msgid "No recipes yet. Add some under Recipes in the dashboard."
+msgstr ""
+
+#: build/blocks/workout-plan/render.php:38
+#: src/blocks/workout-plan/render.php:38
+msgid "Workout plan generator"
+msgstr ""
+
+#: build/blocks/workout-plan/render.php:39
+#: src/blocks/workout-plan/render.php:39
+msgid "Loading… This tool needs JavaScript. You can still browse every exercise in the library."
+msgstr ""
+
+#: includes/class-admin.php:19
+#: includes/class-admin.php:20
+#: includes/class-admin.php:46
+msgid "Fitness Toolkit demo content"
+msgstr ""
+
+#: includes/class-admin.php:31
+msgid "Demo content"
+msgstr ""
+
+#. translators: %d: number of items created.
+#: includes/class-admin.php:53
+#, php-format
+msgid "Imported %d item."
+msgid_plural "Imported %d items."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-admin.php:60
+msgid "Adds exercises, Indian recipes, gear, supplements, three articles, the tool pages and a main menu. Anything that already exists is skipped, so it is safe to run again."
+msgstr ""
+
+#: includes/class-admin.php:64
+msgid "Import demo content"
+msgstr ""
+
+#: includes/class-admin.php:72
+msgid "You are not allowed to do that."
+msgstr ""
+
+#: includes/class-content-types.php:27
+#: includes/class-progress-log.php:184
+#: build/blocks/progress-log/view.js:3
+#: build/blocks/progress-log/view.js:4
+#: src/components/ProgressLog.js:235
+#: src/components/ProgressLog.js:363
+#: src/editor/index.js:158
+msgid "Exercise"
+msgstr ""
+
+#: includes/class-content-types.php:27
+msgid "Exercises"
+msgstr ""
+
+#: includes/class-content-types.php:28
+msgid "Recipe"
+msgstr ""
+
+#: includes/class-content-types.php:28
+msgid "Recipes"
+msgstr ""
+
+#: includes/class-content-types.php:29
+msgid "Gear item"
+msgstr ""
+
+#: includes/class-content-types.php:29
+msgid "Gear"
+msgstr ""
+
+#: includes/class-content-types.php:30
+msgid "Supplement"
+msgstr ""
+
+#: includes/class-content-types.php:30
+msgid "Supplements"
+msgstr ""
+
+#: includes/class-content-types.php:49
+msgid "Muscles"
+msgstr ""
+
+#: includes/class-content-types.php:49
+#: build/blocks/exercise-library/view.js:1
+#: src/components/ExerciseLibrary.js:127
+msgid "Muscle"
+msgstr ""
+
+#: includes/class-content-types.php:50
+#: build/blocks/exercise-library/view.js:1
+#: src/components/ExerciseLibrary.js:174
+msgid "Equipment"
+msgstr ""
+
+#: includes/class-content-types.php:51
+msgid "Diets"
+msgstr ""
+
+#: includes/class-content-types.php:51
+#: build/blocks/meal-planner/index.js:2
+#: build/blocks/meal-planner/view.js:2
+#: build/blocks/recipe-finder/view.js:2
+#: src/components/MealPlanner.js:184
+#: src/components/RecipeFinder.js:82
+msgid "Diet"
+msgstr ""
+
+#: includes/class-content-types.php:52
+msgid "Meals"
+msgstr ""
+
+#: includes/class-content-types.php:52
+#: build/blocks/recipe-finder/view.js:2
+#: src/components/RecipeFinder.js:109
+msgid "Meal"
+msgstr ""
+
+#. translators: %s: singular post type name.
+#: includes/class-content-types.php:94
+#, php-format
+msgid "Add new %s"
+msgstr ""
+
+#. translators: %s: singular post type name.
+#: includes/class-content-types.php:96
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#. translators: %s: plural post type name.
+#: includes/class-content-types.php:98
+#, php-format
+msgid "All %s"
+msgstr ""
+
+#. translators: %s: plural post type name.
+#: includes/class-content-types.php:100
+#, php-format
+msgid "Search %s"
+msgstr ""
+
+#: includes/class-demo-content.php:163
+msgid "Main menu"
+msgstr ""
+
+#: includes/class-demo-content.php:191
+msgid "General"
+msgstr ""
+
+#: includes/class-progress-log.php:151
+#: includes/class-progress-log.php:159
+#: includes/class-progress-log.php:172
+msgid "Fitness Toolkit progress log"
+msgstr ""
+
+#: includes/class-progress-log.php:176
+#: build/blocks/progress-log/view.js:3
+#: build/blocks/progress-log/view.js:4
+#: src/components/ProgressLog.js:221
+#: src/components/ProgressLog.js:359
+msgid "Date"
+msgstr ""
+
+#: includes/class-progress-log.php:180
+msgid "Type"
+msgstr ""
+
+#: includes/class-progress-log.php:188
+msgid "Weight (kg)"
+msgstr ""
+
+#: includes/class-progress-log.php:192
+#: build/blocks/progress-log/view.js:3
+#: build/blocks/progress-log/view.js:4
+#: src/components/ProgressLog.js:271
+#: src/components/ProgressLog.js:371
+msgid "Reps"
+msgstr ""
+
+#: includes/class-rest-logs.php:98
+msgid "Log in to use your progress log."
+msgstr ""
+
+#: includes/class-rest-logs.php:113
+msgid "Pick a date between 2000 and today."
+msgstr ""
+
+#: includes/class-rest-logs.php:128
+msgid "Choose an exercise from the library."
+msgstr ""
+
+#: includes/class-rest-logs.php:131
+msgid "Enter how many reps you did."
+msgstr ""
+
+#: includes/class-rest-logs.php:139
+msgid "Could not save that entry."
+msgstr ""
+
+#: includes/class-rest-logs.php:150
+msgid "Entry not found."
+msgstr ""
+
+#: build/blocks/exercise-details/index.js:1
+#: src/blocks/exercise-details/index.js:18
+msgid "Exercise details"
+msgstr ""
+
+#: build/blocks/exercise-details/index.js:1
+#: src/blocks/exercise-details/index.js:19
+msgid "Shows the steps, mistakes and muscles of the exercise being viewed. Fill them in from the Exercise panel in the sidebar."
+msgstr ""
+
+#: build/blocks/exercise-library/index.js:1
+#: build/blocks/item-facts/index.js:1
+#: build/blocks/macro-calculator/index.js:3
+#: build/blocks/recipe-finder/index.js:1
+#: src/blocks/exercise-library/index.js:20
+#: src/blocks/item-facts/index.js:15
+#: src/blocks/macro-calculator/index.js:15
+#: src/blocks/recipe-finder/index.js:15
+msgid "Settings"
+msgstr ""
+
+#: build/blocks/exercise-library/index.js:1
+#: src/blocks/exercise-library/index.js:24
+msgid "Exercises per page"
+msgstr ""
+
+#: build/blocks/exercise-library/index.js:1
+#: src/blocks/exercise-library/index.js:34
+msgid "Show filters"
+msgstr ""
+
+#: build/blocks/exercise-library/view.js:1
+#: src/components/ExerciseLibrary.js:135
+msgid "All muscles"
+msgstr ""
+
+#: build/blocks/exercise-library/view.js:1
+#: src/components/ExerciseLibrary.js:157
+msgid "Search"
+msgstr ""
+
+#: build/blocks/exercise-library/view.js:1
+#: src/components/ExerciseLibrary.js:162
+msgid "Squat, push-up, row…"
+msgstr ""
+
+#: build/blocks/exercise-library/view.js:1
+#: src/components/ExerciseLibrary.js:184
+#: src/components/ExerciseLibrary.js:208
+msgid "Any"
+msgstr ""
+
+#: build/blocks/exercise-library/view.js:1
+#: build/blocks/workout-plan/view.js:3
+#: src/components/ExerciseLibrary.js:198
+#: src/components/WorkoutPlan.js:196
+#: src/editor/index.js:163
+msgid "Level"
+msgstr ""
+
+#. translators: %d: number of exercises
+#: build/blocks/exercise-library/view.js:2
+#: src/components/ExerciseLibrary.js:225
+#, js-format
+msgid "%d exercise"
+msgid_plural "%d exercises"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/blocks/exercise-library/view.js:2
+#: src/components/ExerciseLibrary.js:240
+msgid "Clear filters"
+msgstr ""
+
+#: build/blocks/exercise-library/view.js:2
+#: src/components/ExerciseLibrary.js:247
+msgid "Could not load exercises. Please try again."
+msgstr ""
+
+#: build/blocks/exercise-library/view.js:2
+#: src/components/ExerciseLibrary.js:266
+msgid "No exercises match. Try fewer filters."
+msgstr ""
+
+#: build/blocks/exercise-library/view.js:2
+#: build/blocks/progress-log/view.js:4
+#: src/components/ExerciseLibrary.js:282
+#: src/components/ProgressLog.js:345
+msgid "Loading…"
+msgstr ""
+
+#: build/blocks/exercise-library/view.js:2
+#: src/components/ExerciseLibrary.js:283
+msgid "Show more"
+msgstr ""
+
+#: build/blocks/gear-kit/view.js:1
+#: src/components/GearKit.js:8
+msgid "Train at home with almost no space or spend."
+msgstr ""
+
+#: build/blocks/gear-kit/view.js:1
+#: src/components/GearKit.js:16
+msgid "Enough to build muscle properly in a spare corner."
+msgstr ""
+
+#: build/blocks/gear-kit/view.js:1
+#: src/components/GearKit.js:24
+msgid "A complete barbell gym for a spare room or garage."
+msgstr ""
+
+#: build/blocks/gear-kit/view.js:1
+#: src/components/GearKit.js:51
+msgid "How far do you want to go?"
+msgstr ""
+
+#: build/blocks/gear-kit/view.js:2
+#: src/components/GearKit.js:109
+msgid "No gear added yet."
+msgstr ""
+
+#. translators: 1: total price, 2: number of priced items
+#: build/blocks/gear-kit/view.js:3
+#: src/components/GearKit.js:116
+#, js-format
+msgid "About ₹%1$s for the %2$d item with a listed price."
+msgid_plural "About ₹%1$s for the %2$d items with a listed price."
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/blocks/gear-kit/view.js:3
+#: src/components/GearKit.js:128
+msgid "Buy in this order: each item unlocks more exercises than the next. Some links may be affiliate links."
+msgstr ""
+
+#: build/blocks/item-facts/index.js:1
+#: src/blocks/item-facts/index.js:19
+msgid "Layout"
+msgstr ""
+
+#: build/blocks/item-facts/index.js:1
+#: src/blocks/item-facts/index.js:24
+msgid "Compact (for lists)"
+msgstr ""
+
+#: build/blocks/item-facts/index.js:1
+#: src/blocks/item-facts/index.js:31
+msgid "Full (for single pages)"
+msgstr ""
+
+#. translators: %s: field name
+#: build/blocks/macro-calculator/index.js:1
+#: build/blocks/macro-calculator/view.js:1
+#: src/components/MacroCalculator.js:88
+#, js-format
+msgid "Decrease %s"
+msgstr ""
+
+#. translators: %s: field name
+#: build/blocks/macro-calculator/index.js:1
+#: build/blocks/macro-calculator/view.js:1
+#: src/components/MacroCalculator.js:118
+#, js-format
+msgid "Increase %s"
+msgstr ""
+
+#. translators: 1: macro name, 2: percent of calories
+#: build/blocks/macro-calculator/index.js:2
+#: build/blocks/macro-calculator/view.js:2
+#: src/components/MacroCalculator.js:155
+#, js-format
+msgid "%1$s supplies %2$d%% of calories"
+msgstr ""
+
+#: build/blocks/macro-calculator/index.js:2
+#: build/blocks/macro-calculator/view.js:2
+#: src/components/MacroCalculator.js:205
+msgid "Sex"
+msgstr ""
+
+#: build/blocks/macro-calculator/index.js:2
+#: build/blocks/macro-calculator/view.js:2
+#: src/components/MacroCalculator.js:209
+msgid "Male"
+msgstr ""
+
+#: build/blocks/macro-calculator/index.js:2
+#: build/blocks/macro-calculator/view.js:2
+#: src/components/MacroCalculator.js:210
+msgid "Female"
+msgstr ""
+
+#: build/blocks/macro-calculator/index.js:2
+#: build/blocks/macro-calculator/view.js:2
+#: src/components/MacroCalculator.js:216
+msgid "Age"
+msgstr ""
+
+#: build/blocks/macro-calculator/index.js:2
+#: build/blocks/macro-calculator/view.js:2
+#: src/components/MacroCalculator.js:217
+msgid "yrs"
+msgstr ""
+
+#: build/blocks/macro-calculator/index.js:2
+#: build/blocks/macro-calculator/view.js:2
+#: src/components/MacroCalculator.js:223
+msgid "Height"
+msgstr ""
+
+#: build/blocks/macro-calculator/index.js:2
+#: build/blocks/macro-calculator/view.js:2
+#: build/blocks/one-rep-max/index.js:3
+#: build/blocks/one-rep-max/view.js:3
+#: build/blocks/progress-log/view.js:4
+#: src/components/MacroCalculator.js:230
+#: src/components/OneRepMax.js:106
+#: src/components/ProgressLog.js:367
+msgid "Weight"
+msgstr ""
+
+#: build/blocks/macro-calculator/index.js:2
+#: build/blocks/macro-calculator/view.js:2
+#: src/components/MacroCalculator.js:239
+msgid "Activity"
+msgstr ""
+
+#: build/blocks/macro-calculator/index.js:2
+#: build/blocks/macro-calculator/view.js:2
+#: build/blocks/workout-plan/view.js:3
+#: src/components/MacroCalculator.js:245
+#: src/components/WorkoutPlan.js:181
+msgid "Goal"
+msgstr ""
+
+#: build/blocks/macro-calculator/index.js:2
+#: build/blocks/macro-calculator/view.js:2
+#: src/components/MacroCalculator.js:257
+msgid "kcal per day"
+msgstr ""
+
+#. translators: 1: BMR kcal, 2: maintenance kcal
+#: build/blocks/macro-calculator/index.js:3
+#: build/blocks/macro-calculator/view.js:3
+#: src/components/MacroCalculator.js:282
+#, js-format
+msgid "Resting burn %1$s kcal · maintenance %2$s kcal"
+msgstr ""
+
+#: build/blocks/macro-calculator/index.js:3
+#: build/blocks/macro-calculator/view.js:3
+#: src/components/MacroCalculator.js:295
+msgid "Get an Indian meal plan for this"
+msgstr ""
+
+#: build/blocks/macro-calculator/index.js:3
+#: build/blocks/macro-calculator/view.js:3
+#: src/components/MacroCalculator.js:299
+msgid "Estimates only, not medical advice."
+msgstr ""
+
+#: build/blocks/macro-calculator/index.js:3
+#: src/blocks/macro-calculator/index.js:18
+msgid "Compact layout"
+msgstr ""
+
+#: build/blocks/macro-calculator/index.js:3
+#: src/blocks/macro-calculator/index.js:19
+msgid "Hides the BMR and maintenance line, for tight spaces like a hero."
+msgstr ""
+
+#: build/blocks/macro-calculator/index.js:3
+#: src/blocks/macro-calculator/index.js:31
+msgid "Meal plan link"
+msgstr ""
+
+#: build/blocks/macro-calculator/index.js:3
+#: src/blocks/macro-calculator/index.js:32
+msgid "Optional. Shows a button under the results."
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:1
+#: build/blocks/meal-planner/view.js:1
+#: src/components/MealPlanner.js:9
+msgid "Vegetarian"
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:1
+#: build/blocks/meal-planner/view.js:1
+#: src/components/MealPlanner.js:10
+msgid "Vegan"
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:1
+#: build/blocks/meal-planner/view.js:1
+#: src/components/MealPlanner.js:11
+msgid "Eggetarian"
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:1
+#: build/blocks/meal-planner/view.js:1
+#: src/components/MealPlanner.js:12
+msgid "Non-veg"
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:1
+#: build/blocks/meal-planner/view.js:1
+#: src/components/MealPlanner.js:16
+msgid "Breakfast"
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:1
+#: build/blocks/meal-planner/view.js:1
+#: src/components/MealPlanner.js:17
+msgid "Lunch"
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:1
+#: build/blocks/meal-planner/view.js:1
+#: src/components/MealPlanner.js:18
+msgid "Dinner"
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:1
+#: build/blocks/meal-planner/view.js:1
+#: src/components/MealPlanner.js:19
+msgid "Snack"
+msgstr ""
+
+#. translators: 1: planned amount, 2: target amount, 3: unit
+#: build/blocks/meal-planner/index.js:2
+#: build/blocks/meal-planner/view.js:2
+#: src/components/MealPlanner.js:62
+#, js-format
+msgid "%1$s of %2$s %3$s"
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:2
+#: build/blocks/meal-planner/view.js:2
+#: src/components/MealPlanner.js:101
+msgid "Enter a calorie target between 1,000 and 5,000."
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:2
+#: build/blocks/meal-planner/view.js:2
+#: build/blocks/workout-plan/view.js:3
+#: src/components/MealPlanner.js:124
+#: src/components/WorkoutPlan.js:142
+msgid "Could not build a plan."
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:2
+#: build/blocks/meal-planner/view.js:2
+#: src/components/MealPlanner.js:144
+msgid "Using the targets from your macro calculator. Change them here if you like."
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:2
+#: build/blocks/meal-planner/view.js:2
+#: src/components/MealPlanner.js:148
+msgid "Tip: use the macro calculator on the Tools page first and your targets will appear here."
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:2
+#: build/blocks/meal-planner/view.js:2
+#: src/components/MealPlanner.js:156
+msgid "Calories per day"
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:2
+#: build/blocks/meal-planner/view.js:2
+#: src/components/MealPlanner.js:170
+#: src/editor/index.js:408
+msgid "Protein (g)"
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:2
+#: build/blocks/meal-planner/view.js:2
+#: src/components/MealPlanner.js:207
+msgid "Include a snack"
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:2
+#: build/blocks/meal-planner/view.js:2
+#: src/components/MealPlanner.js:221
+msgid "Shuffle meals"
+msgstr ""
+
+#. translators: %s: list of meals
+#: build/blocks/meal-planner/index.js:3
+#: build/blocks/meal-planner/view.js:3
+#: src/components/MealPlanner.js:234
+#, js-format
+msgid "No recipes yet for: %s. Add some, or try another diet."
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:3
+#: build/blocks/meal-planner/view.js:3
+#: src/components/MealPlanner.js:248
+msgid "Calories"
+msgstr ""
+
+#. translators: 1: carbs grams, 2: fat grams
+#: build/blocks/meal-planner/index.js:4
+#: build/blocks/meal-planner/view.js:4
+#: src/components/MealPlanner.js:262
+#, js-format
+msgid "Also %1$d g carbs and %2$d g fat."
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:4
+#: build/blocks/meal-planner/view.js:4
+#: src/components/MealPlanner.js:44
+msgid "1 serving"
+msgstr ""
+
+#. translators: %s: number of servings, e.g. 1.5
+#: build/blocks/meal-planner/index.js:5
+#: build/blocks/meal-planner/view.js:5
+#: src/components/MealPlanner.js:47
+#, js-format
+msgid "%s servings"
+msgstr ""
+
+#. translators: 1: kcal, 2: protein grams
+#: build/blocks/meal-planner/index.js:6
+#: build/blocks/meal-planner/view.js:6
+#: src/components/MealPlanner.js:289
+#, js-format
+msgid "%1$d kcal · %2$d g protein"
+msgstr ""
+
+#: build/blocks/meal-planner/index.js:6
+#: build/blocks/meal-planner/view.js:6
+#: src/components/MealPlanner.js:301
+msgid "Nutrition values are approximate. If you have a medical condition, check your plan with a doctor or registered dietitian."
+msgstr ""
+
+#: build/blocks/one-rep-max/index.js:1
+#: build/blocks/one-rep-max/view.js:1
+#: build/blocks/progress-log/view.js:3
+#: src/components/OneRepMax.js:21
+#: src/components/ProgressLog.js:254
+msgid "Weight lifted (kg)"
+msgstr ""
+
+#: build/blocks/one-rep-max/index.js:1
+#: build/blocks/one-rep-max/view.js:1
+#: src/components/OneRepMax.js:36
+msgid "Reps done"
+msgstr ""
+
+#. translators: %s: weight in kg
+#: build/blocks/one-rep-max/index.js:2
+#: build/blocks/one-rep-max/index.js:4
+#: build/blocks/one-rep-max/view.js:2
+#: build/blocks/one-rep-max/view.js:4
+#: src/components/OneRepMax.js:57
+#: src/components/OneRepMax.js:125
+#, js-format
+msgid "%s kg"
+msgstr ""
+
+#: build/blocks/one-rep-max/index.js:2
+#: build/blocks/one-rep-max/view.js:2
+#: src/components/OneRepMax.js:62
+msgid "Estimated one-rep max"
+msgstr ""
+
+#. translators: %d: maximum reps
+#: build/blocks/one-rep-max/index.js:3
+#: build/blocks/one-rep-max/view.js:3
+#: src/components/OneRepMax.js:73
+#, js-format
+msgid "Enter a weight and between 1 and %d reps."
+msgstr ""
+
+#: build/blocks/one-rep-max/index.js:3
+#: build/blocks/one-rep-max/view.js:3
+#: src/components/OneRepMax.js:85
+msgid "Estimates are less accurate above 10 reps. A heavier set of 3 to 6 gives a better number."
+msgstr ""
+
+#: build/blocks/one-rep-max/index.js:3
+#: build/blocks/one-rep-max/view.js:3
+#: src/components/OneRepMax.js:96
+msgid "Working weights"
+msgstr ""
+
+#: build/blocks/one-rep-max/index.js:3
+#: build/blocks/one-rep-max/view.js:3
+#: src/components/OneRepMax.js:103
+msgid "% of max"
+msgstr ""
+
+#: build/blocks/one-rep-max/index.js:3
+#: build/blocks/one-rep-max/view.js:3
+#: src/components/OneRepMax.js:109
+msgid "About this many reps"
+msgstr ""
+
+#: build/blocks/one-rep-max/index.js:4
+#: build/blocks/one-rep-max/view.js:4
+#: src/components/OneRepMax.js:136
+msgid "Weights are rounded to 2.5 kg. Never test a true max without a spotter or safety arms."
+msgstr ""
+
+#: build/blocks/progress-log/index.js:1
+#: src/blocks/progress-log/index.js:15
+msgid "Progress log"
+msgstr ""
+
+#: build/blocks/progress-log/index.js:1
+#: src/blocks/progress-log/index.js:16
+msgid "Signed-in visitors log their bodyweight and lifts here. Logged-out visitors see a prompt to log in."
+msgstr ""
+
+#: build/blocks/progress-log/view.js:1
+#: src/components/ProgressLog.js:17
+msgid "Log your weight on two different days to see a trend."
+msgstr ""
+
+#. translators: 1: start weight, 2: end weight, 3: start date, 4: end date
+#: build/blocks/progress-log/view.js:2
+#: src/components/ProgressLog.js:47
+#, js-format
+msgid "Bodyweight went from %1$s kg to %2$s kg between %3$s and %4$s."
+msgstr ""
+
+#. translators: 1: change in kg with sign, 2: number of entries
+#: build/blocks/progress-log/view.js:3
+#: src/components/ProgressLog.js:91
+#, js-format
+msgid "%1$s kg over your last %2$d entries."
+msgstr ""
+
+#: build/blocks/progress-log/view.js:3
+#: src/components/ProgressLog.js:125
+msgid "Could not load your log."
+msgstr ""
+
+#: build/blocks/progress-log/view.js:3
+#: src/components/ProgressLog.js:199
+msgid "What to log"
+msgstr ""
+
+#: build/blocks/progress-log/view.js:3
+#: src/components/ProgressLog.js:206
+msgid "Bodyweight"
+msgstr ""
+
+#: build/blocks/progress-log/view.js:3
+#: src/components/ProgressLog.js:213
+msgid "Lifts"
+msgstr ""
+
+#: build/blocks/progress-log/view.js:3
+#: src/components/ProgressLog.js:171
+msgid "Saved."
+msgstr ""
+
+#: build/blocks/progress-log/view.js:3
+#: src/components/ProgressLog.js:175
+msgid "Could not save."
+msgstr ""
+
+#: build/blocks/progress-log/view.js:3
+#: src/components/ProgressLog.js:253
+msgid "Bodyweight (kg)"
+msgstr ""
+
+#: build/blocks/progress-log/view.js:3
+#: src/components/ProgressLog.js:290
+msgid "Saving…"
+msgstr ""
+
+#: build/blocks/progress-log/view.js:3
+#: src/components/ProgressLog.js:291
+msgid "Add entry"
+msgstr ""
+
+#: build/blocks/progress-log/view.js:3
+#: src/components/ProgressLog.js:304
+msgid "Trend"
+msgstr ""
+
+#: build/blocks/progress-log/view.js:3
+#: src/components/ProgressLog.js:313
+msgid "Best estimated maxes"
+msgstr ""
+
+#. translators: 1: exercise name, 2: weight, 3: reps
+#: build/blocks/progress-log/view.js:4
+#: src/components/ProgressLog.js:324
+#, js-format
+msgid "%1$s (from %2$s kg × %3$d)"
+msgstr ""
+
+#: build/blocks/progress-log/view.js:4
+#: src/components/ProgressLog.js:341
+msgid "History"
+msgstr ""
+
+#: build/blocks/progress-log/view.js:4
+#: src/components/ProgressLog.js:350
+msgid "No entries yet."
+msgstr ""
+
+#: build/blocks/progress-log/view.js:4
+#: src/components/ProgressLog.js:376
+msgid "Actions"
+msgstr ""
+
+#: build/blocks/progress-log/view.js:4
+#: src/components/ProgressLog.js:402
+msgid "Delete"
+msgstr ""
+
+#: build/blocks/recipe-details/index.js:1
+#: src/blocks/recipe-details/index.js:18
+msgid "Recipe details"
+msgstr ""
+
+#: build/blocks/recipe-details/index.js:1
+#: src/blocks/recipe-details/index.js:19
+msgid "Shows the nutrition, ingredients and method of the recipe being viewed. Fill them in from the Recipe panels in the sidebar."
+msgstr ""
+
+#: build/blocks/recipe-finder/index.js:1
+#: src/blocks/recipe-finder/index.js:19
+msgid "Recipes per page"
+msgstr ""
+
+#: build/blocks/recipe-finder/view.js:2
+#: src/components/RecipeFinder.js:90
+msgid "Any diet"
+msgstr ""
+
+#: build/blocks/recipe-finder/view.js:2
+#: src/components/RecipeFinder.js:117
+msgid "Any meal"
+msgstr ""
+
+#. translators: %d: grams of protein
+#: build/blocks/recipe-finder/view.js:3
+#: src/components/RecipeFinder.js:130
+#, js-format
+msgid "At least %d g protein"
+msgstr ""
+
+#: build/blocks/recipe-finder/view.js:3
+#: src/components/RecipeFinder.js:148
+msgid "Vegetarian includes vegan dishes; eggetarian adds egg dishes."
+msgstr ""
+
+#. translators: %d: number of recipes
+#: build/blocks/recipe-finder/view.js:4
+#: src/components/RecipeFinder.js:158
+#, js-format
+msgid "%d recipe"
+msgid_plural "%d recipes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/blocks/recipe-finder/view.js:4
+#: src/components/RecipeFinder.js:164
+msgid "Could not load recipes. Please try again."
+msgstr ""
+
+#: build/blocks/recipe-finder/view.js:4
+#: src/components/RecipeFinder.js:179
+msgid "No recipes match. Try a lower protein minimum."
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:7
+msgid "Build muscle"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:8
+msgid "Get stronger"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:9
+msgid "Lose fat"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:18
+msgid "Full body A"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:19
+msgid "Full body B"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:20
+msgid "Upper body"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:21
+msgid "Lower body"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:22
+msgid "Push"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:23
+msgid "Pull"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:24
+msgid "Legs"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:28
+msgid "squat"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:29
+msgid "hip hinge"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:30
+msgid "lunge"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:31
+msgid "chest press"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:32
+msgid "overhead press"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:33
+msgid "row"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:34
+msgid "pulldown or pull-up"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:35
+msgid "core"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:36
+msgid "arm"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:40
+msgid "Add 2.5 kg to a lift when you hit the top of the rep range on every set."
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:44
+msgid "Add a rep each week. Once you reach the top of the range on every set, add weight."
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:1
+#: src/components/WorkoutPlan.js:48
+msgid "Keep rests short, stay in a small calorie deficit and walk on rest days."
+msgstr ""
+
+#. translators: 1: sets, 2: reps, 3: rest in seconds
+#: build/blocks/workout-plan/view.js:2
+#: src/components/WorkoutPlan.js:85
+#, js-format
+msgid "%1$d sets × %2$s · rest %3$ds"
+msgstr ""
+
+#. translators: %s: exercise name
+#: build/blocks/workout-plan/view.js:3
+#: src/components/WorkoutPlan.js:99
+#, js-format
+msgid "Swap %s for another exercise"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:3
+#: src/components/WorkoutPlan.js:103
+msgid "Swap"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:3
+#: src/components/WorkoutPlan.js:187
+msgid "Days per week"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:3
+#: src/components/WorkoutPlan.js:203
+msgid "Equipment you have (bodyweight is always included)"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:3
+#: src/components/WorkoutPlan.js:233
+msgid "Building…"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:3
+#: src/components/WorkoutPlan.js:234
+msgid "Build my plan"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:3
+#: src/components/WorkoutPlan.js:252
+msgid "Print plan"
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:3
+#: src/components/WorkoutPlan.js:259
+msgid "Gap in your plan:"
+msgstr ""
+
+#. translators: %s: list of movement types
+#: build/blocks/workout-plan/view.js:4
+#: src/components/WorkoutPlan.js:263
+#, js-format
+msgid "no %s exercise matches your equipment and level. Resistance bands are an inexpensive way to add pulling exercises."
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:4
+#: src/components/WorkoutPlan.js:275
+msgid "Some sessions are short with this equipment. Try fewer days for full-body sessions, or tick more equipment."
+msgstr ""
+
+#: build/blocks/workout-plan/view.js:4
+#: src/components/WorkoutPlan.js:309
+msgid "Warm up for 5 to 10 minutes first. Stop any exercise that causes sharp pain. This is general guidance, not medical advice."
+msgstr ""
+
+#: src/editor/index.js:24
+msgid "Squat"
+msgstr ""
+
+#: src/editor/index.js:25
+msgid "Hip hinge"
+msgstr ""
+
+#: src/editor/index.js:26
+msgid "Lunge (single leg)"
+msgstr ""
+
+#: src/editor/index.js:27
+msgid "Horizontal push (chest)"
+msgstr ""
+
+#: src/editor/index.js:30
+msgid "Vertical push (overhead)"
+msgstr ""
+
+#: src/editor/index.js:32
+msgid "Horizontal pull (row)"
+msgstr ""
+
+#: src/editor/index.js:35
+msgid "Vertical pull (pulldown)"
+msgstr ""
+
+#: src/editor/index.js:37
+msgid "Core"
+msgstr ""
+
+#: src/editor/index.js:38
+msgid "Arms"
+msgstr ""
+
+#: src/editor/index.js:111
+msgid "Move up"
+msgstr ""
+
+#: src/editor/index.js:118
+msgid "Move down"
+msgstr ""
+
+#: src/editor/index.js:132
+msgid "Remove"
+msgstr ""
+
+#: src/editor/index.js:183
+msgid "Movement pattern"
+msgstr ""
+
+#: src/editor/index.js:184
+msgid "The workout plan generator fills each session slot by pattern."
+msgstr ""
+
+#: src/editor/index.js:194
+msgid "Timed hold (seconds, not reps)"
+msgstr ""
+
+#: src/editor/index.js:204
+msgid "Form video URL"
+msgstr ""
+
+#: src/editor/index.js:205
+msgid "YouTube or Vimeo link."
+msgstr ""
+
+#: src/editor/index.js:211
+msgid "Secondary muscles"
+msgstr ""
+
+#: src/editor/index.js:212
+msgid "Comma separated. Primary muscles are set in the Muscles panel."
+msgstr ""
+
+#: src/editor/index.js:232
+msgid "Steps"
+msgstr ""
+
+#. translators: %d: step number
+#: src/editor/index.js:238
+#, js-format
+msgid "Step %d"
+msgstr ""
+
+#: src/editor/index.js:239
+msgid "Add step"
+msgstr ""
+
+#: src/editor/index.js:241
+msgid "Cue"
+msgstr ""
+
+#: src/editor/index.js:242
+msgid "Detail"
+msgstr ""
+
+#. translators: %d: mistake number
+#: src/editor/index.js:254
+#, js-format
+msgid "Mistake %d"
+msgstr ""
+
+#: src/editor/index.js:255
+msgid "Add mistake"
+msgstr ""
+
+#: src/editor/index.js:259
+msgid "Mistake"
+msgstr ""
+
+#: src/editor/index.js:263
+msgid "How to fix it"
+msgstr ""
+
+#: src/editor/index.js:277
+msgid "Gear details"
+msgstr ""
+
+#: src/editor/index.js:283
+msgid "Price (₹)"
+msgstr ""
+
+#: src/editor/index.js:293
+msgid "Where to buy (URL)"
+msgstr ""
+
+#: src/editor/index.js:299
+msgid "Budget tier"
+msgstr ""
+
+#: src/editor/index.js:321
+msgid "Buying order"
+msgstr ""
+
+#: src/editor/index.js:322
+msgid "Lower numbers are recommended first within a tier."
+msgstr ""
+
+#: src/editor/index.js:341
+msgid "Evidence"
+msgstr ""
+
+#: src/editor/index.js:346
+msgid "Strength of evidence"
+msgstr ""
+
+#: src/editor/index.js:351
+msgid "Strong"
+msgstr ""
+
+#: src/editor/index.js:355
+msgid "Moderate"
+msgstr ""
+
+#: src/editor/index.js:357
+msgid "Weak"
+msgstr ""
+
+#: src/editor/index.js:360
+msgid "None / not rated"
+msgstr ""
+
+#: src/editor/index.js:367
+msgid "Verdict"
+msgstr ""
+
+#: src/editor/index.js:368
+msgid "One or two plain sentences: worth it or not, and for whom."
+msgstr ""
+
+#: src/editor/index.js:386
+msgid "Steps, one per line"
+msgstr ""
+
+#: src/editor/index.js:407
+msgid "Calories (kcal)"
+msgstr ""
+
+#: src/editor/index.js:409
+msgid "Carbs (g)"
+msgstr ""
+
+#: src/editor/index.js:410
+msgid "Fat (g)"
+msgstr ""
+
+#: src/editor/index.js:411
+msgid "Time (minutes)"
+msgstr ""
+
+#: src/editor/index.js:425
+msgid "Nutrition per serving"
+msgstr ""
+
+#. translators: %d: kcal calculated from macros
+#: src/editor/index.js:447
+#, js-format
+msgid "Macros add up to %d kcal."
+msgstr ""
+
+#: src/editor/index.js:452
+msgid "That is more than 10% away from the calories field."
+msgstr ""
+
+#. translators: %d: ingredient number
+#: src/editor/index.js:467
+#, js-format
+msgid "Ingredient %d"
+msgstr ""
+
+#: src/editor/index.js:468
+msgid "Add ingredient"
+msgstr ""
+
+#: src/editor/index.js:472
+msgid "Ingredient"
+msgstr ""
+
+#: src/editor/index.js:474
+msgid "Amount"
+msgstr ""

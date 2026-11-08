@@ -11,21 +11,21 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: plugins/fitbull-core
+        working-directory: plugins/arponsamanta-fitness-toolkit
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: plugins/fitbull-core/package-lock.json
+          cache-dependency-path: plugins/arponsamanta-fitness-toolkit/package-lock.json
       - run: npm ci
       - run: npm run lint:js
       - run: npm run lint:css
       - run: npm test
       - run: npm run build
       - name: Committed build is up to date
-        run: git diff --exit-code -- build || (echo "::error::Run 'npm run build' and commit plugins/fitbull-core/build" && exit 1)
+        run: git diff --exit-code -- build || (echo "::error::Run 'npm run build' and commit plugins/arponsamanta-fitness-toolkit/build" && exit 1)
 
   php:
     name: PHP ${{ matrix.php }} lint and unit tests
@@ -35,7 +35,7 @@ jobs:
         php: ["8.1", "8.3"]
     defaults:
       run:
-        working-directory: plugins/fitbull-core
+        working-directory: plugins/arponsamanta-fitness-toolkit
     steps:
       - uses: actions/checkout@v4
       - uses: shivammathur/setup-php@v2
@@ -45,5 +45,5 @@ jobs:
       - run: composer install --no-interaction --no-progress
       - name: Syntax check (plugin and theme)
         working-directory: .
-        run: find plugins/fitbull-core themes/fitbull -name '*.php' -not -path '*/vendor/*' -not -path '*/node_modules/*' -print0 | xargs -0 -n1 php -l
+        run: find plugins/arponsamanta-fitness-toolkit themes/fitbull -name '*.php' -not -path '*/vendor/*' -not -path '*/node_modules/*' -print0 | xargs -0 -n1 php -l
       - run: vendor/bin/phpunit

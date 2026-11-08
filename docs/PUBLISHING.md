@@ -22,7 +22,7 @@ git tag v1.0.0
 git push origin v1.0.0
 ```
 
-The `Release zips` workflow builds `fitbull-core.zip` (plugin) and `fitbull.zip` (theme) and attaches them to a GitHub release. You can also build them locally with `bin/package.sh` (they land in `dist/`).
+The `Release zips` workflow builds `arponsamanta-fitness-toolkit.zip` (plugin) and `fitbull.zip` (theme) and attaches them to a GitHub release. You can also build them locally with `bin/package.sh` (they land in `dist/`).
 
 ## 3. WordPress.org directories
 
@@ -30,22 +30,22 @@ You need a free WordPress.org account. It is separate from your WordPress.com ac
 
 Both packages already pass the official checkers: **Plugin Check** reports no errors, and **Theme Check** reports only an informational note.
 
-### Plugin: Fitbull Core
+### Plugin: ArponSamanta Fitness Toolkit
 
 1. Add plugins@wordpress.org to your email allowlist, so review emails don't go to spam.
-2. Go to the [plugin submission page](https://wordpress.org/plugins/developers/add/) and upload `fitbull-core.zip`.
+2. Go to the [plugin submission page](https://wordpress.org/plugins/developers/add/) and upload `arponsamanta-fitness-toolkit.zip`.
 3. The handbook says reviews happen within 14 business days of being queued. Reply quickly to any email from the review team.
 4. Once approved, you get SVN access. Check out the repo and copy in the plugin (the same files as the zip):
    ```bash
-   svn co https://plugins.svn.wordpress.org/fitbull-core fitbull-core-svn
-   cd fitbull-core-svn
-   unzip ../dist/fitbull-core.zip -d /tmp/fb && cp -R /tmp/fb/fitbull-core/* trunk/
+   svn co https://plugins.svn.wordpress.org/arponsamanta-fitness-toolkit arponsamanta-fitness-toolkit-svn
+   cd arponsamanta-fitness-toolkit-svn
+   unzip ../dist/arponsamanta-fitness-toolkit.zip -d /tmp/fb && cp -R /tmp/fb/arponsamanta-fitness-toolkit/* trunk/
    cp ../.wordpress-org/screenshot-*.png assets/
    svn add --force trunk assets
    svn cp trunk tags/1.0.0
    svn ci -m "Release 1.0.0"
    ```
-5. The plugin page appears a few minutes later. The slug (`fitbull-core`) can't be changed after you submit, so be sure of it first.
+5. The plugin page appears a few minutes later. The slug (`arponsamanta-fitness-toolkit`) can't be changed after you submit, so be sure of it first.
 
 ### Theme: Fitbull
 
@@ -54,7 +54,7 @@ Both packages already pass the official checkers: **Plugin Check** reports no er
 3. Watch the ticket. Reply within 7 days, or the ticket may be closed.
 4. Only one theme can be in the queue at a time.
 
-Theme reviewers check that the theme works **without** the plugin. That's why the plugin-only sections (hubs, exercise finder, call-to-action band, the calculator in the hero) hide themselves when Fitbull Core is inactive, and why the header menu and footer have no hard-coded links.
+Theme reviewers check that the theme works **without** the plugin. That's why the plugin-only sections (hubs, exercise finder, call-to-action band, the calculator in the hero) hide themselves when ArponSamanta Fitness Toolkit is inactive, and why the header menu and footer have no hard-coded links.
 
 ## Optional: a permanent free site
 

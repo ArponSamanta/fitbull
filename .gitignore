@@ -12,9 +12,9 @@ Thumbs.db
 
 # Test caches
 .phpunit.result.cache
-plugins/fitbull-core/coverage/
+plugins/arponsamanta-fitness-toolkit/coverage/
 
-# Note: plugins/fitbull-core/build/ is committed on purpose, so the plugin
+# Note: plugins/arponsamanta-fitness-toolkit/build/ is committed on purpose, so the plugin
 # works straight from a Git checkout (Docker setup and WordPress Playground demo).
 
 # Release zips from bin/package.sh

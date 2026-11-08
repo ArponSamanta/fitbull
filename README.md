@@ -36,7 +36,7 @@ flowchart LR
     TJ[theme.json tokens] --> TPL[Templates and parts]
     PAT[Plugin-aware patterns] --> TPL
   end
-  subgraph Plugin["plugins/fitbull-core"]
+  subgraph Plugin["plugins/arponsamanta-fitness-toolkit"]
     DATA[Post types, taxonomies, typed meta]
     LOG[(fitbull_logs table)]
     REST["REST API /fitbull/v1"]
@@ -82,8 +82,8 @@ Open http://localhost:8080 and finish the WordPress install. Then:
 
 ```bash
 docker compose run --rm wpcli wp theme activate fitbull
-docker compose run --rm wpcli wp plugin activate fitbull-core
-docker compose run --rm wpcli wp fitbull seed
+docker compose run --rm wpcli wp plugin activate arponsamanta-fitness-toolkit
+docker compose run --rm wpcli wp fitness-toolkit seed
 ```
 
 You can also skip the last command and use **Tools > Fitbull demo content** in wp-admin.
@@ -91,7 +91,7 @@ You can also skip the last command and use **Tools > Fitbull demo content** in w
 ### Development
 
 ```bash
-cd plugins/fitbull-core
+cd plugins/arponsamanta-fitness-toolkit
 npm install
 npm start                     # rebuild blocks on save
 npm test                      # Jest
@@ -110,8 +110,8 @@ fitbull/
 ├─ blueprint.json              WordPress Playground demo
 ├─ bin/package.sh              Release zips
 ├─ themes/fitbull/             Block theme: theme.json, templates, parts, patterns, fonts
-└─ plugins/fitbull-core/
-   ├─ fitbull-core.php         Bootstrap: hooks only
+└─ plugins/arponsamanta-fitness-toolkit/
+   ├─ arponsamanta-fitness-toolkit.php         Bootstrap: hooks only
    ├─ includes/                Data model, REST controllers, pure engines, log table, admin, CLI
    ├─ src/blocks/              11 blocks (block.json, React, render.php, SCSS)
    ├─ src/components/          React UIs

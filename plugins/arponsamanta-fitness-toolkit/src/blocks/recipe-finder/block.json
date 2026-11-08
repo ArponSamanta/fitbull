@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "fitbull/recipe-finder",
+	"version": "1.0.0",
+	"title": "Recipe finder",
+	"category": "widgets",
+	"icon": "carrot",
+	"description": "Filter recipes by diet, meal and minimum protein.",
+	"keywords": [
+		"recipe",
+		"diet",
+		"food",
+		"protein"
+	],
+	"textdomain": "arponsamanta-fitness-toolkit",
+	"attributes": {
+		"perPage": {
+			"type": "number",
+			"default": 12
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": [
+			"wide"
+		],
+		"spacing": {
+			"margin": true
+		}
+	},
+	"editorScript": "file:./index.js",
+	"viewScript": "file:./view.js",
+	"style": [
+		"file:./style-index.css",
+		"arponsamanta-fitness-toolkit-ui"
+	],
+	"render": "file:./render.php"
+}
