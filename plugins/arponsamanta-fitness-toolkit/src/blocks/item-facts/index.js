@@ -12,11 +12,19 @@ registerBlockType( metadata.name, {
 		return (
 			<>
 				<InspectorControls>
-					<PanelBody title={ __( 'Settings', 'arponsamanta-fitness-toolkit' ) }>
+					<PanelBody
+						title={ __(
+							'Settings',
+							'arponsamanta-fitness-toolkit'
+						) }
+					>
 						<SelectControl
 							__nextHasNoMarginBottom
 							__next40pxDefaultSize
-							label={ __( 'Layout', 'arponsamanta-fitness-toolkit' ) }
+							label={ __(
+								'Layout',
+								'arponsamanta-fitness-toolkit'
+							) }
 							value={ attributes.layout }
 							options={ [
 								{

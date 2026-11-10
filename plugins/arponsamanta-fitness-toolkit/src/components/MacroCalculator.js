@@ -152,7 +152,10 @@ function MacroBar( { label, grams, share, tone } ) {
 				role="img"
 				aria-label={ sprintf(
 					/* translators: 1: macro name, 2: percent of calories */
-					__( '%1$s supplies %2$d%% of calories', 'arponsamanta-fitness-toolkit' ),
+					__(
+						'%1$s supplies %2$d%% of calories',
+						'arponsamanta-fitness-toolkit'
+					),
 					label,
 					share
 				) }
@@ -194,7 +197,10 @@ export default function MacroCalculator( {
 		<div className={ `fb-calc${ compact ? ' fb-calc--compact' : '' }` }>
 			<div className="fb-calc__head">
 				<h2 className="fb-calc__title">
-					{ __( 'Your daily targets', 'arponsamanta-fitness-toolkit' ) }
+					{ __(
+						'Your daily targets',
+						'arponsamanta-fitness-toolkit'
+					) }
 				</h2>
 				<span className="fb-calc__muted">
 					{ __( 'Macro calculator', 'arponsamanta-fitness-toolkit' ) }
@@ -206,8 +212,14 @@ export default function MacroCalculator( {
 				value={ values.sex }
 				onChange={ update( 'sex' ) }
 				options={ [
-					{ value: 'male', label: __( 'Male', 'arponsamanta-fitness-toolkit' ) },
-					{ value: 'female', label: __( 'Female', 'arponsamanta-fitness-toolkit' ) },
+					{
+						value: 'male',
+						label: __( 'Male', 'arponsamanta-fitness-toolkit' ),
+					},
+					{
+						value: 'female',
+						label: __( 'Female', 'arponsamanta-fitness-toolkit' ),
+					},
 				] }
 			/>
 
@@ -292,11 +304,17 @@ export default function MacroCalculator( {
 
 			{ mealPlanUrl && (
 				<a className="fb-calc__cta" href={ mealPlanUrl }>
-					{ __( 'Get an Indian meal plan for this', 'arponsamanta-fitness-toolkit' ) }
+					{ __(
+						'Get an Indian meal plan for this',
+						'arponsamanta-fitness-toolkit'
+					) }
 				</a>
 			) }
 			<p className="fb-calc__disclaimer">
-				{ __( 'Estimates only, not medical advice.', 'arponsamanta-fitness-toolkit' ) }
+				{ __(
+					'Estimates only, not medical advice.',
+					'arponsamanta-fitness-toolkit'
+				) }
 			</p>
 		</div>
 	);

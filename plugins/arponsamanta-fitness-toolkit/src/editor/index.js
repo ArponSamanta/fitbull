@@ -22,14 +22,26 @@ import { __, sprintf } from '@wordpress/i18n';
 
 const PATTERN_OPTIONS = [
 	{ value: 'squat', label: __( 'Squat', 'arponsamanta-fitness-toolkit' ) },
-	{ value: 'hinge', label: __( 'Hip hinge', 'arponsamanta-fitness-toolkit' ) },
-	{ value: 'lunge', label: __( 'Lunge (single leg)', 'arponsamanta-fitness-toolkit' ) },
-	{ value: 'push_h', label: __( 'Horizontal push (chest)', 'arponsamanta-fitness-toolkit' ) },
+	{
+		value: 'hinge',
+		label: __( 'Hip hinge', 'arponsamanta-fitness-toolkit' ),
+	},
+	{
+		value: 'lunge',
+		label: __( 'Lunge (single leg)', 'arponsamanta-fitness-toolkit' ),
+	},
+	{
+		value: 'push_h',
+		label: __( 'Horizontal push (chest)', 'arponsamanta-fitness-toolkit' ),
+	},
 	{
 		value: 'push_v',
 		label: __( 'Vertical push (overhead)', 'arponsamanta-fitness-toolkit' ),
 	},
-	{ value: 'pull_h', label: __( 'Horizontal pull (row)', 'arponsamanta-fitness-toolkit' ) },
+	{
+		value: 'pull_h',
+		label: __( 'Horizontal pull (row)', 'arponsamanta-fitness-toolkit' ),
+	},
 	{
 		value: 'pull_v',
 		label: __( 'Vertical pull (pulldown)', 'arponsamanta-fitness-toolkit' ),
@@ -108,14 +120,20 @@ function RowList( { rows = [], onChange, fields, addLabel, itemLabel } ) {
 						<Button
 							size="small"
 							icon="arrow-up-alt2"
-							label={ __( 'Move up', 'arponsamanta-fitness-toolkit' ) }
+							label={ __(
+								'Move up',
+								'arponsamanta-fitness-toolkit'
+							) }
 							disabled={ index === 0 }
 							onClick={ () => move( index, -1 ) }
 						/>
 						<Button
 							size="small"
 							icon="arrow-down-alt2"
-							label={ __( 'Move down', 'arponsamanta-fitness-toolkit' ) }
+							label={ __(
+								'Move down',
+								'arponsamanta-fitness-toolkit'
+							) }
 							disabled={ index === rows.length - 1 }
 							onClick={ () => move( index, 1 ) }
 						/>
@@ -165,22 +183,34 @@ function ExercisePanels() {
 						options={ [
 							{
 								value: 'beginner',
-								label: __( 'Beginner', 'arponsamanta-fitness-toolkit' ),
+								label: __(
+									'Beginner',
+									'arponsamanta-fitness-toolkit'
+								),
 							},
 							{
 								value: 'intermediate',
-								label: __( 'Intermediate', 'arponsamanta-fitness-toolkit' ),
+								label: __(
+									'Intermediate',
+									'arponsamanta-fitness-toolkit'
+								),
 							},
 							{
 								value: 'advanced',
-								label: __( 'Advanced', 'arponsamanta-fitness-toolkit' ),
+								label: __(
+									'Advanced',
+									'arponsamanta-fitness-toolkit'
+								),
 							},
 						] }
 						onChange={ set( 'fb_difficulty' ) }
 					/>
 					<SelectControl
 						{ ...controlProps }
-						label={ __( 'Movement pattern', 'arponsamanta-fitness-toolkit' ) }
+						label={ __(
+							'Movement pattern',
+							'arponsamanta-fitness-toolkit'
+						) }
 						help={ __(
 							'The workout plan generator fills each session slot by pattern.',
 							'arponsamanta-fitness-toolkit'
@@ -201,14 +231,23 @@ function ExercisePanels() {
 					<TextControl
 						{ ...controlProps }
 						type="url"
-						label={ __( 'Form video URL', 'arponsamanta-fitness-toolkit' ) }
-						help={ __( 'YouTube or Vimeo link.', 'arponsamanta-fitness-toolkit' ) }
+						label={ __(
+							'Form video URL',
+							'arponsamanta-fitness-toolkit'
+						) }
+						help={ __(
+							'YouTube or Vimeo link.',
+							'arponsamanta-fitness-toolkit'
+						) }
 						value={ meta.fb_video_url || '' }
 						onChange={ set( 'fb_video_url' ) }
 					/>
 					<TextControl
 						{ ...controlProps }
-						label={ __( 'Secondary muscles', 'arponsamanta-fitness-toolkit' ) }
+						label={ __(
+							'Secondary muscles',
+							'arponsamanta-fitness-toolkit'
+						) }
 						help={ __(
 							'Comma separated. Primary muscles are set in the Muscles panel.',
 							'arponsamanta-fitness-toolkit'
@@ -235,32 +274,62 @@ function ExercisePanels() {
 					rows={ meta.fb_steps }
 					onChange={ set( 'fb_steps' ) }
 					/* translators: %d: step number */
-					itemLabel={ __( 'Step %d', 'arponsamanta-fitness-toolkit' ) }
-					addLabel={ __( 'Add step', 'arponsamanta-fitness-toolkit' ) }
+					itemLabel={ __(
+						'Step %d',
+						'arponsamanta-fitness-toolkit'
+					) }
+					addLabel={ __(
+						'Add step',
+						'arponsamanta-fitness-toolkit'
+					) }
 					fields={ [
-						{ key: 'title', label: __( 'Cue', 'arponsamanta-fitness-toolkit' ) },
-						{ key: 'text', label: __( 'Detail', 'arponsamanta-fitness-toolkit' ) },
+						{
+							key: 'title',
+							label: __( 'Cue', 'arponsamanta-fitness-toolkit' ),
+						},
+						{
+							key: 'text',
+							label: __(
+								'Detail',
+								'arponsamanta-fitness-toolkit'
+							),
+						},
 					] }
 				/>
 			</PluginDocumentSettingPanel>
 			<PluginDocumentSettingPanel
 				name="fitbull-mistakes"
-				title={ __( 'Common mistakes', 'arponsamanta-fitness-toolkit' ) }
+				title={ __(
+					'Common mistakes',
+					'arponsamanta-fitness-toolkit'
+				) }
 			>
 				<RowList
 					rows={ meta.fb_mistakes }
 					onChange={ set( 'fb_mistakes' ) }
 					/* translators: %d: mistake number */
-					itemLabel={ __( 'Mistake %d', 'arponsamanta-fitness-toolkit' ) }
-					addLabel={ __( 'Add mistake', 'arponsamanta-fitness-toolkit' ) }
+					itemLabel={ __(
+						'Mistake %d',
+						'arponsamanta-fitness-toolkit'
+					) }
+					addLabel={ __(
+						'Add mistake',
+						'arponsamanta-fitness-toolkit'
+					) }
 					fields={ [
 						{
 							key: 'title',
-							label: __( 'Mistake', 'arponsamanta-fitness-toolkit' ),
+							label: __(
+								'Mistake',
+								'arponsamanta-fitness-toolkit'
+							),
 						},
 						{
 							key: 'fix',
-							label: __( 'How to fix it', 'arponsamanta-fitness-toolkit' ),
+							label: __(
+								'How to fix it',
+								'arponsamanta-fitness-toolkit'
+							),
 						},
 					] }
 				/>
@@ -290,26 +359,41 @@ function GearPanel() {
 				<TextControl
 					{ ...controlProps }
 					type="url"
-					label={ __( 'Where to buy (URL)', 'arponsamanta-fitness-toolkit' ) }
+					label={ __(
+						'Where to buy (URL)',
+						'arponsamanta-fitness-toolkit'
+					) }
 					value={ meta.fb_buy_url || '' }
 					onChange={ set( 'fb_buy_url' ) }
 				/>
 				<SelectControl
 					{ ...controlProps }
-					label={ __( 'Budget tier', 'arponsamanta-fitness-toolkit' ) }
+					label={ __(
+						'Budget tier',
+						'arponsamanta-fitness-toolkit'
+					) }
 					value={ meta.fb_budget_tier }
 					options={ [
 						{
 							value: 'starter',
-							label: __( 'Starter', 'arponsamanta-fitness-toolkit' ),
+							label: __(
+								'Starter',
+								'arponsamanta-fitness-toolkit'
+							),
 						},
 						{
 							value: 'serious',
-							label: __( 'Serious', 'arponsamanta-fitness-toolkit' ),
+							label: __(
+								'Serious',
+								'arponsamanta-fitness-toolkit'
+							),
 						},
 						{
 							value: 'full',
-							label: __( 'Full setup', 'arponsamanta-fitness-toolkit' ),
+							label: __(
+								'Full setup',
+								'arponsamanta-fitness-toolkit'
+							),
 						},
 					] }
 					onChange={ set( 'fb_budget_tier' ) }
@@ -318,7 +402,10 @@ function GearPanel() {
 					{ ...controlProps }
 					type="number"
 					min={ 1 }
-					label={ __( 'Buying order', 'arponsamanta-fitness-toolkit' ) }
+					label={ __(
+						'Buying order',
+						'arponsamanta-fitness-toolkit'
+					) }
 					help={ __(
 						'Lower numbers are recommended first within a tier.',
 						'arponsamanta-fitness-toolkit'
@@ -343,21 +430,36 @@ function SupplementPanel() {
 			<Flex direction="column" gap={ 4 }>
 				<SelectControl
 					{ ...controlProps }
-					label={ __( 'Strength of evidence', 'arponsamanta-fitness-toolkit' ) }
+					label={ __(
+						'Strength of evidence',
+						'arponsamanta-fitness-toolkit'
+					) }
 					value={ meta.fb_evidence }
 					options={ [
 						{
 							value: 'strong',
-							label: __( 'Strong', 'arponsamanta-fitness-toolkit' ),
+							label: __(
+								'Strong',
+								'arponsamanta-fitness-toolkit'
+							),
 						},
 						{
 							value: 'moderate',
-							label: __( 'Moderate', 'arponsamanta-fitness-toolkit' ),
+							label: __(
+								'Moderate',
+								'arponsamanta-fitness-toolkit'
+							),
 						},
-						{ value: 'weak', label: __( 'Weak', 'arponsamanta-fitness-toolkit' ) },
+						{
+							value: 'weak',
+							label: __( 'Weak', 'arponsamanta-fitness-toolkit' ),
+						},
 						{
 							value: 'none',
-							label: __( 'None / not rated', 'arponsamanta-fitness-toolkit' ),
+							label: __(
+								'None / not rated',
+								'arponsamanta-fitness-toolkit'
+							),
 						},
 					] }
 					onChange={ set( 'fb_evidence' ) }
@@ -383,7 +485,10 @@ function MethodField( { value, onChange } ) {
 	return (
 		<TextareaControl
 			__nextHasNoMarginBottom
-			label={ __( 'Steps, one per line', 'arponsamanta-fitness-toolkit' ) }
+			label={ __(
+				'Steps, one per line',
+				'arponsamanta-fitness-toolkit'
+			) }
 			rows={ 8 }
 			value={ draft }
 			onChange={ ( text ) => {
@@ -404,11 +509,17 @@ function RecipePanels() {
 	const number = ( key ) => ( value ) =>
 		set( key )( Math.max( 0, parseInt( value, 10 ) || 0 ) );
 	const fields = [
-		[ 'fb_calories', __( 'Calories (kcal)', 'arponsamanta-fitness-toolkit' ) ],
+		[
+			'fb_calories',
+			__( 'Calories (kcal)', 'arponsamanta-fitness-toolkit' ),
+		],
 		[ 'fb_protein_g', __( 'Protein (g)', 'arponsamanta-fitness-toolkit' ) ],
 		[ 'fb_carbs_g', __( 'Carbs (g)', 'arponsamanta-fitness-toolkit' ) ],
 		[ 'fb_fat_g', __( 'Fat (g)', 'arponsamanta-fitness-toolkit' ) ],
-		[ 'fb_prep_minutes', __( 'Time (minutes)', 'arponsamanta-fitness-toolkit' ) ],
+		[
+			'fb_prep_minutes',
+			__( 'Time (minutes)', 'arponsamanta-fitness-toolkit' ),
+		],
 	];
 	const fromMacros =
 		( meta.fb_protein_g || 0 ) * 4 +
@@ -422,7 +533,10 @@ function RecipePanels() {
 		<>
 			<PluginDocumentSettingPanel
 				name="fitbull-nutrition"
-				title={ __( 'Nutrition per serving', 'arponsamanta-fitness-toolkit' ) }
+				title={ __(
+					'Nutrition per serving',
+					'arponsamanta-fitness-toolkit'
+				) }
 			>
 				<Flex direction="column" gap={ 3 }>
 					{ fields.map( ( [ key, label ] ) => (
@@ -444,7 +558,10 @@ function RecipePanels() {
 					>
 						{ sprintf(
 							/* translators: %d: kcal calculated from macros */
-							__( 'Macros add up to %d kcal.', 'arponsamanta-fitness-toolkit' ),
+							__(
+								'Macros add up to %d kcal.',
+								'arponsamanta-fitness-toolkit'
+							),
 							fromMacros
 						) }
 						{ off &&
@@ -464,14 +581,29 @@ function RecipePanels() {
 					rows={ meta.fb_ingredients }
 					onChange={ set( 'fb_ingredients' ) }
 					/* translators: %d: ingredient number */
-					itemLabel={ __( 'Ingredient %d', 'arponsamanta-fitness-toolkit' ) }
-					addLabel={ __( 'Add ingredient', 'arponsamanta-fitness-toolkit' ) }
+					itemLabel={ __(
+						'Ingredient %d',
+						'arponsamanta-fitness-toolkit'
+					) }
+					addLabel={ __(
+						'Add ingredient',
+						'arponsamanta-fitness-toolkit'
+					) }
 					fields={ [
 						{
 							key: 'item',
-							label: __( 'Ingredient', 'arponsamanta-fitness-toolkit' ),
+							label: __(
+								'Ingredient',
+								'arponsamanta-fitness-toolkit'
+							),
 						},
-						{ key: 'qty', label: __( 'Amount', 'arponsamanta-fitness-toolkit' ) },
+						{
+							key: 'qty',
+							label: __(
+								'Amount',
+								'arponsamanta-fitness-toolkit'
+							),
+						},
 					] }
 				/>
 			</PluginDocumentSettingPanel>

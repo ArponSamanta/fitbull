@@ -48,7 +48,10 @@ export default function GearKit( { items = [] } ) {
 			<div className="fb-panel">
 				<fieldset className="fb-field">
 					<legend>
-						{ __( 'How far do you want to go?', 'arponsamanta-fitness-toolkit' ) }
+						{ __(
+							'How far do you want to go?',
+							'arponsamanta-fitness-toolkit'
+						) }
 					</legend>
 					<div
 						className={ `fb-seg fb-seg--${ TIERS.length }` }
@@ -84,7 +87,10 @@ export default function GearKit( { items = [] } ) {
 								<span className="fb-num">
 									{ sprintf(
 										/* translators: %s: price in rupees */
-										__( 'About ₹%s', 'arponsamanta-fitness-toolkit' ),
+										__(
+											'About ₹%s',
+											'arponsamanta-fitness-toolkit'
+										),
 										item.price.toLocaleString( 'en-IN' )
 									) }
 								</span>
@@ -96,7 +102,10 @@ export default function GearKit( { items = [] } ) {
 									rel="sponsored nofollow noopener noreferrer"
 									target="_blank"
 								>
-									{ __( 'Check price', 'arponsamanta-fitness-toolkit' ) }
+									{ __(
+										'Check price',
+										'arponsamanta-fitness-toolkit'
+									) }
 								</a>
 							) }
 						</div>
@@ -106,7 +115,10 @@ export default function GearKit( { items = [] } ) {
 
 			{ kit.length === 0 && (
 				<p className="fb-muted">
-					{ __( 'No gear added yet.', 'arponsamanta-fitness-toolkit' ) }
+					{ __(
+						'No gear added yet.',
+						'arponsamanta-fitness-toolkit'
+					) }
 				</p>
 			) }
 			{ priced.length > 0 && (

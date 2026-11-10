@@ -7,38 +7,24 @@
 	"category": "theme",
 	"icon": "info-outline",
 	"description": "Key facts for the current item: macros for a recipe, evidence for a supplement, tier and price for gear, level for an exercise.",
-	"keywords": [
-		"facts",
-		"badges"
-	],
+	"keywords": [ "facts", "badges" ],
 	"textdomain": "arponsamanta-fitness-toolkit",
 	"attributes": {
 		"layout": {
 			"type": "string",
-			"enum": [
-				"card",
-				"full"
-			],
+			"enum": [ "card", "full" ],
 			"default": "card"
 		}
 	},
 	"supports": {
 		"html": false,
-		"align": [
-			"wide"
-		],
+		"align": [ "wide" ],
 		"spacing": {
 			"margin": true
 		}
 	},
 	"editorScript": "file:./index.js",
-	"usesContext": [
-		"postId",
-		"postType"
-	],
-	"style": [
-		"file:./style-index.css",
-		"arponsamanta-fitness-toolkit-ui"
-	],
+	"usesContext": [ "postId", "postType" ],
+	"style": [ "file:./style-index.css", "arponsamanta-fitness-toolkit-ui" ],
 	"render": "file:./render.php"
 }

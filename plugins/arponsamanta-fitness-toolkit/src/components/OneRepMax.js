@@ -18,7 +18,10 @@ export default function OneRepMax() {
 				<div className="fb-row">
 					<div className="fb-field">
 						<label htmlFor={ weightId }>
-							{ __( 'Weight lifted (kg)', 'arponsamanta-fitness-toolkit' ) }
+							{ __(
+								'Weight lifted (kg)',
+								'arponsamanta-fitness-toolkit'
+							) }
 						</label>
 						<input
 							id={ weightId }
@@ -33,7 +36,10 @@ export default function OneRepMax() {
 					</div>
 					<div className="fb-field">
 						<label htmlFor={ repsId }>
-							{ __( 'Reps done', 'arponsamanta-fitness-toolkit' ) }
+							{ __(
+								'Reps done',
+								'arponsamanta-fitness-toolkit'
+							) }
 						</label>
 						<input
 							id={ repsId }
@@ -54,7 +60,10 @@ export default function OneRepMax() {
 								<span className="fb-stat__value">
 									{ sprintf(
 										/* translators: %s: weight in kg */
-										__( '%s kg', 'arponsamanta-fitness-toolkit' ),
+										__(
+											'%s kg',
+											'arponsamanta-fitness-toolkit'
+										),
 										max
 									) }
 								</span>
@@ -93,17 +102,26 @@ export default function OneRepMax() {
 			{ rows.length > 0 && (
 				<div className="fb-panel">
 					<h3 className="fb-panel__title">
-						{ __( 'Working weights', 'arponsamanta-fitness-toolkit' ) }
+						{ __(
+							'Working weights',
+							'arponsamanta-fitness-toolkit'
+						) }
 					</h3>
 					<div className="fb-table-wrap">
 						<table className="fb-table">
 							<thead>
 								<tr>
 									<th scope="col">
-										{ __( '% of max', 'arponsamanta-fitness-toolkit' ) }
+										{ __(
+											'% of max',
+											'arponsamanta-fitness-toolkit'
+										) }
 									</th>
 									<th scope="col">
-										{ __( 'Weight', 'arponsamanta-fitness-toolkit' ) }
+										{ __(
+											'Weight',
+											'arponsamanta-fitness-toolkit'
+										) }
 									</th>
 									<th scope="col">
 										{ __(
@@ -122,7 +140,10 @@ export default function OneRepMax() {
 										<td className="fb-num">
 											{ sprintf(
 												/* translators: %s: weight in kg */
-												__( '%s kg', 'arponsamanta-fitness-toolkit' ),
+												__(
+													'%s kg',
+													'arponsamanta-fitness-toolkit'
+												),
 												row.weight
 											) }
 										</td>

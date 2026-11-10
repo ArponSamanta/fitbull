@@ -12,11 +12,19 @@ registerBlockType( metadata.name, {
 		return (
 			<>
 				<InspectorControls>
-					<PanelBody title={ __( 'Settings', 'arponsamanta-fitness-toolkit' ) }>
+					<PanelBody
+						title={ __(
+							'Settings',
+							'arponsamanta-fitness-toolkit'
+						) }
+					>
 						<RangeControl
 							__nextHasNoMarginBottom
 							__next40pxDefaultSize
-							label={ __( 'Recipes per page', 'arponsamanta-fitness-toolkit' ) }
+							label={ __(
+								'Recipes per page',
+								'arponsamanta-fitness-toolkit'
+							) }
 							min={ 3 }
 							max={ 48 }
 							value={ attributes.perPage }

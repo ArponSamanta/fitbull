@@ -124,7 +124,10 @@ export default function ExerciseLibrary( {
 					<div
 						className="fb-lib__chips"
 						role="group"
-						aria-label={ __( 'Muscle', 'arponsamanta-fitness-toolkit' ) }
+						aria-label={ __(
+							'Muscle',
+							'arponsamanta-fitness-toolkit'
+						) }
 					>
 						<button
 							type="button"
@@ -132,7 +135,10 @@ export default function ExerciseLibrary( {
 							aria-pressed={ ! muscle }
 							onClick={ () => setMuscle( '' ) }
 						>
-							{ __( 'All muscles', 'arponsamanta-fitness-toolkit' ) }
+							{ __(
+								'All muscles',
+								'arponsamanta-fitness-toolkit'
+							) }
 						</button>
 						{ filters.muscles.map( ( term ) => (
 							<button
@@ -154,7 +160,10 @@ export default function ExerciseLibrary( {
 					<div className="fb-lib__row">
 						<div className="fb-lib__field fb-lib__field--grow">
 							<label htmlFor={ searchId }>
-								{ __( 'Search', 'arponsamanta-fitness-toolkit' ) }
+								{ __(
+									'Search',
+									'arponsamanta-fitness-toolkit'
+								) }
 							</label>
 							<input
 								id={ searchId }
@@ -171,7 +180,10 @@ export default function ExerciseLibrary( {
 						</div>
 						<div className="fb-lib__field">
 							<label htmlFor={ equipmentId }>
-								{ __( 'Equipment', 'arponsamanta-fitness-toolkit' ) }
+								{ __(
+									'Equipment',
+									'arponsamanta-fitness-toolkit'
+								) }
 							</label>
 							<select
 								id={ equipmentId }
@@ -181,7 +193,10 @@ export default function ExerciseLibrary( {
 								}
 							>
 								<option value="">
-									{ __( 'Any', 'arponsamanta-fitness-toolkit' ) }
+									{ __(
+										'Any',
+										'arponsamanta-fitness-toolkit'
+									) }
 								</option>
 								{ filters.equipment.map( ( term ) => (
 									<option
@@ -195,7 +210,10 @@ export default function ExerciseLibrary( {
 						</div>
 						<div className="fb-lib__field">
 							<label htmlFor={ levelId }>
-								{ __( 'Level', 'arponsamanta-fitness-toolkit' ) }
+								{ __(
+									'Level',
+									'arponsamanta-fitness-toolkit'
+								) }
 							</label>
 							<select
 								id={ levelId }
@@ -205,7 +223,10 @@ export default function ExerciseLibrary( {
 								}
 							>
 								<option value="">
-									{ __( 'Any', 'arponsamanta-fitness-toolkit' ) }
+									{ __(
+										'Any',
+										'arponsamanta-fitness-toolkit'
+									) }
 								</option>
 								{ filters.difficulties.map( ( level ) => (
 									<option key={ level } value={ level }>
@@ -237,7 +258,10 @@ export default function ExerciseLibrary( {
 						className="fb-lib__reset"
 						onClick={ reset }
 					>
-						{ __( 'Clear filters', 'arponsamanta-fitness-toolkit' ) }
+						{ __(
+							'Clear filters',
+							'arponsamanta-fitness-toolkit'
+						) }
 					</button>
 				) }
 			</div>

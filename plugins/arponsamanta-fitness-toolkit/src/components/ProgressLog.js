@@ -122,7 +122,12 @@ export default function ProgressLog( { exercises = [], today } ) {
 		apiFetch( { path: PATH } )
 			.then( setEntries )
 			.catch( () =>
-				setMessage( __( 'Could not load your log.', 'arponsamanta-fitness-toolkit' ) )
+				setMessage(
+					__(
+						'Could not load your log.',
+						'arponsamanta-fitness-toolkit'
+					)
+				)
 			)
 			.finally( () => setLoading( false ) );
 	}, [] );
@@ -172,7 +177,8 @@ export default function ProgressLog( { exercises = [], today } ) {
 			} )
 			.catch( ( e ) =>
 				setMessage(
-					e.message || __( 'Could not save.', 'arponsamanta-fitness-toolkit' )
+					e.message ||
+						__( 'Could not save.', 'arponsamanta-fitness-toolkit' )
 				)
 			)
 			.finally( () => setSaving( false ) );
@@ -196,7 +202,10 @@ export default function ProgressLog( { exercises = [], today } ) {
 				className="fb-seg"
 				style={ { '--fb-count': 2 } }
 				role="group"
-				aria-label={ __( 'What to log', 'arponsamanta-fitness-toolkit' ) }
+				aria-label={ __(
+					'What to log',
+					'arponsamanta-fitness-toolkit'
+				) }
 			>
 				<button
 					type="button"
@@ -232,7 +241,10 @@ export default function ProgressLog( { exercises = [], today } ) {
 					{ tab === 'lift' && (
 						<div className="fb-field">
 							<label htmlFor={ exerciseId }>
-								{ __( 'Exercise', 'arponsamanta-fitness-toolkit' ) }
+								{ __(
+									'Exercise',
+									'arponsamanta-fitness-toolkit'
+								) }
 							</label>
 							<select
 								id={ exerciseId }
@@ -250,8 +262,14 @@ export default function ProgressLog( { exercises = [], today } ) {
 					<div className="fb-field">
 						<label htmlFor={ weightId }>
 							{ tab === 'weight'
-								? __( 'Bodyweight (kg)', 'arponsamanta-fitness-toolkit' )
-								: __( 'Weight lifted (kg)', 'arponsamanta-fitness-toolkit' ) }
+								? __(
+										'Bodyweight (kg)',
+										'arponsamanta-fitness-toolkit'
+								  )
+								: __(
+										'Weight lifted (kg)',
+										'arponsamanta-fitness-toolkit'
+								  ) }
 						</label>
 						<input
 							id={ weightId }
@@ -288,7 +306,10 @@ export default function ProgressLog( { exercises = [], today } ) {
 					>
 						{ saving
 							? __( 'Saving…', 'arponsamanta-fitness-toolkit' )
-							: __( 'Add entry', 'arponsamanta-fitness-toolkit' ) }
+							: __(
+									'Add entry',
+									'arponsamanta-fitness-toolkit'
+							  ) }
 					</button>
 				</div>
 				{ message && (
@@ -310,7 +331,10 @@ export default function ProgressLog( { exercises = [], today } ) {
 			{ tab === 'lift' && bests.length > 0 && (
 				<div className="fb-panel">
 					<h3 className="fb-panel__title">
-						{ __( 'Best estimated maxes', 'arponsamanta-fitness-toolkit' ) }
+						{ __(
+							'Best estimated maxes',
+							'arponsamanta-fitness-toolkit'
+						) }
 					</h3>
 					<div className="fb-stats">
 						{ bests.slice( 0, 6 ).map( ( b ) => (
@@ -347,7 +371,10 @@ export default function ProgressLog( { exercises = [], today } ) {
 				) }
 				{ ! loading && shown.length === 0 && (
 					<p className="fb-muted">
-						{ __( 'No entries yet.', 'arponsamanta-fitness-toolkit' ) }
+						{ __(
+							'No entries yet.',
+							'arponsamanta-fitness-toolkit'
+						) }
 					</p>
 				) }
 				{ shown.length > 0 && (
@@ -356,24 +383,39 @@ export default function ProgressLog( { exercises = [], today } ) {
 							<thead>
 								<tr>
 									<th scope="col">
-										{ __( 'Date', 'arponsamanta-fitness-toolkit' ) }
+										{ __(
+											'Date',
+											'arponsamanta-fitness-toolkit'
+										) }
 									</th>
 									{ tab === 'lift' && (
 										<th scope="col">
-											{ __( 'Exercise', 'arponsamanta-fitness-toolkit' ) }
+											{ __(
+												'Exercise',
+												'arponsamanta-fitness-toolkit'
+											) }
 										</th>
 									) }
 									<th scope="col">
-										{ __( 'Weight', 'arponsamanta-fitness-toolkit' ) }
+										{ __(
+											'Weight',
+											'arponsamanta-fitness-toolkit'
+										) }
 									</th>
 									{ tab === 'lift' && (
 										<th scope="col">
-											{ __( 'Reps', 'arponsamanta-fitness-toolkit' ) }
+											{ __(
+												'Reps',
+												'arponsamanta-fitness-toolkit'
+											) }
 										</th>
 									) }
 									<th scope="col">
 										<span className="fb-sr-only">
-											{ __( 'Actions', 'arponsamanta-fitness-toolkit' ) }
+											{ __(
+												'Actions',
+												'arponsamanta-fitness-toolkit'
+											) }
 										</span>
 									</th>
 								</tr>

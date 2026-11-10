@@ -12,10 +12,15 @@ function Edit( { attributes, setAttributes } ) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={ __( 'Settings', 'arponsamanta-fitness-toolkit' ) }>
+				<PanelBody
+					title={ __( 'Settings', 'arponsamanta-fitness-toolkit' ) }
+				>
 					<ToggleControl
 						__nextHasNoMarginBottom
-						label={ __( 'Compact layout', 'arponsamanta-fitness-toolkit' ) }
+						label={ __(
+							'Compact layout',
+							'arponsamanta-fitness-toolkit'
+						) }
 						help={ __(
 							'Hides the BMR and maintenance line, for tight spaces like a hero.',
 							'arponsamanta-fitness-toolkit'
@@ -28,7 +33,10 @@ function Edit( { attributes, setAttributes } ) {
 					<TextControl
 						__nextHasNoMarginBottom
 						__next40pxDefaultSize
-						label={ __( 'Meal plan link', 'arponsamanta-fitness-toolkit' ) }
+						label={ __(
+							'Meal plan link',
+							'arponsamanta-fitness-toolkit'
+						) }
 						help={ __(
 							'Optional. Shows a button under the results.',
 							'arponsamanta-fitness-toolkit'

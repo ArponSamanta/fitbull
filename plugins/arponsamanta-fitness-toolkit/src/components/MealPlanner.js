@@ -8,8 +8,14 @@ import { calculateMacros } from '../lib/macros';
 const DIETS = [
 	{ value: 'veg', label: __( 'Vegetarian', 'arponsamanta-fitness-toolkit' ) },
 	{ value: 'vegan', label: __( 'Vegan', 'arponsamanta-fitness-toolkit' ) },
-	{ value: 'eggetarian', label: __( 'Eggetarian', 'arponsamanta-fitness-toolkit' ) },
-	{ value: 'non-veg', label: __( 'Non-veg', 'arponsamanta-fitness-toolkit' ) },
+	{
+		value: 'eggetarian',
+		label: __( 'Eggetarian', 'arponsamanta-fitness-toolkit' ),
+	},
+	{
+		value: 'non-veg',
+		label: __( 'Non-veg', 'arponsamanta-fitness-toolkit' ),
+	},
 ];
 
 const MEALS = {
@@ -59,7 +65,10 @@ function Meter( { label, value, target, unit } ) {
 				<span className="fb-muted fb-num">
 					{ sprintf(
 						/* translators: 1: planned amount, 2: target amount, 3: unit */
-						__( '%1$s of %2$s %3$s', 'arponsamanta-fitness-toolkit' ),
+						__(
+							'%1$s of %2$s %3$s',
+							'arponsamanta-fitness-toolkit'
+						),
 						value.toLocaleString( 'en-IN' ),
 						target.toLocaleString( 'en-IN' ),
 						unit
@@ -121,7 +130,10 @@ export default function MealPlanner() {
 				.catch( ( e ) =>
 					setError(
 						e.message ||
-							__( 'Could not build a plan.', 'arponsamanta-fitness-toolkit' )
+							__(
+								'Could not build a plan.',
+								'arponsamanta-fitness-toolkit'
+							)
 					)
 				)
 				.finally( () => setLoading( false ) );
@@ -153,7 +165,10 @@ export default function MealPlanner() {
 				<div className="fb-row">
 					<div className="fb-field">
 						<label htmlFor={ kcalId }>
-							{ __( 'Calories per day', 'arponsamanta-fitness-toolkit' ) }
+							{ __(
+								'Calories per day',
+								'arponsamanta-fitness-toolkit'
+							) }
 						</label>
 						<input
 							id={ kcalId }
@@ -167,7 +182,10 @@ export default function MealPlanner() {
 					</div>
 					<div className="fb-field">
 						<label htmlFor={ proteinId }>
-							{ __( 'Protein (g)', 'arponsamanta-fitness-toolkit' ) }
+							{ __(
+								'Protein (g)',
+								'arponsamanta-fitness-toolkit'
+							) }
 						</label>
 						<input
 							id={ proteinId }
@@ -204,7 +222,10 @@ export default function MealPlanner() {
 							checked={ snack }
 							onChange={ ( e ) => setSnack( e.target.checked ) }
 						/>
-						{ __( 'Include a snack', 'arponsamanta-fitness-toolkit' ) }
+						{ __(
+							'Include a snack',
+							'arponsamanta-fitness-toolkit'
+						) }
 					</label>
 					<button
 						type="button"
@@ -218,7 +239,10 @@ export default function MealPlanner() {
 							)
 						}
 					>
-						{ __( 'Shuffle meals', 'arponsamanta-fitness-toolkit' ) }
+						{ __(
+							'Shuffle meals',
+							'arponsamanta-fitness-toolkit'
+						) }
 					</button>
 				</div>
 			</div>
@@ -245,13 +269,19 @@ export default function MealPlanner() {
 						<>
 							<div className="fb-panel">
 								<Meter
-									label={ __( 'Calories', 'arponsamanta-fitness-toolkit' ) }
+									label={ __(
+										'Calories',
+										'arponsamanta-fitness-toolkit'
+									) }
 									value={ plan.totals.calories }
 									target={ plan.target.calories }
 									unit="kcal"
 								/>
 								<Meter
-									label={ __( 'Protein', 'arponsamanta-fitness-toolkit' ) }
+									label={ __(
+										'Protein',
+										'arponsamanta-fitness-toolkit'
+									) }
 									value={ plan.totals.protein_g }
 									target={ plan.target.protein_g }
 									unit="g"

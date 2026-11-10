@@ -15,7 +15,10 @@ function Edit( { context: { postId, postType } } ) {
 			<div { ...blockProps }>
 				<Placeholder
 					icon="list-view"
-					label={ __( 'Exercise details', 'arponsamanta-fitness-toolkit' ) }
+					label={ __(
+						'Exercise details',
+						'arponsamanta-fitness-toolkit'
+					) }
 					instructions={ __(
 						'Shows the steps, mistakes and muscles of the exercise being viewed. Fill them in from the Exercise panel in the sidebar.',
 						'arponsamanta-fitness-toolkit'

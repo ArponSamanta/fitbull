@@ -7,29 +7,18 @@
 	"category": "theme",
 	"icon": "list-view",
 	"description": "Nutrition, ingredients and method for the current recipe.",
-	"keywords": [
-		"recipe",
-		"ingredients"
-	],
+	"keywords": [ "recipe", "ingredients" ],
 	"textdomain": "arponsamanta-fitness-toolkit",
 	"attributes": {},
 	"supports": {
 		"html": false,
-		"align": [
-			"wide"
-		],
+		"align": [ "wide" ],
 		"spacing": {
 			"margin": true
 		}
 	},
 	"editorScript": "file:./index.js",
-	"usesContext": [
-		"postId",
-		"postType"
-	],
-	"style": [
-		"file:./style-index.css",
-		"arponsamanta-fitness-toolkit-ui"
-	],
+	"usesContext": [ "postId", "postType" ],
+	"style": [ "file:./style-index.css", "arponsamanta-fitness-toolkit-ui" ],
 	"render": "file:./render.php"
 }

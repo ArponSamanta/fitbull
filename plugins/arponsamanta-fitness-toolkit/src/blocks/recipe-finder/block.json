@@ -7,12 +7,7 @@
 	"category": "widgets",
 	"icon": "carrot",
 	"description": "Filter recipes by diet, meal and minimum protein.",
-	"keywords": [
-		"recipe",
-		"diet",
-		"food",
-		"protein"
-	],
+	"keywords": [ "recipe", "diet", "food", "protein" ],
 	"textdomain": "arponsamanta-fitness-toolkit",
 	"attributes": {
 		"perPage": {
@@ -22,18 +17,13 @@
 	},
 	"supports": {
 		"html": false,
-		"align": [
-			"wide"
-		],
+		"align": [ "wide" ],
 		"spacing": {
 			"margin": true
 		}
 	},
 	"editorScript": "file:./index.js",
 	"viewScript": "file:./view.js",
-	"style": [
-		"file:./style-index.css",
-		"arponsamanta-fitness-toolkit-ui"
-	],
+	"style": [ "file:./style-index.css", "arponsamanta-fitness-toolkit-ui" ],
 	"render": "file:./render.php"
 }

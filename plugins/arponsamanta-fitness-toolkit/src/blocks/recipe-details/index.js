@@ -15,7 +15,10 @@ registerBlockType( metadata.name, {
 				<div { ...blockProps }>
 					<Placeholder
 						icon="list-view"
-						label={ __( 'Recipe details', 'arponsamanta-fitness-toolkit' ) }
+						label={ __(
+							'Recipe details',
+							'arponsamanta-fitness-toolkit'
+						) }
 						instructions={ __(
 							'Shows the nutrition, ingredients and method of the recipe being viewed. Fill them in from the Recipe panels in the sidebar.',
 							'arponsamanta-fitness-toolkit'

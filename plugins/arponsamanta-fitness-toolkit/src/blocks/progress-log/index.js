@@ -12,7 +12,10 @@ registerBlockType( metadata.name, {
 			<div { ...useBlockProps() }>
 				<Placeholder
 					icon="chart-line"
-					label={ __( 'Progress log', 'arponsamanta-fitness-toolkit' ) }
+					label={ __(
+						'Progress log',
+						'arponsamanta-fitness-toolkit'
+					) }
 					instructions={ __(
 						'Signed-in visitors log their bodyweight and lifts here. Logged-out visitors see a prompt to log in.',
 						'arponsamanta-fitness-toolkit'

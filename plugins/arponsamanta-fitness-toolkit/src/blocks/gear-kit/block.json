@@ -7,28 +7,18 @@
 	"category": "widgets",
 	"icon": "cart",
 	"description": "What to buy first for a home gym, by budget tier.",
-	"keywords": [
-		"gear",
-		"equipment",
-		"home gym",
-		"budget"
-	],
+	"keywords": [ "gear", "equipment", "home gym", "budget" ],
 	"textdomain": "arponsamanta-fitness-toolkit",
 	"attributes": {},
 	"supports": {
 		"html": false,
-		"align": [
-			"wide"
-		],
+		"align": [ "wide" ],
 		"spacing": {
 			"margin": true
 		}
 	},
 	"editorScript": "file:./index.js",
 	"viewScript": "file:./view.js",
-	"style": [
-		"file:./style-index.css",
-		"arponsamanta-fitness-toolkit-ui"
-	],
+	"style": [ "file:./style-index.css", "arponsamanta-fitness-toolkit-ui" ],
 	"render": "file:./render.php"
 }

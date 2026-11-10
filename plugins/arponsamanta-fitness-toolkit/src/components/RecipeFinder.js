@@ -114,7 +114,10 @@ export default function RecipeFinder( { perPage = 12, initial, filters } ) {
 							onChange={ ( e ) => setMeal( e.target.value ) }
 						>
 							<option value="">
-								{ __( 'Any meal', 'arponsamanta-fitness-toolkit' ) }
+								{ __(
+									'Any meal',
+									'arponsamanta-fitness-toolkit'
+								) }
 							</option>
 							{ filters.meals.map( ( term ) => (
 								<option key={ term.slug } value={ term.slug }>
@@ -127,7 +130,10 @@ export default function RecipeFinder( { perPage = 12, initial, filters } ) {
 						<label htmlFor={ proteinId }>
 							{ sprintf(
 								/* translators: %d: grams of protein */
-								__( 'At least %d g protein', 'arponsamanta-fitness-toolkit' ),
+								__(
+									'At least %d g protein',
+									'arponsamanta-fitness-toolkit'
+								),
 								minProtein
 							) }
 						</label>
@@ -155,7 +161,12 @@ export default function RecipeFinder( { perPage = 12, initial, filters } ) {
 			<p className="fb-muted" aria-live="polite">
 				{ sprintf(
 					/* translators: %d: number of recipes */
-					_n( '%d recipe', '%d recipes', data.total, 'arponsamanta-fitness-toolkit' ),
+					_n(
+						'%d recipe',
+						'%d recipes',
+						data.total,
+						'arponsamanta-fitness-toolkit'
+					),
 					data.total
 				) }
 			</p>

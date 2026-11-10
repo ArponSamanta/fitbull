@@ -17,11 +17,16 @@ function Edit( { attributes, setAttributes } ) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={ __( 'Settings', 'arponsamanta-fitness-toolkit' ) }>
+				<PanelBody
+					title={ __( 'Settings', 'arponsamanta-fitness-toolkit' ) }
+				>
 					<RangeControl
 						__nextHasNoMarginBottom
 						__next40pxDefaultSize
-						label={ __( 'Exercises per page', 'arponsamanta-fitness-toolkit' ) }
+						label={ __(
+							'Exercises per page',
+							'arponsamanta-fitness-toolkit'
+						) }
 						min={ 3 }
 						max={ 48 }
 						value={ perPage }
@@ -31,7 +36,10 @@ function Edit( { attributes, setAttributes } ) {
 					/>
 					<ToggleControl
 						__nextHasNoMarginBottom
-						label={ __( 'Show filters', 'arponsamanta-fitness-toolkit' ) }
+						label={ __(
+							'Show filters',
+							'arponsamanta-fitness-toolkit'
+						) }
 						checked={ showFilters }
 						onChange={ ( value ) =>
 							setAttributes( { showFilters: value } )

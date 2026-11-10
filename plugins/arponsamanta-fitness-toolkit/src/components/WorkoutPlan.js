@@ -4,14 +4,29 @@ import { __, sprintf } from '@wordpress/i18n';
 import { addQueryArgs } from '@wordpress/url';
 
 const GOALS = [
-	{ value: 'muscle', label: __( 'Build muscle', 'arponsamanta-fitness-toolkit' ) },
-	{ value: 'strength', label: __( 'Get stronger', 'arponsamanta-fitness-toolkit' ) },
-	{ value: 'fat_loss', label: __( 'Lose fat', 'arponsamanta-fitness-toolkit' ) },
+	{
+		value: 'muscle',
+		label: __( 'Build muscle', 'arponsamanta-fitness-toolkit' ),
+	},
+	{
+		value: 'strength',
+		label: __( 'Get stronger', 'arponsamanta-fitness-toolkit' ),
+	},
+	{
+		value: 'fat_loss',
+		label: __( 'Lose fat', 'arponsamanta-fitness-toolkit' ),
+	},
 ];
 
 const LEVELS = [
-	{ value: 'beginner', label: __( 'Beginner', 'arponsamanta-fitness-toolkit' ) },
-	{ value: 'intermediate', label: __( 'Intermediate', 'arponsamanta-fitness-toolkit' ) },
+	{
+		value: 'beginner',
+		label: __( 'Beginner', 'arponsamanta-fitness-toolkit' ),
+	},
+	{
+		value: 'intermediate',
+		label: __( 'Intermediate', 'arponsamanta-fitness-toolkit' ),
+	},
 ];
 
 const SESSIONS = {
@@ -82,7 +97,10 @@ function ExerciseRow( { item, onSwap } ) {
 				<span className="fb-muted">
 					{ sprintf(
 						/* translators: 1: sets, 2: reps, 3: rest in seconds */
-						__( '%1$d sets × %2$s · rest %3$ds', 'arponsamanta-fitness-toolkit' ),
+						__(
+							'%1$d sets × %2$s · rest %3$ds',
+							'arponsamanta-fitness-toolkit'
+						),
 						item.sets,
 						item.reps,
 						item.rest_seconds
@@ -96,7 +114,10 @@ function ExerciseRow( { item, onSwap } ) {
 					onClick={ onSwap }
 					aria-label={ sprintf(
 						/* translators: %s: exercise name */
-						__( 'Swap %s for another exercise', 'arponsamanta-fitness-toolkit' ),
+						__(
+							'Swap %s for another exercise',
+							'arponsamanta-fitness-toolkit'
+						),
 						item.title
 					) }
 				>
@@ -139,7 +160,11 @@ export default function WorkoutPlan( { equipment = [] } ) {
 			.then( setPlan )
 			.catch( ( e ) =>
 				setError(
-					e.message || __( 'Could not build a plan.', 'arponsamanta-fitness-toolkit' )
+					e.message ||
+						__(
+							'Could not build a plan.',
+							'arponsamanta-fitness-toolkit'
+						)
 				)
 			)
 			.finally( () => setLoading( false ) );
@@ -184,7 +209,10 @@ export default function WorkoutPlan( { equipment = [] } ) {
 					onChange={ setGoal }
 				/>
 				<Segmented
-					label={ __( 'Days per week', 'arponsamanta-fitness-toolkit' ) }
+					label={ __(
+						'Days per week',
+						'arponsamanta-fitness-toolkit'
+					) }
 					options={ [ 2, 3, 4, 5 ].map( ( n ) => ( {
 						value: n,
 						label: String( n ),
@@ -231,7 +259,10 @@ export default function WorkoutPlan( { equipment = [] } ) {
 					>
 						{ loading
 							? __( 'Building…', 'arponsamanta-fitness-toolkit' )
-							: __( 'Build my plan', 'arponsamanta-fitness-toolkit' ) }
+							: __(
+									'Build my plan',
+									'arponsamanta-fitness-toolkit'
+							  ) }
 					</button>
 				</div>
 			</form>
@@ -249,14 +280,20 @@ export default function WorkoutPlan( { equipment = [] } ) {
 							className="fb-btn fb-btn--ghost fb-btn--small fb-no-print"
 							onClick={ () => window.print() }
 						>
-							{ __( 'Print plan', 'arponsamanta-fitness-toolkit' ) }
+							{ __(
+								'Print plan',
+								'arponsamanta-fitness-toolkit'
+							) }
 						</button>
 					</div>
 
 					{ plan.notes.length > 0 && (
 						<p className="fb-notice">
 							<strong>
-								{ __( 'Gap in your plan:', 'arponsamanta-fitness-toolkit' ) }
+								{ __(
+									'Gap in your plan:',
+									'arponsamanta-fitness-toolkit'
+								) }
 							</strong>{ ' ' }
 							{ sprintf(
 								/* translators: %s: list of movement types */
