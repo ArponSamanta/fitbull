@@ -4,7 +4,7 @@ Tags: fitness, workout, recipes, nutrition, gym
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,7 +48,7 @@ Go to Tools > Fitness Toolkit demo content, or run `wp fitness-toolkit seed`, to
 
 = Does it need a particular theme? =
 
-No. The blocks work with any block theme.
+No. The blocks work with any block theme. On WordPress 6.7 and later the plugin also adds templates for exercises, recipes, gear and supplements; your theme can override them in the Site Editor.
 
 = Is the information medical advice? =
 
@@ -75,6 +75,10 @@ The macro calculator remembers its inputs in the visitor's own browser (localSto
 5. Progress log.
 
 == Changelog ==
+
+= 1.0.3 =
+* Adds block templates for the single and archive views of exercises, recipes, gear and supplements (WordPress 6.7+).
+* The demo importer creates a Home page and a Guides page and sets them under Settings > Reading, if the site still shows its latest posts.
 
 = 1.0.2 =
 * Renamed to ArponSamanta Fitness Toolkit (slug arponsamanta-fitness-toolkit).

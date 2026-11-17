@@ -58,7 +58,7 @@ Theme reviewers check that the theme works **without** the plugin. That's why th
 
 ## Optional: a permanent free site
 
-Playground is enough for a portfolio. If you want a site that keeps its data, free PHP hosts exist. They are usually slow, show ads or have limits, so read their terms before you rely on one. Install WordPress there, upload the two zips, then use Tools > Fitbull demo content.
+Playground is enough for a portfolio. If you want a site that keeps its data, free PHP hosts exist. They are usually slow, show ads or have limits, so read their terms before you rely on one. Install WordPress there, upload the two zips, then use Tools > Fitness Toolkit demo content.
 
 ## Sources
 

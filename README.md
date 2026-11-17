@@ -21,7 +21,7 @@ It is a **custom block theme** plus a **custom plugin**. There are no page build
 | **Recipes** | 16 Indian recipes with macros, ingredients and method, filtered by diet, meal and minimum protein. |
 | **Gear and supplements** | A home-gym kit builder in buying order by budget tier, and supplements rated by evidence. |
 | **Editor experience** | Sidebar panels for every structured field, a calorie sanity check for recipes, and a one-click demo importer under Tools. |
-| **Theme** | `theme.json` design tokens, self-hosted fonts, patterns, and templates for every content type. It works without the plugin and hides plugin-only sections. |
+| **Theme** | `theme.json` design tokens, self-hosted fonts, patterns, and templates for posts, pages, search and a landing page. It works without the plugin and hides plugin-only sections. Templates for the plugin's content types ship with the plugin. |
 | **Quality** | ESLint, Stylelint, Jest, PHPUnit and the build run in GitHub Actions. It passes WordPress.org's Plugin Check and Theme Check. |
 
 | Workout plan | Meal plan | Recipe | Mobile |
@@ -86,7 +86,7 @@ docker compose run --rm wpcli wp plugin activate arponsamanta-fitness-toolkit
 docker compose run --rm wpcli wp fitness-toolkit seed
 ```
 
-You can also skip the last command and use **Tools > Fitbull demo content** in wp-admin.
+You can also skip the last command and use **Tools > Fitness Toolkit demo content** in wp-admin.
 
 ### Development
 

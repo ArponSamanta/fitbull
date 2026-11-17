@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       ArponSamanta Fitness Toolkit
  * Description:       Exercise library, workout plan generator, Indian recipes and meal planner, macro and 1RM calculators, progress log, gear and supplement guides.
- * Version:           1.0.2
+ * Version:           1.0.3
  * Requires at least: 6.6
  * Requires PHP:      8.0
  * Author:            Arpon Samanta
@@ -16,7 +16,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'FITBULL_CORE_VERSION', '1.0.2' );
+define( 'FITBULL_CORE_VERSION', '1.0.3' );
 define( 'FITBULL_CORE_FILE', __FILE__ );
 define( 'FITBULL_CORE_DIR', plugin_dir_path( __FILE__ ) );
 define( 'FITBULL_CORE_URL', plugin_dir_url( __FILE__ ) );
@@ -32,6 +32,7 @@ require_once FITBULL_CORE_DIR . 'includes/class-rest-planner.php';
 require_once FITBULL_CORE_DIR . 'includes/class-rest-logs.php';
 require_once FITBULL_CORE_DIR . 'includes/class-blocks.php';
 require_once FITBULL_CORE_DIR . 'includes/class-editor.php';
+require_once FITBULL_CORE_DIR . 'includes/class-templates.php';
 require_once FITBULL_CORE_DIR . 'includes/class-demo-content.php';
 require_once FITBULL_CORE_DIR . 'includes/class-admin.php';
 
@@ -39,6 +40,8 @@ require_once FITBULL_CORE_DIR . 'includes/class-admin.php';
 add_action( 'init', array( 'Fitbull\\Core\\Content_Types', 'register' ) );
 add_action( 'init', array( 'Fitbull\\Core\\Meta', 'register' ) );
 add_action( 'init', array( 'Fitbull\\Core\\Blocks', 'register' ) );
+// Templates for the plugin's post types.
+add_action( 'init', array( 'Fitbull\\Core\\Templates', 'register' ) );
 add_action( 'enqueue_block_editor_assets', array( 'Fitbull\\Core\\Editor', 'enqueue' ) );
 
 // REST API.

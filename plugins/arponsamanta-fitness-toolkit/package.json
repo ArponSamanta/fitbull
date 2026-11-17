@@ -1,6 +1,6 @@
 {
 	"name": "arponsamanta-fitness-toolkit",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"private": true,
 	"description": "Content types, REST API and interactive blocks for fitness sites.",
 	"author": "Arpon Samanta",

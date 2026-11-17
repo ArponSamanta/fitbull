@@ -12,12 +12,33 @@
 <!-- /wp:group -->
 <!-- wp:post-featured-image {"align":"wide","style":{"border":{"radius":"20px"}}} /-->
 <!-- wp:post-content {"layout":{"type":"constrained"}} /-->
-<!-- wp:separator {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
-<hr class="wp-block-separator has-alpha-channel-opacity" style="margin-top:var(--wp--preset--spacing--50)"/>
-<!-- /wp:separator -->
-<!-- wp:paragraph {"textColor":"muted","fontSize":"small"} -->
-<p class="has-muted-color has-text-color has-small-font-size">Information only, not medical advice. Some links may be affiliate links; we may earn a commission at no extra cost to you.</p>
-<!-- /wp:paragraph -->
+<!-- wp:comments {"className":"fb-comments","style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}}} -->
+<div class="wp-block-comments fb-comments" style="margin-top:var(--wp--preset--spacing--60)">
+<!-- wp:comments-title {"level":2,"style":{"typography":{"fontSize":"var:preset|font-size|x-large"}}} /-->
+<!-- wp:comment-template -->
+<!-- wp:group {"className":"fb-comment","style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group fb-comment">
+<!-- wp:group {"style":{"spacing":{"blockGap":"0.75rem"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center"}} -->
+<div class="wp-block-group">
+<!-- wp:avatar {"size":40,"style":{"border":{"radius":"999px"}}} /-->
+<!-- wp:comment-author-name {"fontSize":"small"} /-->
+<!-- wp:comment-date {"format":"j M Y","textColor":"muted","fontSize":"small"} /-->
+<!-- wp:comment-edit-link {"fontSize":"small"} /-->
+</div>
+<!-- /wp:group -->
+<!-- wp:comment-content /-->
+<!-- wp:comment-reply-link {"fontSize":"small"} /-->
+</div>
+<!-- /wp:group -->
+<!-- /wp:comment-template -->
+<!-- wp:comments-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:comments-pagination-previous /-->
+<!-- wp:comments-pagination-numbers /-->
+<!-- wp:comments-pagination-next /-->
+<!-- /wp:comments-pagination -->
+<!-- wp:post-comments-form /-->
+</div>
+<!-- /wp:comments -->
 </main>
 <!-- /wp:group -->
 

@@ -128,6 +128,7 @@ class Demo_Content {
 			++$created;
 		}
 
+		$created += self::front_page();
 		$created += self::navigation( $data['navigation'] );
 		self::tidy_defaults();
 		flush_rewrite_rules();
@@ -166,6 +167,55 @@ class Demo_Content {
 			)
 		);
 		return $id ? 1 : 0;
+	}
+
+	/**
+	 * A static Home page and a Guides page for the blog, when the site still
+	 * shows its latest posts on the front page. The Home page asks for the
+	 * "page-landing" template, which the Fitbull theme provides; other
+	 * themes fall back to their normal page template.
+	 */
+	private static function front_page(): int {
+		if ( 'posts' !== get_option( 'show_on_front' ) ) {
+			return 0;
+		}
+		$created = 0;
+		$home    = get_page_by_path( 'home' );
+		if ( ! $home ) {
+			$home_id = wp_insert_post(
+				array(
+					'post_type'     => 'page',
+					'post_status'   => 'publish',
+					'post_title'    => __( 'Home', 'arponsamanta-fitness-toolkit' ),
+					'post_name'     => 'home',
+					'post_content'  => '',
+					'page_template' => 'page-landing',
+				)
+			);
+			$created += $home_id ? 1 : 0;
+		} else {
+			$home_id = $home->ID;
+		}
+		$guides = get_page_by_path( 'guides' );
+		if ( ! $guides ) {
+			$guides_id = wp_insert_post(
+				array(
+					'post_type'   => 'page',
+					'post_status' => 'publish',
+					'post_title'  => __( 'Guides', 'arponsamanta-fitness-toolkit' ),
+					'post_name'   => 'guides',
+				)
+			);
+			$created  += $guides_id ? 1 : 0;
+		} else {
+			$guides_id = $guides->ID;
+		}
+		if ( $home_id && $guides_id ) {
+			update_option( 'show_on_front', 'page' );
+			update_option( 'page_on_front', (int) $home_id );
+			update_option( 'page_for_posts', (int) $guides_id );
+		}
+		return $created;
 	}
 
 	/**

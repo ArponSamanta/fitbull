@@ -221,3 +221,47 @@ p.is-style-eyebrow {
 	justify-content: center;
 	align-items: center;
 }
+
+/* Form fields: search and the comment form, matched to the dark palette. */
+.wp-block-search__input,
+.wp-block-post-comments-form input:not([type="submit"]):not([type="checkbox"]),
+.wp-block-post-comments-form textarea {
+	background: var(--wp--preset--color--ink);
+	color: var(--wp--preset--color--chalk);
+	border: 1px solid var(--wp--preset--color--line-strong);
+	border-radius: 12px;
+	padding: 0.7rem 0.9rem;
+	font: inherit;
+}
+
+.wp-block-search__input:focus-visible,
+.wp-block-post-comments-form input:focus-visible,
+.wp-block-post-comments-form textarea:focus-visible {
+	outline: 2px solid var(--wp--preset--color--lime);
+	outline-offset: 2px;
+}
+
+.wp-block-post-comments-form input[type="checkbox"] {
+	accent-color: var(--wp--preset--color--lime);
+}
+
+.wp-block-post-comments-form .comment-notes,
+.wp-block-post-comments-form .logged-in-as {
+	color: var(--wp--preset--color--muted);
+	font-size: 0.9rem;
+}
+
+/* Comments */
+.fb-comments .wp-block-comment-template {
+	padding: 0;
+	list-style: none;
+}
+
+.fb-comment {
+	padding: 1.1rem 0;
+	border-bottom: 1px solid var(--wp--preset--color--line);
+}
+
+.fb-comment .wp-block-comment-content p {
+	margin: 0.25rem 0;
+}

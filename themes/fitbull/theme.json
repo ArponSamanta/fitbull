@@ -153,6 +153,7 @@
 		{ "name": "footer", "title": "Footer", "area": "footer" }
 	],
 	"customTemplates": [
+		{ "name": "page-landing", "title": "Landing page", "postTypes": [ "page" ] },
 		{ "name": "page-wide", "title": "Wide page (no title)", "postTypes": [ "page" ] }
 	]
 }
