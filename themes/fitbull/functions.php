@@ -60,3 +60,21 @@ function fitbull_block_styles() {
 	);
 }
 add_action( 'init', 'fitbull_block_styles' );
+
+/**
+ * These patterns are built on ArponSamanta Fitness Toolkit's blocks and
+ * print nothing without it, so hide them from the inserter when the plugin
+ * is not active. Runs after the theme's pattern files are registered.
+ */
+function fitbull_unregister_plugin_patterns() {
+	if ( class_exists( 'Fitbull\\Core\\Blocks' ) ) {
+		return;
+	}
+	$registry = WP_Block_Patterns_Registry::get_instance();
+	foreach ( array( 'fitbull/cta-band', 'fitbull/exercise-finder', 'fitbull/hubs' ) as $pattern ) {
+		if ( $registry->is_registered( $pattern ) ) {
+			unregister_block_pattern( $pattern );
+		}
+	}
+}
+add_action( 'init', 'fitbull_unregister_plugin_patterns', 20 );

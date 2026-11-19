@@ -3,7 +3,7 @@ Contributors: arponsamanta
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,12 @@ The theme works on its own as a blog theme. Install the companion plugin, ArponS
 No. Without ArponSamanta Fitness Toolkit the theme is a complete blog theme. Sections that rely on the plugin are hidden.
 
 == Changelog ==
+
+= 1.0.4 =
+* New screenshot: the blog index as it looks right after activation.
+* Added a home.html template with a level 1 heading for the blog index.
+* Patterns that need the companion plugin are hidden from the inserter when it is not active.
+* The mobile menu is left-aligned when the navigation falls back to the page list.
 
 = 1.0.3 =
 * The front page template is now a "Landing page" page template, so Settings > Reading works as expected.
@@ -63,4 +69,4 @@ Barlow Condensed, Copyright 2017 The Barlow Project Authors
 License: SIL Open Font License, Version 1.1
 Source: https://github.com/jpt/barlow
 
-Screenshot: an original render of the theme's homepage by the theme author, released under GPLv2 or later.
+Screenshot: the blog index as shown right after activation, without the companion plugin. The screenshot and the featured images in it are original works by the theme author, released under GPLv2 or later.

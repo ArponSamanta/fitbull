@@ -187,7 +187,8 @@ p.is-style-eyebrow {
 	align-items: flex-start !important;
 }
 
-.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container {
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__container,
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-page-list {
 	align-items: flex-start !important;
 	gap: 1.1rem;
 	width: 100%;
